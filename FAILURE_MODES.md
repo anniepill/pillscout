@@ -15,6 +15,8 @@ Notes from testing the first PillScout MCP server against Claude and Gemini, Apr
 | The model overruled a correct upper-limit flag with its own pharmacology (topical versus oral magnesium). It happened to be right. | An unsourced override is a drift even when it is correct, because it will be just as confident when wrong. | Route of administration in the engine, so there is nothing to override. |
 | Asked to write a prompt for my coding tool, the model put invented clinical facts in the prompt itself. | Fabrication can happen before any tool is called; no schema reaches it. | A source check on every prompt before it runs. A process rule, not code. |
 
+The field names in the third column are from the first server and from the rebuilt server's specification, both private; none of them is in this repository.
+
 What did not break, across three reviews of the transcripts: the model did not reword a verbatim quote, did not invent a citation in its answer, did not strip a disclaimer, and did not ignore a hard refusal. Likely because the early server rarely returned those shapes. The corpus that followed carried them, and they were tested on purpose.
 
 The rule that came out of this and governed everything after: every value carries its source, every absence is a field with a reason, every check says how deep it went, and bad data is stopped at the boundary before a model can narrate it. The corpus states, with the source. The model reasons. What sits between them is a schema, not a paragraph.

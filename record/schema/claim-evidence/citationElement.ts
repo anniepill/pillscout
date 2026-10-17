@@ -26,8 +26,9 @@ import { effectsSchema } from './effectSpan.js';
 // The citation element: one source-attributed evidence anchor.
 //
 // A `citations:` list hangs off nearly every claim-bearing block in an
-// ingredient record, at 44 distinct parent paths and 855 elements when this
-// schema was written. Until this schema it was the corpus's largest ungoverned
+// ingredient record: 44 distinct parent paths and 855 elements when this
+// schema was written, measured on the full private corpus at the time, not on
+// this repository. Until this schema it was the corpus's largest ungoverned
 // surface: 13 of its keys carried leaf enum schemas, applied by key name
 // wherever the walk happened to find them, and the OBJECT itself was governed
 // by nothing. No schema knew which keys a citation may carry, so a coined or
@@ -46,7 +47,8 @@ import { effectsSchema } from './effectSpan.js';
 //
 // KEY SET AND REQUIRED/OPTIONAL SPLIT ARE DERIVED, NOT DESIGNED. Both were
 // read off the corpus with the same YAML parser the validator uses: 26
-// distinct keys across 855 citation elements. A key present on every element
+// distinct keys across 855 citation elements, measured on the full private
+// corpus at the time, not on this repository. A key present on every element
 // is required; every other key is optional. Nothing here is aspirational, so
 // the schema admits HEAD exactly as authored and any tightening beyond it is
 // a separate, deliberate change. The exceptions are `anchor_id`, added from
@@ -67,7 +69,8 @@ import { effectsSchema } from './effectSpan.js';
 // record application, and closing one is its own decision.
 
 export const citationElementSchema = z.strictObject({
-  // --- Required. Present on all 855 elements when this schema was derived. ---
+  // --- Required. Present on all 855 elements of the full private corpus when
+  // this schema was derived. ---
 
   // The provenance quartet. Open strings: `source` and `document_id`
   // vocabularies are cross-checked against the room manifests (the full
@@ -161,9 +164,10 @@ export const citationElementSchema = z.strictObject({
   //
   // Optional here, and required on a claim that attributes a use
   // category, which the anchor check enforces from the extraction because only
-  // it can tell which column the bytes are in. 52 elements carried it when
-  // this was written, all on ginkgo; the remaining twenty records gain theirs
-  // as the spine backfill anchors them.
+  // it can tell which column the bytes are in. When this was written, measured
+  // on the full private corpus at the time and not on this repository, 52
+  // elements carried it, all on ginkgo; the other twenty records there gain
+  // theirs as the spine backfill anchors them.
   //
   // Deliberately NOT tagged sourceText(), on the `section_title` precedent in
   // schema/byte-hygiene/sourceText.ts: a hand-authored heading string stays

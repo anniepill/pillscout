@@ -1,0 +1,1058 @@
+person:
+  Medicines: ["warfarin", "atorvastatin", "levothyroxine", "sertraline"]
+  Supplements with a record: ["ginkgo", "st_johns_wort", "red_yeast_rice", "calcium", "iron", "vitamin_d"]
+  No record: ["ashwagandha", "fish oil"]
+  Wants to add: ["valerian"]
+
+pairs_with_passages: ["ginkgo + warfarin", "ginkgo + atorvastatin", "ginkgo + sertraline", "st_johns_wort + warfarin", "st_johns_wort + atorvastatin", "st_johns_wort + sertraline", "red_yeast_rice + atorvastatin", "calcium + levothyroxine", "iron + levothyroxine", "vitamin_d + atorvastatin", "valerian + atorvastatin", "calcium + vitamin_d"]
+
+passages:
+  - passage: "In patients with a pathologically increased\nbleeding tendency (haemorrhagic diathesis) and\nconcomitant anticoagulant and antiplatelet\ntreatment, the medicinal product should only be\nused after consultation with a doctor."
+    sources:
+      - item: "ginkgo"
+        authority: "European Medicines Agency (herbal committee)"
+        document_id: "EMA/HMPC/321097/2012"
+        section_title: "Special warnings and precautions for use"
+        source_directive: "ask_before_use"
+        evidence_outcome: "not_applicable"
+        conditions:
+          applicability_conditions: {"population": ["patients_with_haemorrhagic_diathesis_or_concomitant_anticoagulant_or_antiplatelet_treatment"]}
+          scope: ["Well-established use"]
+    bears_on:
+      - pair: "ginkgo + warfarin"
+        kind: "class"
+        matched_class: ["anticoagulant"]
+        note: "The source named a class. The lookup service matched this item to the class; the source did not name it."
+  - passage: "If the medicinal product is taken concomitantly\nwith anticoagulants (e.g. phenprocoumon and\nwarfarin) or antiplatelet drugs (e.g. clopidogrel,\nacetylsalicylic acid and other non-steroidal anti-\ninflammatory drugs), their effect may be\ninfluenced."
+    sources:
+      - item: "ginkgo"
+        authority: "European Medicines Agency (herbal committee)"
+        document_id: "EMA/HMPC/321097/2012"
+        section_title: "Interactions with other medicinal products and other forms of interaction"
+        evidence_outcome: "not_applicable"
+        conditions:
+          scope: ["Well-established use"]
+    bears_on:
+      - pair: "ginkgo + warfarin"
+        kind: "named"
+        partner: "warfarin"
+  - passage: "Available studies with warfarin do not indicate that\nthere is an interaction between warfarin and G.\nbiloba products, but adequate monitoring is\nadvised when starting, when changing G. biloba\ndose, when ending G. biloba intake or if changing\nproduct."
+    sources:
+      - item: "ginkgo"
+        authority: "European Medicines Agency (herbal committee)"
+        document_id: "EMA/HMPC/321097/2012"
+        section_title: "Interactions with other medicinal products and other forms of interaction"
+        evidence_outcome: "null_finding"
+        conditions:
+          scope: ["Well-established use"]
+    bears_on:
+      - pair: "ginkgo + warfarin"
+        kind: "named"
+        partner: "warfarin"
+  - passage: "Ginkgo may increase the risk of bleeding in people who are taking anticoagulant drugs, such as warfarin."
+    sources:
+      - item: "ginkgo"
+        authority: "NIH NCCIH"
+        document_id: "nccih_ginkgo"
+        section_title: "What Do We Know About Safety?"
+        evidence_outcome: "positive_finding"
+    bears_on:
+      - pair: "ginkgo + warfarin"
+        kind: "named"
+        partner: "warfarin"
+  - passage: "EGb 761 inhibited all the P450s studied except CYP2D6 (Ki>900 microg/ml). The activity of CYP2C9 was the most affected by EGb 761 (Ki=14 plus-or-minus 4 microg/ml). CYP1A2 (106 plus-or-minus 24 microg/ml), CYP2E1 (127 plus-or-minus 42 microg/ml), and CYP3A4 (155 plus-or-minus 43 microg/ml) were also inhibited but to a lesser extent."
+    sources:
+      - item: "ginkgo"
+        authority: "European Medicines Agency (herbal committee)"
+        document_id: "EMA/HMPC/321095/2012"
+        section_title: "Pharmacokinetic data - Metabolism - Gaudineau et al. 2004"
+        evidence_outcome: "positive_finding"
+    bears_on:
+      - pair: "ginkgo + warfarin"
+        kind: "class"
+        matched_pathway: ["CYP2C9"]
+        note: "The source named an enzyme pathway. The lookup service matched this item to it; the source did not name it."
+      - pair: "ginkgo + atorvastatin"
+        kind: "class"
+        matched_pathway: ["CYP3A4"]
+        note: "The source named an enzyme pathway. The lookup service matched this item to it; the source did not name it."
+  - passage: "Quercetin was also a strong inhibitor of CYP2C9 (IC50=7.8 microg/ml, 25.8 microM), as was myricetin for CYP2D6 (IC50=9.6 microg/ml, 30.2 microM). It was concluded that a number of flavonol aglycones, as well as the biflavonol amentoflavone, are inhibitors of several human CYP isoforms in vitro. Inhibition of CYP2C9 is of potential concern, since this enzyme is responsible for clearance of some drugs (such as S-warfarin) that have narrow therapeutic ranges in clinical practice. The importance of the in vitro findings requires evaluation in clinical studies."
+    sources:
+      - item: "ginkgo"
+        authority: "European Medicines Agency (herbal committee)"
+        document_id: "EMA/HMPC/321095/2012"
+        section_title: "Pharmacokinetic data - Metabolism - Von Moltke et al. 2004"
+        evidence_outcome: "positive_finding"
+    bears_on:
+      - pair: "ginkgo + warfarin"
+        kind: "named_elsewhere"
+        note: "This passage names the item. The record files it under a different heading."
+  - passage: "The mean ratio (90% CI) for S-7-hydroxywarfarin urinary excretion rate was 1.07 (0.85–1.32) for ginkgo treatment, and 1.00 (0.81–1.23) for ginger coadministration suggesting these herbs did not affect CYP2C9 activity."
+    sources:
+      - item: "ginkgo"
+        authority: "published study"
+        document_id: "PMID:15801937"
+        section_title: "Effect of ginkgo and ginger on warfarin pharmacokinetics in healthy subjects - CYP2C9 activity"
+        evidence_outcome: "null_finding"
+    bears_on:
+      - pair: "ginkgo + warfarin"
+        kind: "named_elsewhere"
+        note: "This passage names the item. The record files it under a different heading."
+  - passage: "The influence of Ginkgo biloba on drug metabolising CYPs has been demonstrated with various probe substrates for the corresponding CYPs. Both, an inducing and an inhibitory effect were suggested for Ginkgo biloba on CYP3A4 by results of interaction studies, depending on the study design. Whereas a daily dose of 240 mg EGb 761 and extracts other than EGb 761 supposed an inducing effect, a higher daily dose of EGb 761 assumed an inhibitory effect. An induction of CYP2C9 was assumed at a daily dose of 360 mg of EGb 761. Also inducing effects for Ginkgo biloba extracts other than EGb 761 on CYP2C19 were observed."
+    sources:
+      - item: "ginkgo"
+        authority: "European Medicines Agency (herbal committee)"
+        document_id: "EMA/HMPC/321095/2012"
+        section_title: "Overall conclusions on clinical pharmacology and efficacy"
+        evidence_outcome: "positive_finding"
+    bears_on:
+      - pair: "ginkgo + warfarin"
+        kind: "class"
+        matched_pathway: ["CYP2C9"]
+        note: "The source named an enzyme pathway. The lookup service matched this item to it; the source did not name it."
+      - pair: "ginkgo + atorvastatin"
+        kind: "class"
+        matched_pathway: ["CYP3A4"]
+        note: "The source named an enzyme pathway. The lookup service matched this item to it; the source did not name it."
+      - pair: "ginkgo + sertraline"
+        kind: "class"
+        matched_pathway: ["CYP2C19"]
+        note: "The source named an enzyme pathway. The lookup service matched this item to it; the source did not name it."
+  - passage: "Do not use if you are taking blood thinners or other health products that affect blood coagulation."
+    sources:
+      - item: "ginkgo"
+        authority: "Health Canada"
+        document_id: "mono_ginkgo-biloba_english"
+        section_title: "Contraindication(s)"
+        source_position: "contraindicated"
+        evidence_outcome: "not_applicable"
+    bears_on:
+      - pair: "ginkgo + warfarin"
+        kind: "class"
+        partner: "anticoagulants and antiplatelet drugs"
+        matched_class: ["anticoagulant", "blood thinner", "blood coagulation"]
+        note: "The source named a class. The lookup service matched this item to the class; the source did not name it."
+  - passage: "Ginkgo leaf may increase the effects of\nanticoagulants such as coumarin derivatives."
+    sources:
+      - item: "ginkgo"
+        authority: "European Medicines Agency (herbal committee)"
+        document_id: "EMA/HMPC/321097/2012"
+        section_title: "Interactions with other medicinal products and other forms of interaction"
+        evidence_outcome: "positive_finding"
+        conditions:
+          scope: ["Traditional use"]
+    bears_on:
+      - pair: "ginkgo + warfarin"
+        kind: "class"
+        partner: "anticoagulants and antiplatelet drugs"
+        matched_class: ["anticoagulant", "coumarin"]
+        note: "The source named a class. The lookup service matched this item to the class; the source did not name it."
+  - passage: "International normalised ratio of prothrombine time and platelet aggregation were not affected by Ginkgo biloba coadministration. Therefore, EGb 761 at recommended doses does not significantly affect clotting status or pharmacodynamics of warfarin in healthy subjects."
+    sources:
+      - item: "ginkgo"
+        authority: "European Medicines Agency (herbal committee)"
+        document_id: "EMA/HMPC/321095/2012"
+        section_title: "Pharmacodynamic interactions - Jiang et al. 2005"
+        evidence_outcome: "null_finding"
+    bears_on:
+      - pair: "ginkgo + warfarin"
+        kind: "named"
+        partner: "warfarin"
+  - passage: "INR and platelet aggregation were not affected by administration of ginkgo or ginger alone."
+    sources:
+      - item: "ginkgo"
+        authority: "published study"
+        document_id: "pmid_15801937_abstract"
+        section_title: "Effect of ginkgo and ginger on the pharmacokinetics and pharmacodynamics of warfarin in healthy subjects"
+        evidence_outcome: "null_finding"
+    bears_on:
+      - pair: "ginkgo + warfarin"
+        kind: "named"
+        partner: "warfarin"
+  - passage: "Some botanicals may cause bleeding events when taken alone (e.g., garlic and Ginkgo biloba) and may have anticoagulant, antiplatelet, and/or fibrinolytic properties. These effects would be expected to be additive to the anticoagulant effects of JANTOVEN."
+    sources:
+      - item: "ginkgo"
+        authority: "U.S. FDA drug label"
+        document_id: "fda_dailymed_warfarin_setid_19a69a72"
+        section_title: "Botanical (Herbal) Products and Foods"
+        evidence_outcome: "positive_finding"
+    brand_notes:
+      - "Jantoven is a warfarin product. Matched by the lookup service."
+    bears_on:
+      - pair: "ginkgo + warfarin"
+        kind: "named"
+        partner: "warfarin"
+  - passage: "Some botanicals and foods can interact with JANTOVEN through CYP450 interactions (e.g., echinacea, grapefruit juice, ginkgo, goldenseal, St. John's wort)."
+    sources:
+      - item: "ginkgo"
+        authority: "U.S. FDA drug label"
+        document_id: "fda_dailymed_warfarin_setid_19a69a72"
+        section_title: "Botanical (Herbal) Products and Foods"
+        evidence_outcome: "positive_finding"
+    brand_notes:
+      - "Jantoven is a warfarin product. Matched by the lookup service."
+    bears_on:
+      - pair: "ginkgo + warfarin"
+        kind: "named"
+        partner: "warfarin"
+  - passage: "Concomitant use of G. biloba preparations and\nefavirenz is not recommended; plasma\nconcentrations of efavirenz may be decreased\nbecause of induction of CYP3A4 (see also section\n4.4)."
+    sources:
+      - item: "ginkgo"
+        authority: "European Medicines Agency (herbal committee)"
+        document_id: "EMA/HMPC/321097/2012"
+        section_title: "Interactions with other medicinal products and other forms of interaction"
+        source_position: "not_recommended"
+        evidence_outcome: "positive_finding"
+        conditions:
+          scope: ["Well-established use"]
+    bears_on:
+      - pair: "ginkgo + atorvastatin"
+        kind: "class"
+        matched_pathway: ["CYP3A4"]
+        note: "The source named an enzyme pathway. The lookup service matched this item to it; the source did not name it."
+  - passage: "An interaction study with talinolol indicates that G.\nbiloba may inhibit P-glycoprotein at the intestinal\nlevel. This may give rise to increased exposure of\ndrugs markedly affected by P-glycoprotein in the\nintestine such as dabigatran etexilate. Caution is\nadvised if combining G. biloba and dabigatran."
+    sources:
+      - item: "ginkgo"
+        authority: "European Medicines Agency (herbal committee)"
+        document_id: "EMA/HMPC/321097/2012"
+        section_title: "Interactions with other medicinal products and other forms of interaction"
+        evidence_outcome: "positive_finding"
+        conditions:
+          scope: ["Well-established use"]
+    bears_on:
+      - pair: "ginkgo + atorvastatin"
+        kind: "class"
+        matched_pathway: ["P-glycoprotein"]
+        note: "The source named an enzyme pathway. The lookup service matched this item to it; the source did not name it."
+  - passage: "Ginkgo biloba inhibited CYP3A4 activity (IC50 value of 668 plus-or-minus 66 microg/ml) and P-gp activity (IC50 value of 23.6 microg/ml). The low IC50 value for Ginkgo biloba may indicate an inhibition of P-gp in the small intestine in vivo."
+    sources:
+      - item: "ginkgo"
+        authority: "European Medicines Agency (herbal committee)"
+        document_id: "EMA/HMPC/321095/2012"
+        section_title: "Pharmacokinetic interactions - Hellum and Nilsen 2008"
+        evidence_outcome: "positive_finding"
+    bears_on:
+      - pair: "ginkgo + atorvastatin"
+        kind: "class"
+        matched_pathway: ["CYP3A4"]
+        note: "The source named an enzyme pathway. The lookup service matched this item to it; the source did not name it."
+  - passage: "The exact mechanism is not known.\nHuman pharmacological data show increased EEG\nvigilance in geriatric subjects, reduction in blood\nviscosity and improved cerebral perfusion in\nspecific areas in healthy men (60-70 years) and\nreduction in platelet aggregation. Additionally,\nvasodilating effects on forearm blood vessels\ncausing increased regional blood flow are shown."
+    sources:
+      - item: "ginkgo"
+        authority: "European Medicines Agency (herbal committee)"
+        document_id: "EMA/HMPC/321097/2012"
+        section_title: "Pharmacodynamic properties"
+        evidence_outcome: "positive_finding"
+        conditions:
+          scope: ["Well-established use"]
+    bears_on:
+      - pair: "ginkgo + warfarin"
+        kind: "related"
+        reason: "reduces platelet aggregation"
+        note: "The lookup service judged this passage relevant to this item. The source did not name it."
+  - passage: "PAF-mediated aggregation of human platelets was half-maximally inhibited (IC50) by ginkgolide A, B, C and EGb 761 at concentrations of 13.7, 1.6, 33.2 microM and 23.2 microg/ml, respectively. Of the ginkgolides tested, ginkgolide B exerted by far the most powerful antagonistic effect."
+    sources:
+      - item: "ginkgo"
+        authority: "European Medicines Agency (herbal committee)"
+        document_id: "EMA/HMPC/321095/2012"
+        section_title: "Primary pharmacodynamic - Inhibitory action on PAF"
+        evidence_outcome: "positive_finding"
+    bears_on:
+      - pair: "ginkgo + warfarin"
+        kind: "related"
+        reason: "ginkgolides inhibit platelet aggregation"
+        note: "The lookup service judged this passage relevant to this item. The source did not name it."
+  - passage: "Purified ginkgolide A, B and C, which are known to be potent PAF receptor-antagonists, apparently inhibited PAF-induced platelet aggregation, but not oxidant-induced aggregation."
+    sources:
+      - item: "ginkgo"
+        authority: "European Medicines Agency (herbal committee)"
+        document_id: "EMA/HMPC/321095/2012"
+        section_title: "Primary pharmacodynamic - Inhibitory action on PAF"
+        evidence_outcome: "positive_finding"
+    bears_on:
+      - pair: "ginkgo + warfarin"
+        kind: "related"
+        reason: "inhibits platelet aggregation"
+        note: "The lookup service judged this passage relevant to this item. The source did not name it."
+  - passage: "The ginkgolides, and in particular ginkgolide B, are known antagonists of PAF. PAF is a potent inducer of platelet aggregation, neutrophil degranulation, and oxygen radical production leading to increased microvascular permeability and bronchoconstriction."
+    sources:
+      - item: "ginkgo"
+        authority: "World Health Organization"
+        document_id: "WHO/Monographs/Vol1/Folium_Ginkgo"
+        section_title: "Antagonism of platelet-activating factor (PAF)"
+        evidence_outcome: "positive_finding"
+    bears_on:
+      - pair: "ginkgo + warfarin"
+        kind: "related"
+        reason: "PAF antagonism, platelet mechanism"
+        note: "The lookup service judged this passage relevant to this item. The source did not name it."
+  - passage: "G. biloba extracts may impair the ability of\nplatelets to aggregate. The tendency for bleeding\nmay be increased."
+    sources:
+      - item: "ginkgo"
+        authority: "European Medicines Agency (herbal committee)"
+        document_id: "EMA/HMPC/321097/2012"
+        section_title: "Fertility, pregnancy and lactation"
+        evidence_outcome: "positive_finding"
+        conditions:
+          scope: ["Well-established use"]
+    bears_on:
+      - pair: "ginkgo + warfarin"
+        kind: "related"
+        reason: "impairs platelets, raises bleeding"
+        note: "The lookup service judged this passage relevant to this item. The source did not name it."
+  - passage: "G. biloba extracts may impair the ability of\nplatelets to aggregate. The tendency for bleeding\nmay be increased. Animal studies are insufficient\nwith respect to reproductive toxicity (see section\n5.3).\nThe use is contraindicated in pregnancy (see\nsection 4.3)"
+    sources:
+      - item: "ginkgo"
+        authority: "European Medicines Agency (herbal committee)"
+        document_id: "EMA/HMPC/321097/2012"
+        section_title: "Fertility, pregnancy and lactation"
+        source_position: "contraindicated"
+        evidence_outcome: "not_applicable"
+        conditions:
+          applicability_conditions: {"population": ["pregnancy"]}
+          scope: ["Well-established use"]
+    bears_on:
+      - pair: "ginkgo + warfarin"
+        kind: "related"
+        reason: "impairs platelets, raises bleeding"
+        note: "The lookup service judged this passage relevant to this item. The source did not name it."
+  - passage: "Preparations containing Ginkgo might increase\nsusceptibility to bleeding, the medicinal product\nshould be discontinued as a precaution 3 to 4\ndays prior to surgery."
+    sources:
+      - item: "ginkgo"
+        authority: "European Medicines Agency (herbal committee)"
+        document_id: "EMA/HMPC/321097/2012"
+        section_title: "Special warnings and precautions for use"
+        evidence_outcome: "positive_finding"
+        conditions:
+          scope: ["Well-established use"]
+    bears_on:
+      - pair: "ginkgo + warfarin"
+        kind: "related"
+        reason: "bleeding risk, stop presurgery"
+        note: "The lookup service judged this passage relevant to this item. The source did not name it."
+  - passage: "Bleeding of individual organs has been reported\n(eye, nose, cerebral and gastrointestinal\nhaemorrhage). The frequency is not known."
+    sources:
+      - item: "ginkgo"
+        authority: "European Medicines Agency (herbal committee)"
+        document_id: "EMA/HMPC/321097/2012"
+        section_title: "Undesirable effects"
+        evidence_outcome: "positive_finding"
+        conditions:
+          scope: ["Well-established use"]
+    bears_on:
+      - pair: "ginkgo + warfarin"
+        kind: "related"
+        reason: "organ bleeding reported"
+        note: "The lookup service judged this passage relevant to this item. The source did not name it."
+  - passage: "Referring to published case reports the use of Ginkgo biloba has been associated with different bleeding incidents: Spontaneous bleeding of the nose, ecchymosis and haemorrhoidal bleeding (Bent et al. 2005); Postoperative bleeding (Bebbington et al. 2005, Yagmur et al. 2005, Fessenden et al. 2001, Norred and Finlayson 2000); Bleeding complications after liver transplantation (Hauser et al. 2002); Retrobulbar haemorrhage (Fong and Kinnear 2003); Hyphema (Schneider et al. 2002, Rosenblatt and Mindel 1997); Cerebral haemorrhage (Meisel et al. 2003, Benjamin et al. 2001); Subarachnoid haemorrhage (Vale 1998); Parietal lobe haemorrhage (Matthews 1998); Subdural haematoma (Miller and Freeman 2002, Gilbert 1997, Rowin and Lewis 1996)."
+    sources:
+      - item: "ginkgo"
+        authority: "European Medicines Agency (herbal committee)"
+        document_id: "EMA/HMPC/321095/2012"
+        section_title: "Adverse events and serious adverse events and deaths"
+        evidence_outcome: "positive_finding"
+    bears_on:
+      - pair: "ginkgo + warfarin"
+        kind: "related"
+        reason: "bleeding case reports"
+        note: "The lookup service judged this passage relevant to this item. The source did not name it."
+  - passage: "According to the pharmacovigilance database of the BfArM 74 cases of haemorrhage during the intake of Ginkgo biloba medicinal products are reported in Germany (June 20, 2012). It should be kept in mind that these are suspected cases of adverse events and a causal link on an individual basis is not proven with certainty. The specific location of bleeding incidences of reported adverse events (with 5 or more than 5 cases mentioned) are as followed: epistaxis, cerebral haemorrhage, gastrointestinal haemorrhage, gastric ulcer haemorrhage, haematoma, eye haemorrhage, melaena and decreased haemoglobin value. Included in the 74 reported adverse events are five cases of deaths."
+    sources:
+      - item: "ginkgo"
+        authority: "European Medicines Agency (herbal committee)"
+        document_id: "EMA/HMPC/321095/2012"
+        section_title: "Adverse events - BfArM pharmacovigilance database"
+        evidence_outcome: "positive_finding"
+    bears_on:
+      - pair: "ginkgo + warfarin"
+        kind: "related"
+        reason: "haemorrhage pharmacovigilance reports"
+        note: "The lookup service judged this passage relevant to this item. The source did not name it."
+  - passage: "Based on meta-analysis of haemostasis outcomes, comparison of mean difference or baseline change between treatment and placebo groups did not indicate a higher bleeding risk associated with standardised Ginkgo biloba leaf extract. This finding ultimately contributes to an informed evaluation of Ginkgo biloba leaf extract use, including patient self-medication."
+    sources:
+      - item: "ginkgo"
+        authority: "European Medicines Agency (herbal committee)"
+        document_id: "EMA/HMPC/321095/2012"
+        section_title: "Reviews and meta-analyses - Kellermann and Kloft 2011"
+        evidence_outcome: "null_finding"
+    bears_on:
+      - pair: "ginkgo + warfarin"
+        kind: "related"
+        reason: "bleeding-risk meta-analysis"
+        note: "The lookup service judged this passage relevant to this item. The source did not name it."
+  - passage: "Of particular note rates of major bleeding did not differ between the treatment groups (HR, 0.97; 95% CI, 0.77-1.23; p=0.81), and bleeding incidence did not differ for individuals taking aspirin and assigned to either EGb 761 or placebo (rates of 1.98 and 1.76 per 100 person-years, respectively, p=0.44)."
+    sources:
+      - item: "ginkgo"
+        authority: "European Medicines Agency (herbal committee)"
+        document_id: "EMA/HMPC/321095/2012"
+        section_title: "DeKosky et al. 2008 GEM study secondary findings"
+        evidence_outcome: "null_finding"
+    bears_on:
+      - pair: "ginkgo + warfarin"
+        kind: "related"
+        reason: "major-bleeding trial data"
+        note: "The lookup service judged this passage relevant to this item. The source did not name it."
+  - passage: "Wolf (2006) suggests that coadministration of aspirin and EGb 761 to 50 healthy male volunteers (20-44 years) in a double-blind, double-dummy study did not prolong coagulation parameters, including bleeding time and agonist-induced platelet aggregation, compared to aspirin alone."
+    sources:
+      - item: "ginkgo"
+        authority: "European Medicines Agency (herbal committee)"
+        document_id: "EMA/HMPC/321095/2012"
+        section_title: "Pharmacodynamic interactions - Wolf 2006"
+        evidence_outcome: "null_finding"
+    bears_on:
+      - pair: "ginkgo + warfarin"
+        kind: "related"
+        reason: "bleeding time with aspirin"
+        note: "The lookup service judged this passage relevant to this item. The source did not name it."
+  - passage: "Coadministration of Ginkgo biloba (not further specified) at an oral dose of 120 or 240 mg, either with cilostazol or clopidogrel to 10 healthy male volunteers in a randomised, open-label, crossover study did not enhance antiplatelet activity. Ginkgo biloba potentiated the bleeding time prolongation effect of cilostazol."
+    sources:
+      - item: "ginkgo"
+        authority: "European Medicines Agency (herbal committee)"
+        document_id: "EMA/HMPC/321095/2012"
+        section_title: "Pharmacodynamic interactions - Aruna and Naidu 2007"
+        evidence_outcome: "positive_finding"
+      - item: "ginkgo"
+        authority: "European Medicines Agency (herbal committee)"
+        document_id: "EMA/HMPC/321095/2012"
+        section_title: "Pharmacodynamic interactions - Aruna and Naidu 2007"
+        evidence_outcome: "null_finding"
+    bears_on:
+      - pair: "ginkgo + warfarin"
+        kind: "related"
+        reason: "potentiated bleeding time"
+        note: "The lookup service judged this passage relevant to this item. The source did not name it."
+  - passage: "The inhibitory effect of Ginkgo biloba extract on the pharmacokinetics of the P-gp substrate talinolol was studied in healthy volunteers. The observed increase of Cmax by 33% and AUC by 21% without any significant alterations in Tmax and T1/2 of talinolol supports the hypothesis of Blonk et al. (2012): that a possible explanation for the increase in Cmax and bioavailability of a drug when combined with EGb 761 could be the inhibition of P-gp by EGb 761."
+    sources:
+      - item: "ginkgo"
+        authority: "European Medicines Agency (herbal committee)"
+        document_id: "EMA/HMPC/321095/2012"
+        section_title: "Overall conclusions on clinical pharmacology and efficacy - talinolol"
+        evidence_outcome: "positive_finding"
+    bears_on:
+      - pair: "ginkgo + atorvastatin"
+        kind: "related"
+        reason: "P-gp abbreviation, inhibition"
+        note: "The lookup service judged this passage relevant to this item. The source did not name it."
+  - passage: "The observed increase of Cmax by 33% and AUC by 21% without any significant alterations in Tmax and T1/2 of talinolol supports the hypothesis of Blonk et al. (2012): that a possible explanation for the increase in Cmax and bioavailability of a drug when combined with EGb 761 could be the inhibition of P-gp by EGb 761."
+    sources:
+      - item: "ginkgo"
+        authority: "European Medicines Agency (herbal committee)"
+        document_id: "EMA/HMPC/321095/2012"
+        section_title: "Overall conclusions on clinical pharmacology and efficacy - talinolol"
+        evidence_outcome: "positive_finding"
+    bears_on:
+      - pair: "ginkgo + atorvastatin"
+        kind: "related"
+        reason: "P-gp abbreviation, inhibition"
+        note: "The lookup service judged this passage relevant to this item. The source did not name it."
+  - passage: "As the daily intake of hyperforin is less than 1 mg and of a duration of use not longer than 2 weeks no clinically relevant interactions are reported for concomitantly administered drugs which are metabolised via CYP1A2, CYP2B6, CYP2C9, CYP2C19, CYP3A4 or transported by P-glycoprotein."
+    sources:
+      - item: "st_johns_wort"
+        authority: "European Medicines Agency (herbal committee)"
+        document_id: "EMA/HMPC/7695/2021"
+        section_title: "Interactions with other medicinal products and other forms of interaction"
+    bears_on:
+      - pair: "st_johns_wort + warfarin"
+        kind: "class"
+        matched_pathway: ["CYP2C9"]
+        note: "The source named an enzyme pathway. The lookup service matched this item to it; the source did not name it."
+      - pair: "st_johns_wort + atorvastatin"
+        kind: "class"
+        matched_pathway: ["CYP3A4", "P-glycoprotein"]
+        note: "The source named an enzyme pathway. The lookup service matched this item to it; the source did not name it."
+      - pair: "st_johns_wort + sertraline"
+        kind: "class"
+        matched_pathway: ["CYP2C19", "CYP2B6"]
+        note: "The source named an enzyme pathway. The lookup service matched this item to it; the source did not name it."
+  - passage: "Hyperforin induces the activity of the metabolic enzymes CYP3A4, CYP2B6, CYP2C9, CYP2C19 and P-glycoprotein dose-dependently via activation of the PXR system. Therefore, the elimination of other drug substances may be accelerated, resulting in decreased plasma concentrations."
+    sources:
+      - item: "st_johns_wort"
+        authority: "European Medicines Agency (herbal committee)"
+        document_id: "EMA/HMPC/7695/2021"
+        section_title: "Pharmacokinetic properties"
+    bears_on:
+      - pair: "st_johns_wort + warfarin"
+        kind: "class"
+        matched_pathway: ["CYP2C9"]
+        note: "The source named an enzyme pathway. The lookup service matched this item to it; the source did not name it."
+      - pair: "st_johns_wort + atorvastatin"
+        kind: "class"
+        matched_pathway: ["CYP3A4", "P-glycoprotein"]
+        note: "The source named an enzyme pathway. The lookup service matched this item to it; the source did not name it."
+      - pair: "st_johns_wort + sertraline"
+        kind: "class"
+        matched_pathway: ["CYP2C19", "CYP2B6"]
+        note: "The source named an enzyme pathway. The lookup service matched this item to it; the source did not name it."
+  - passage: "Hyperforin induces the activity of the metabolic enzymes CYP3A4, CYP2B6, CYP2C9, CYP2C19 and P-glycoprotein dose-dependently via activation of the PXR system."
+    sources:
+      - item: "st_johns_wort"
+        authority: "European Medicines Agency (herbal committee)"
+        document_id: "EMA/HMPC/7695/2021"
+        section_title: "Pharmacokinetic properties"
+    bears_on:
+      - pair: "st_johns_wort + warfarin"
+        kind: "class"
+        matched_pathway: ["CYP2C9"]
+        note: "The source named an enzyme pathway. The lookup service matched this item to it; the source did not name it."
+      - pair: "st_johns_wort + atorvastatin"
+        kind: "class"
+        matched_pathway: ["CYP3A4", "P-glycoprotein"]
+        note: "The source named an enzyme pathway. The lookup service matched this item to it; the source did not name it."
+      - pair: "st_johns_wort + sertraline"
+        kind: "class"
+        matched_pathway: ["CYP2C19", "CYP2B6"]
+        note: "The source named an enzyme pathway. The lookup service matched this item to it; the source did not name it."
+  - passage: "Concomitant use with coumarin-type anticoagulants, cyclosporine, everolimus, sirolimus, tacrolimus for systemic use, fosamprenavir, indinavir and other protease inhibitors, nucleoside reverse transcriptase inhibitors, irinotecan, imatinib and other cytostatic agents metabolised by CYP3A4, CYP2B6, CYP2C9, CYP2C19 or transported by P-glycoprotein."
+    sources:
+      - item: "st_johns_wort"
+        authority: "European Medicines Agency (herbal committee)"
+        document_id: "EMA/HMPC/7695/2021"
+        section_title: "Contraindications"
+        source_position: "contraindicated"
+    bears_on:
+      - pair: "st_johns_wort + warfarin"
+        kind: "class"
+        matched_class: ["anticoagulant", "coumarin"]
+        note: "The source named a class. The lookup service matched this item to the class; the source did not name it."
+        matched_pathway: ["CYP2C9"]
+        enzyme_note: "The source named an enzyme pathway. The lookup service matched this item to it; the source did not name it."
+      - pair: "st_johns_wort + atorvastatin"
+        kind: "class"
+        matched_pathway: ["CYP3A4", "P-glycoprotein"]
+        note: "The source named an enzyme pathway. The lookup service matched this item to it; the source did not name it."
+      - pair: "st_johns_wort + sertraline"
+        kind: "class"
+        matched_pathway: ["CYP2C19", "CYP2B6"]
+        note: "The source named an enzyme pathway. The lookup service matched this item to it; the source did not name it."
+  - passage: "Special care should be taken in case of concomitant use of all drug substances the metabolism of which is influenced by CYP3A4, CYP2B6, CYP2C9, CYP2C19 or P-glycoprotein (e.g., amitriptyline, fexofenadine, alprazolam, diazepam, midazolam, methadone, simvastatin, digoxin, finasteride), because a reduction of plasma concentrations is possible."
+    sources:
+      - item: "st_johns_wort"
+        authority: "European Medicines Agency (herbal committee)"
+        document_id: "EMA/HMPC/7695/2021"
+        section_title: "Interactions with other medicinal products and other forms of interaction"
+    bears_on:
+      - pair: "st_johns_wort + warfarin"
+        kind: "class"
+        matched_pathway: ["CYP2C9"]
+        note: "The source named an enzyme pathway. The lookup service matched this item to it; the source did not name it."
+      - pair: "st_johns_wort + atorvastatin"
+        kind: "class"
+        matched_pathway: ["CYP3A4", "P-glycoprotein"]
+        note: "The source named an enzyme pathway. The lookup service matched this item to it; the source did not name it."
+      - pair: "st_johns_wort + sertraline"
+        kind: "class"
+        matched_pathway: ["CYP2C19", "CYP2B6"]
+        note: "The source named an enzyme pathway. The lookup service matched this item to it; the source did not name it."
+  - passage: "Use of St. John's wort, a CYP3A4 inducer, in combination with Zolpidem may decrease blood levels of Zolpidem and is not recommended."
+    sources:
+      - item: "st_johns_wort"
+        authority: "U.S. FDA drug label"
+        document_id: "fda_dailymed_zolpidem_setid_004bd09e"
+        section_title: "Drugs that Affect Drug Metabolism via Cytochrome P450"
+        source_position: "not_recommended"
+        evidence_outcome: "positive_finding"
+    bears_on:
+      - pair: "st_johns_wort + atorvastatin"
+        kind: "class"
+        partner: "zolpidem"
+        matched_pathway: ["CYP3A4"]
+        note: "The source named an enzyme pathway. The lookup service matched this item to it; the source did not name it."
+  - passage: "Hypericum dry extract inhibits the synaptosomal uptake of the neurotransmitters noradrenaline, serotonin and dopamine. It changes the behaviour of animals in several antidepressant models (e.g., forced swimming test) similarly to synthetic antidepressants."
+    sources:
+      - item: "st_johns_wort"
+        authority: "European Medicines Agency (herbal committee)"
+        document_id: "EMA/HMPC/7695/2021"
+        section_title: "Pharmacodynamic properties"
+    bears_on:
+      - pair: "st_johns_wort + sertraline"
+        kind: "class"
+        matched_class: ["antidepressant"]
+        note: "The source named a class. The lookup service matched this item to the class; the source did not name it."
+  - passage: "Hypericum dry extract may contribute to serotonergic effects when combined with antidepressants such as serotonin reuptake inhibitors (e.g. sertraline, paroxetine) or buspirone. Very rarely undesired effects (serotonin syndrome) with autonomic dysfunctions (such as perspiration, tachycardia, diarrhoea, fever), mental alterations (such as agitation, disorientation), and motor alterations (such as tremor or myoclonias) can occur in combination with serotonin-uptake inhibitors or other serotonergic active substances."
+    sources:
+      - item: "st_johns_wort"
+        authority: "European Medicines Agency (herbal committee)"
+        document_id: "EMA/HMPC/7695/2021"
+        section_title: "Interactions with other medicinal products and other forms of interaction"
+    bears_on:
+      - pair: "st_johns_wort + sertraline"
+        kind: "named_elsewhere"
+        note: "This passage names the item. The record files it under a different heading."
+  - passage: "The concomitant use of serotonergic drugs (including other SSRIs, SNRIs, triptans, tricyclic antidepressants, opioids, lithium, buspirone, amphetamines, tryptophan, and St. John's Wort) with fluoxetine increases the risk of serotonin syndrome."
+    sources:
+      - item: "st_johns_wort"
+        authority: "U.S. FDA drug label"
+        document_id: "fda_dailymed_fluoxetine_setid_023cef65"
+        section_title: "Other Serotonergic Drugs"
+        evidence_outcome: "positive_finding"
+    bears_on:
+      - pair: "st_johns_wort + sertraline"
+        kind: "class"
+        partner: "fluoxetine"
+        matched_class: ["SSRI", "antidepressant", "serotonergic"]
+        note: "The source named a class. The lookup service matched this item to the class; the source did not name it."
+  - passage: "The concomitant use of serotonergic drugs (including other SSRIs, SNRIs, triptans, tricyclic antidepressants, opioids, lithium, buspirone, amphetamines, tryptophan, and St. John's Wort) with Fluvoxamine Maleate Tablets increases the risk of serotonin syndrome."
+    sources:
+      - item: "st_johns_wort"
+        authority: "U.S. FDA drug label"
+        document_id: "fda_dailymed_fluvoxamine_setid_0b107225"
+        section_title: "CNS Active Drugs"
+        evidence_outcome: "positive_finding"
+    bears_on:
+      - pair: "st_johns_wort + sertraline"
+        kind: "class"
+        partner: "fluvoxamine"
+        matched_class: ["SSRI", "antidepressant", "serotonergic"]
+        note: "The source named a class. The lookup service matched this item to the class; the source did not name it."
+  - passage: "St. John's Wort induces CYP3A enzymes and may decrease tacrolimus whole blood concentrations. Monitoring of whole blood concentrations and appropriate dosage adjustments of tacrolimus are recommended when St. John's Wort and tacrolimus are co-administered."
+    sources:
+      - item: "st_johns_wort"
+        authority: "U.S. FDA drug label"
+        document_id: "fda_dailymed_tacrolimus_setid_1e56c550"
+        section_title: "St. John's Wort (Hypericum perforatum)"
+        evidence_outcome: "positive_finding"
+    bears_on:
+      - pair: "st_johns_wort + atorvastatin"
+        kind: "related"
+        reason: "CYP3A induction"
+        note: "The lookup service judged this passage relevant to this item. The source did not name it."
+  - passage: "St. John's Wort is an inducer of CYP3A and may decrease exposure to nifedipine. Alternative antihypertensive therapy should be considered in patients in whom St. John's Wort therapy is necessary."
+    sources:
+      - item: "st_johns_wort"
+        authority: "U.S. FDA drug label"
+        document_id: "fda_dailymed_nifedipine_setid_1bd05e73"
+        section_title: "Herbals"
+        evidence_outcome: "positive_finding"
+    bears_on:
+      - pair: "st_johns_wort + atorvastatin"
+        kind: "related"
+        reason: "CYP3A induction"
+        note: "The lookup service judged this passage relevant to this item. The source did not name it."
+  - passage: "Herbal medicinal product for the treatment of mild to moderate depressive episodes."
+    sources:
+      - item: "st_johns_wort"
+        authority: "European Medicines Agency (herbal committee)"
+        document_id: "EMA/HMPC/7695/2021"
+        section_title: "Therapeutic indications"
+    bears_on:
+      - pair: "st_johns_wort + sertraline"
+        kind: "related"
+        reason: "both treat depression"
+        note: "The lookup service judged this passage relevant to this item. The source did not name it."
+  - passage: "This assessment does not concern quality aspects of RYR products available in the market, such as the potential presence of contaminants (e.g. fungi and their mycotoxins such as citrinin) or adulterants (e.g. addition of synthetic statins)."
+    sources:
+      - item: "red_yeast_rice"
+        authority: "European Food Safety Authority"
+        document_id: "efsa_2025_monacolins_opinion"
+        section_title: "Scope exclusion - quality aspects (citrinin, adulterants)"
+        evidence_outcome: "positive_finding"
+    bears_on:
+      - pair: "red_yeast_rice + atorvastatin"
+        kind: "class"
+        matched_class: ["statin"]
+        note: "The source named a class. The lookup service matched this item to the class; the source did not name it."
+  - passage: "Should not be consumed if you are taking cholesterol-lowering medication."
+    sources:
+      - item: "red_yeast_rice"
+        authority: "European Commission"
+        document_id: "eu_commission_regulation_2022_860"
+        section_title: "Mandatory label warnings - cholesterol-lowering medication"
+        source_position: "contraindicated"
+        evidence_outcome: "not_applicable"
+    bears_on:
+      - pair: "red_yeast_rice + atorvastatin"
+        kind: "class"
+        partner: "cholesterol-lowering medication (statins)"
+        matched_class: ["statin", "cholesterol-lowering"]
+        note: "The source named a class. The lookup service matched this item to the class; the source did not name it."
+  - passage: "The Panel concluded that monacolin K in lactone form is identical to lovastatin, an active ingredient of several medicinal products."
+    sources:
+      - item: "red_yeast_rice"
+        authority: "European Food Safety Authority"
+        document_id: "efsa_2018_monacolins_opinion"
+        section_title: "Conclusion"
+        evidence_outcome: "positive_finding"
+    bears_on:
+      - pair: "red_yeast_rice + atorvastatin"
+        kind: "related"
+        reason: "monacolin K is lovastatin"
+        note: "The lookup service judged this passage relevant to this item. The source did not name it."
+  - passage: "Monacolin K and lovastatin are rapidly converted from their lactone to an identical HA form, the latter being responsible for the inhibition of the HMG-CoA reductase enzyme involved in the biosynthesis of cholesterol. While the acidic form is naturally occurring in RYR, in the case of lovastatin its generation requires conversion from the lactone form."
+    sources:
+      - item: "red_yeast_rice"
+        authority: "European Food Safety Authority"
+        document_id: "efsa_2018_monacolins_opinion"
+        section_title: "Discussion"
+        evidence_outcome: "positive_finding"
+    bears_on:
+      - pair: "red_yeast_rice + atorvastatin"
+        kind: "related"
+        reason: "inhibits HMG-CoA reductase"
+        note: "The lookup service judged this passage relevant to this item. The source did not name it."
+  - passage: "Although you label and promote CholesLo as a dietary supplement, laboratory analyses of two samples collected by the FDA determined that this product contains lovastatin. Lovastatin is the active ingredient in Mevacor and its generic counterparts, which are FDA-approved drugs used to treat patients with primary hypercholesterolemia. Traditional red yeast rice does not contain more than trace amounts of lovastatin, if any. Because your CholesLo product contains red yeast rice with enhanced or added lovastatin, it cannot be marketed as a dietary supplement. Section 201(ff)(3)(B)(i) of the Act [21 U.S.C. 321(ff)(3)(B)(i)] specifically excludes from the dietary supplement definition articles that are approved as new drugs under section 505, unless the article was marketed as a dietary supplement or food before its approval as a new drug."
+    sources:
+      - item: "red_yeast_rice"
+        authority: "U.S. FDA drug label"
+        document_id: "fda_warning_letter_608729"
+        section_title: "Unapproved new drug / not a dietary supplement"
+        evidence_outcome: "positive_finding"
+    bears_on:
+      - pair: "red_yeast_rice + atorvastatin"
+        kind: "related"
+        reason: "lovastatin found in product"
+        note: "The lookup service judged this passage relevant to this item. The source did not name it."
+  - passage: "Based on the additional nutrivigilance data provided, the NDA Panel reiterates the concerns of the ANS Panel (EFSA ANS Panel, 2018) that exposure to monacolin K from RYR at intake levels as low as 3 mg/day could lead to severe adverse effects on the musculoskeletal system, including rhabdomyolysis, and on the liver."
+    sources:
+      - item: "red_yeast_rice"
+        authority: "European Food Safety Authority"
+        document_id: "efsa_2025_monacolins_opinion"
+        section_title: "Conclusions - severe effects at 3 mg/day (hepatic slice)"
+        evidence_outcome: "positive_finding"
+      - item: "red_yeast_rice"
+        authority: "European Food Safety Authority"
+        document_id: "efsa_2025_monacolins_opinion"
+        section_title: "Conclusions - severe effects at 3 mg/day (musculoskeletal slice)"
+        evidence_outcome: "positive_finding"
+    bears_on:
+      - pair: "red_yeast_rice + atorvastatin"
+        kind: "related"
+        reason: "statin-type muscle toxicity"
+        note: "The lookup service judged this passage relevant to this item. The source did not name it."
+  - passage: "Calcium carbonate supplements can interfere with the absorption of levothyroxine (Synthroid, Levoxyl, and others), a thyroid hormone used to treat hypothyroidism and thyroid cancer. The FDA-approved label for this medication instructs patients who are taking calcium carbonate supplements to avoid taking levothyroxine within 4 hours of taking the supplement."
+    sources:
+      - item: "calcium"
+        authority: "NIH Office of Dietary Supplements"
+        document_id: "nih_ods_calcium"
+        section_title: "Levothyroxine"
+        evidence_outcome: "positive_finding"
+        conditions:
+          applicability_conditions: {"condition": ["calcium_carbonate"]}
+    brand_notes:
+      - "Synthroid is a levothyroxine product. Matched by the lookup service."
+    bears_on:
+      - pair: "calcium + levothyroxine"
+        kind: "named"
+        partner: "levothyroxine"
+  - passage: "Concurrent use may reduce the efficacy of levothyroxine by binding and delaying or preventing absorption, potentially resulting in hypothyroidism. Calcium carbonate may form an insoluble chelate with levothyroxine, and ferrous sulfate likely forms a ferric-thyroxine complex. Administer levothyroxine at least 4 hours apart from these agents."
+    sources:
+      - item: "calcium"
+        authority: "U.S. FDA drug label"
+        document_id: "fda_dailymed_levothyroxine_setid_abe173cc"
+        section_title: "Drug Interactions - Table 2 Agents that may decrease T4 absorption (LOINC 34073-7)"
+        evidence_outcome: "positive_finding"
+        conditions:
+          applicability_conditions: {"condition": ["calcium_carbonate"]}
+      - item: "iron"
+        authority: "U.S. FDA drug label"
+        document_id: "fda_dailymed_levothyroxine_setid_abe173cc"
+        section_title: "Drug Interactions - Table 2 Agents that may decrease T4 absorption (LOINC 34073-7)"
+        evidence_outcome: "positive_finding"
+        conditions:
+          applicability_conditions: {"condition": ["ferrous_sulfate"]}
+    bears_on:
+      - pair: "calcium + levothyroxine"
+        kind: "named"
+        partner: "levothyroxine"
+      - pair: "iron + levothyroxine"
+        kind: "named"
+        partner: "levothyroxine"
+  - passage: "Calcium. Helps in the development and maintenance of bones/(and) teeth. Helps in the development and maintenance of bones/(and) teeth especially in children and young adults. Adequate calcium (and vitamin D) (throughout life) as part of a healthy diet, (along with physical activity) may reduce the risk of developing osteoporosis (in peri- and postmenopausal women) (in later life). Adequate calcium (and vitamin D) (throughout life) as part of a healthy diet, (along with physical activity) may help prevent bone loss/osteoporosis (in peri- and postmenopausal women) (in later life). As part of a healthy diet (when taken with Vitamin D) may help prevent bone loss/osteoporosis. Source of (an) electrolyte(s)/Provides (an) electrolyte(s). Source of (an) electrolyte(s)/Provides (an) electrolyte(s) for the maintenance of good health. Helps to maintain/support normal muscle function. Helps maintain/support bone health. Helps to prevent calcium deficiency."
+    sources:
+      - item: "calcium"
+        authority: "Health Canada"
+        document_id: "hc_nnhpd_multivitamin_mineral_monograph"
+        section_title: "Table 6. Specific uses or purposes statements for minerals - Calcium"
+        evidence_outcome: "positive_finding"
+    bears_on:
+      - pair: "calcium + vitamin_d"
+        kind: "named_elsewhere"
+        note: "This passage names the item. The record files it under a different heading."
+  - passage: "Levothyroxine (Levothroid, Levoxyl, Synthroid, Tirosint, and Unithroid) is used to treat hypothyroidism, goiter, and thyroid cancer. The simultaneous ingestion of iron and levothyroxine can result in clinically significant reductions in levothyroxine efficacy in some patients. The labels for some of these products warn that iron supplements can reduce the absorption of levothyroxine tablets and advise against administering levothyroxine within 4 hours of iron supplements."
+    sources:
+      - item: "iron"
+        authority: "NIH Office of Dietary Supplements"
+        document_id: "nih_ods_iron"
+        section_title: "Levothyroxine"
+        evidence_outcome: "positive_finding"
+    brand_notes:
+      - "Synthroid is a levothyroxine product. Matched by the lookup service."
+    bears_on:
+      - pair: "iron + levothyroxine"
+        kind: "named"
+        partner: "levothyroxine"
+  - passage: "Statin medications reduce cholesterol synthesis. Because endogenous vitamin D is derived from cholesterol, statins may also reduce vitamin D synthesis. In addition, high intakes of vitamin D, especially from supplements, might reduce the potency of atorvastatin (Lipitor), lovastatin (Altoprev and Mevacor), and simvastatin (FloLipid and Zocor), because these statins and vitamin D appear to compete for the same metabolizing enzyme."
+    sources:
+      - item: "vitamin_d"
+        authority: "NIH Office of Dietary Supplements"
+        document_id: "nih_ods_vitamin_d"
+        section_title: "Statins"
+        evidence_outcome: "positive_finding"
+    brand_notes:
+      - "Lipitor is an atorvastatin product. Matched by the lookup service."
+    bears_on:
+      - pair: "vitamin_d + atorvastatin"
+        kind: "named_elsewhere"
+        note: "This passage names the item. The record files it under a different heading."
+  - passage: "Helps to prevent vitamin D deficiency. Vitamin D intake, when combined with sufficient calcium, a healthy diet and regular exercise may reduce the risk of developing osteoporosis in people with vitamin D deficiency."
+    sources:
+      - item: "vitamin_d"
+        authority: "Health Canada"
+        document_id: "hc_nnhpd_monograph_vitamin_d_1000_2500_iu"
+        section_title: "Use(s) or Purpose(s)"
+        evidence_outcome: "positive_finding"
+    bears_on:
+      - pair: "calcium + vitamin_d"
+        kind: "named_elsewhere"
+        note: "This passage names the item. The record files it under a different heading."
+  - passage: "The influence of an aqueous-ethanolic valerian root extract on the metabolic activity of CYP3A4 and CYP2D6 in humans was investigated in an open crossover trial (Donovan et al., 2004). Pharmacokinetic parameters after a single intake of 2 mg alprazolam and 30 mg dextrometorphan (dextrometorphan/dextrorphan ratio) were compared in human volunteers before and after daily intake of 1,000 mg aqueous-ethanolic valerian root dry extract (no further information) over 14 days. The study did not reveal an influence on the CYP2D6 pathway while for CYP3A4 a slight inhibition was shown: Cmax of alprazolam increased after valerian root extract intake from 25+/-7 ng/ml to 31+/-8 vs (p<0.05), the AUC at baseline was 88.9% of the AUC after valerian root extract intake (n.s.). The authors rated the magnitude of this moderate increase not as clinically relevant and concluded that valerian root is unlikely to have clinically relevant effects on the disposition of medications primarily dependent on the CYP2D6 or the CYP3A4 pathways."
+    sources:
+      - item: "valerian"
+        authority: "European Medicines Agency (herbal committee)"
+        document_id: "EMA/HMPC/150846/2015"
+        section_title: "Drug interactions and other forms of interaction"
+        evidence_outcome: "null_finding"
+      - item: "valerian"
+        authority: "European Medicines Agency (herbal committee)"
+        document_id: "EMA/HMPC/150846/2015"
+        section_title: "Drug interactions and other forms of interaction"
+        evidence_outcome: "positive_finding"
+    bears_on:
+      - pair: "valerian + atorvastatin"
+        kind: "class"
+        partner: "cyp2d6 substrates"
+        matched_pathway: ["CYP3A4"]
+        note: "The source named an enzyme pathway. The lookup service matched this item to it; the source did not name it."
+  - passage: "Gurley et al. (2005) confirmed these results in another open crossover trial in 12 young adults for intake of 375 mg/day valerian root extract (DER 4:1, extraction solvent not specified). They found no relevant interaction for CYP1A2, CYP2D6, CAP2E1 and CYP3A4/5."
+    sources:
+      - item: "valerian"
+        authority: "European Medicines Agency (herbal committee)"
+        document_id: "EMA/HMPC/150846/2015"
+        section_title: "Drug interactions and other forms of interaction"
+        evidence_outcome: "null_finding"
+    bears_on:
+      - pair: "valerian + atorvastatin"
+        kind: "class"
+        partner: "cyp2d6 substrates"
+        matched_pathway: ["CYP3A4"]
+        note: "The source named an enzyme pathway. The lookup service matched this item to it; the source did not name it."
+  - passage: "Lefebre & Foster (2004) investigated interactions of several valerian root preparations available on the U.S. market with CYP3A4 in vitro. The data point to a possible inhibition of CYP3A4-mediated metabolism and P-glycoprotein ATPase activity that could not be correlated to the content of certain constituents."
+    sources:
+      - item: "valerian"
+        authority: "European Medicines Agency (herbal committee)"
+        document_id: "EMA/HMPC/150846/2015"
+        section_title: "Drug interactions and other forms of interaction"
+        evidence_outcome: "positive_finding"
+    bears_on:
+      - pair: "valerian + atorvastatin"
+        kind: "class"
+        partner: "cyp3a4 substrates"
+        matched_pathway: ["CYP3A4", "P-glycoprotein"]
+        note: "The source named an enzyme pathway. The lookup service matched this item to it; the source did not name it."
+
+general_instructions:
+  note: "The source gave a general instruction that applies to anything taken with this supplement."
+  passages:
+    - passage: "Products providing calcium, iron or zinc. Take with food. Take a few hours before or after taking other medications or health products."
+      sources:
+        - item: "calcium"
+          authority: "Health Canada"
+          document_id: "hc_nnhpd_multivitamin_mineral_monograph"
+          section_title: "Co-administration sub-statements - Products providing calcium, iron or zinc"
+          evidence_outcome: "not_applicable"
+        - item: "iron"
+          authority: "Health Canada"
+          document_id: "hc_nnhpd_multivitamin_mineral_monograph"
+          section_title: "Co-administration sub-statements - Products providing calcium, iron or zinc"
+          evidence_outcome: "not_applicable"
+    - passage: "Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you are taking any medications including antacids, anticonvulsants, digoxin, cholestyramine, colestipol, mineral oil, steroids, statins or thiazide diuretics (NNHPD 2021; BfR 2020)."
+      sources:
+        - item: "vitamin_d"
+          authority: "Health Canada"
+          document_id: "hc_nnhpd_monograph_vitamin_d_1000_2500_iu"
+          section_title: "Caution(s) and warning(s) - medication list"
+          source_directive: "ask_before_use"
+          evidence_outcome: "not_applicable"
+      bears_on:
+        - pair: "vitamin_d + atorvastatin"
+          kind: "class"
+          partner: "antacids"
+          matched_class: ["statin"]
+          note: "The source named a class. The lookup service matched this item to the class; the source did not name it."
+    - passage: "Pharmacodynamic interactions of whole extracts or isolated constituents of valerian root with other medicinal products, food or alcohol in man have not been observed. For low-dose valerian root extract (100 mg) and 20 mg propanolol (Kohnen & Oswald, 1988), no interaction could be demonstrated in healthy volunteers. Further interaction studies in humans are not available."
+      sources:
+        - item: "valerian"
+          authority: "European Medicines Agency (herbal committee)"
+          document_id: "EMA/HMPC/150846/2015"
+          section_title: "Drug interactions and other forms of interaction"
+          evidence_outcome: "null_finding"
+
+on_each_item_itself:
+  - passage: "If the symptoms persist for more than 2 weeks, a\ndoctor or a qualified health care practitioner\nshould be consulted."
+    sources:
+      - item: "ginkgo"
+        authority: "European Medicines Agency (herbal committee)"
+        document_id: "EMA/HMPC/321097/2012"
+        section_title: "Posology and method of administration"
+        source_directive: "ask_if_symptoms_persist"
+        evidence_outcome: "not_applicable"
+        conditions:
+          scope: ["Traditional use"]
+  - passage: "Hypersensitivity to the active substance."
+    sources:
+      - item: "ginkgo"
+        authority: "European Medicines Agency (herbal committee)"
+        document_id: "EMA/HMPC/321097/2012"
+        section_title: "Contraindications"
+        source_position: "contraindicated"
+        evidence_outcome: "not_applicable"
+        conditions:
+          scope: ["Well-established use"]
+      - item: "ginkgo"
+        authority: "European Medicines Agency (herbal committee)"
+        document_id: "EMA/HMPC/321097/2012"
+        section_title: "Contraindications"
+        source_position: "contraindicated"
+        evidence_outcome: "not_applicable"
+        conditions:
+          scope: ["Traditional use"]
+      - item: "st_johns_wort"
+        authority: "European Medicines Agency (herbal committee)"
+        document_id: "EMA/HMPC/7695/2021"
+        section_title: "Contraindications"
+        source_position: "contraindicated"
+      - item: "valerian"
+        authority: "European Medicines Agency (herbal committee)"
+        document_id: "EMA/HMPC/150848/2015"
+        section_title: "Contraindications"
+        source_position: "contraindicated"
+        evidence_outcome: "not_applicable"
+  - passage: "Pregnancy (see section 4.6. \u2018Fertility, pregnancy\nand lactation\u2019)."
+    sources:
+      - item: "ginkgo"
+        authority: "European Medicines Agency (herbal committee)"
+        document_id: "EMA/HMPC/321097/2012"
+        section_title: "Contraindications"
+        source_position: "contraindicated"
+        evidence_outcome: "not_applicable"
+        conditions:
+          applicability_conditions: {"population": ["pregnancy"]}
+          scope: ["Well-established use"]
+  - passage: "If the symptoms worsen during the use of the\nmedicinal product, a doctor or a pharmacist\nshould be consulted."
+    sources:
+      - item: "ginkgo"
+        authority: "European Medicines Agency (herbal committee)"
+        document_id: "EMA/HMPC/321097/2012"
+        section_title: "Special warnings and precautions for use"
+        source_directive: "ask_if_symptoms_persist"
+        evidence_outcome: "not_applicable"
+        conditions:
+          scope: ["Well-established use"]
+  - passage: "If the symptoms worsen during the use of the\nmedicinal product, a doctor or a qualified\nhealthcare professional should be consulted."
+    sources:
+      - item: "ginkgo"
+        authority: "European Medicines Agency (herbal committee)"
+        document_id: "EMA/HMPC/321097/2012"
+        section_title: "Special warnings and precautions for use"
+        source_directive: "ask_if_symptoms_persist"
+        evidence_outcome: "not_applicable"
+        conditions:
+          scope: ["Traditional use"]
+  - passage: "Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you are taking diabetes, high blood pressure or seizure medications."
+    sources:
+      - item: "ginkgo"
+        authority: "Health Canada"
+        document_id: "mono_ginkgo-biloba_english"
+        section_title: "Caution(s) and warning(s)"
+        source_directive: "ask_before_use"
+        evidence_outcome: "not_applicable"
+  - passage: "Concomitant use of Ginkgo biloba containing\nproducts and efavirenz is not recommended (see\nsection 4.5)."
+    sources:
+      - item: "ginkgo"
+        authority: "European Medicines Agency (herbal committee)"
+        document_id: "EMA/HMPC/321097/2012"
+        section_title: "Special warnings and precautions for use"
+        source_position: "not_recommended"
+        evidence_outcome: "not_applicable"
+        conditions:
+          scope: ["Well-established use"]
+  - passage: "Herbal Products: St. John's Wort (hypericum perforatum) ↓ ritonavir Contraindicated due to potential for loss of virologic response and possible resistance to ritonavir or to the class of protease inhibitors [see Contraindications (4) ]."
+    sources:
+      - item: "st_johns_wort"
+        authority: "U.S. FDA drug label"
+        document_id: "fda_dailymed_ritonavir_setid_11f757f1"
+        section_title: "Established and Other Potentially Significant Drug Interactions"
+        source_position: "contraindicated"
+        evidence_outcome: "positive_finding"
+  - passage: "Concomitant use of CRIXIVAN and St. John's wort ( Hypericum perforatum ) or products containing St. John's wort is not recommended. Coadministration of CRIXIVAN and St. John's wort has been shown to substantially decrease indinavir concentrations (see CLINICAL PHARMACOLOGY, Drug Interactions) and may lead to loss of virologic response and possible resistance to CRIXIVAN or to the class of protease inhibitors."
+    sources:
+      - item: "st_johns_wort"
+        authority: "U.S. FDA drug label"
+        document_id: "fda_dailymed_indinavir_setid_01c5574c"
+        section_title: "Drug Interactions"
+        source_position: "not_recommended"
+        evidence_outcome: "positive_finding"
+  - passage: "During the treatment intense UV-exposure should be avoided."
+    sources:
+      - item: "st_johns_wort"
+        authority: "European Medicines Agency (herbal committee)"
+        document_id: "EMA/HMPC/7695/2021"
+        section_title: "Special warnings and precautions for use"
+        source_directive: "avoid"
+  - passage: "Should not be consumed if you are already consuming other products containing red yeast rice."
+    sources:
+      - item: "red_yeast_rice"
+        authority: "European Commission"
+        document_id: "eu_commission_regulation_2022_860"
+        section_title: "Mandatory label warnings - no stacking"
+        source_position: "contraindicated"
+        evidence_outcome: "not_applicable"
+  - passage: "Should not be consumed by pregnant or lactating women, children below 18 years old and adults above 70 years old."
+    sources:
+      - item: "red_yeast_rice"
+        authority: "European Commission"
+        document_id: "eu_commission_regulation_2022_860"
+        section_title: "Mandatory label warnings - vulnerable populations"
+        source_position: "contraindicated"
+        evidence_outcome: "not_applicable"
+  - passage: "Do not use if you have hypercalcemia and/or hypercalciuria (NIH 2024; BfR 2020)."
+    sources:
+      - item: "vitamin_d"
+        authority: "Health Canada"
+        document_id: "hc_nnhpd_monograph_vitamin_d_1000_2500_iu"
+        section_title: "Contraindication(s)"
+        source_position: "contraindicated"
+        evidence_outcome: "not_applicable"
+  - passage: "Stop use and ask a health care practitioner/health care provider/health care professional/doctor/physician if the following early symptoms of hypercalcemia occur: weakness, fatigue, drowsiness, headache, lack of appetite, dry mouth, metallic taste, nausea, vomiting, vertigo, ringing in the ears, lack of coordination and muscle weakness."
+    sources:
+      - item: "vitamin_d"
+        authority: "Health Canada"
+        document_id: "hc_nnhpd_monograph_vitamin_d_1000_2500_iu"
+        section_title: "Known adverse reaction(s)"
+        source_directive: "stop_use_and_ask"
+        evidence_outcome: "positive_finding"
+  - passage: "Full baths are contraindicated in cases of open wounds, large skin injuries, acute skin diseases, high fever, severe infections, severe circulatory disturbances and cardiac insufficiency."
+    sources:
+      - item: "valerian"
+        authority: "European Medicines Agency (herbal committee)"
+        document_id: "EMA/HMPC/150848/2015"
+        section_title: "Contraindications"
+        source_position: "contraindicated"
+        evidence_outcome: "not_applicable"
+  - passage: "Avoid taking with alcohol or products that cause drowsiness (Brinker 2010; Gennaro et al. 2000)."
+    sources:
+      - item: "valerian"
+        authority: "Health Canada"
+        document_id: "hc_nnhpd_monograph_valerian"
+        section_title: "Caution(s) and warning(s)"
+        source_directive: "avoid"
+        evidence_outcome: "not_applicable"
+
+nothing_found:
+  note: "No statement in this record names this item or a class it belongs to. That is not a finding of safety."
+  pairs: ["ginkgo + levothyroxine", "st_johns_wort + levothyroxine", "red_yeast_rice + warfarin", "red_yeast_rice + levothyroxine", "red_yeast_rice + sertraline", "calcium + warfarin", "calcium + atorvastatin", "calcium + sertraline", "iron + warfarin", "iron + atorvastatin", "iron + sertraline", "vitamin_d + warfarin", "vitamin_d + levothyroxine", "vitamin_d + sertraline", "valerian + warfarin", "valerian + levothyroxine", "valerian + sertraline", "ginkgo + st_johns_wort", "ginkgo + red_yeast_rice", "ginkgo + calcium", "ginkgo + iron", "ginkgo + vitamin_d", "ginkgo + valerian", "st_johns_wort + red_yeast_rice", "st_johns_wort + calcium", "st_johns_wort + iron", "st_johns_wort + vitamin_d", "st_johns_wort + valerian", "red_yeast_rice + calcium", "red_yeast_rice + iron", "red_yeast_rice + vitamin_d", "red_yeast_rice + valerian", "calcium + iron", "calcium + valerian", "iron + vitamin_d", "iron + valerian", "vitamin_d + valerian"]
+
+no_record:
+  note: "This service has no record for this item. Nothing here is a finding about it, for or against."
+  items: ["ashwagandha", "fish oil"]
+
+not_checked: "This service checks supplements against medicines and against each other. It does not check one medicine against another."

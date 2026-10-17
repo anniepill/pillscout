@@ -1,0 +1,295 @@
+supplements:
+  - ginkgo
+  - "St John's wort"
+  - zinc
+medications:
+  - warfarin
+pairs:
+  - pair: ginkgo with warfarin
+    lookups:
+      - record: ginkgo
+        looking_for: warfarin
+        matches:
+          - kind: named
+            partner: warfarin
+            citations:
+              - citation_status: cited
+                source: ema_hmpc
+                document_id: EMA/HMPC/321097/2012
+                section_title: "Interactions with other medicinal products and other forms of interaction"
+                verbatim: "If the medicinal product is taken concomitantly\nwith anticoagulants (e.g. phenprocoumon and\nwarfarin) or antiplatelet drugs (e.g. clopidogrel,\nacetylsalicylic acid and other non-steroidal anti-\ninflammatory drugs), their effect may be\ninfluenced."
+                evidence_outcome: not_applicable
+                conditions:
+                  - scope: ["Well-established use"]
+              - citation_status: cited
+                source: ema_hmpc
+                document_id: EMA/HMPC/321097/2012
+                section_title: "Interactions with other medicinal products and other forms of interaction"
+                verbatim: "Available studies with warfarin do not indicate that\nthere is an interaction between warfarin and G.\nbiloba products, but adequate monitoring is\nadvised when starting, when changing G. biloba\ndose, when ending G. biloba intake or if changing\nproduct."
+                evidence_outcome: null_finding
+                conditions:
+                  - scope: ["Well-established use"]
+              - citation_status: cited
+                source: ema_hmpc
+                document_id: EMA/HMPC/321095/2012
+                section_title: "Pharmacodynamic interactions - Jiang et al. 2005"
+                verbatim: "International normalised ratio of prothrombine time and platelet aggregation were not affected by Ginkgo biloba coadministration. Therefore, EGb 761 at recommended doses does not significantly affect clotting status or pharmacodynamics of warfarin in healthy subjects."
+                evidence_outcome: null_finding
+                conditions: []
+              - citation_status: retained_pre_scope_lock
+                source: pubmed
+                document_id: pmid_15801937_abstract
+                section_title: "Effect of ginkgo and ginger on the pharmacokinetics and pharmacodynamics of warfarin in healthy subjects"
+                verbatim: "INR and platelet aggregation were not affected by administration of ginkgo or ginger alone."
+                evidence_outcome: null_finding
+                conditions: []
+              - citation_status: retained_pre_scope_lock
+                source: nccih
+                document_id: nccih_ginkgo
+                section_title: "What Do We Know About Safety?"
+                verbatim: "Ginkgo may increase the risk of bleeding in people who are taking anticoagulant drugs, such as warfarin."
+                evidence_outcome: positive_finding
+                conditions: []
+              - citation_status: cited
+                source: fda
+                document_id: fda_dailymed_warfarin_setid_19a69a72
+                section_title: "Botanical (Herbal) Products and Foods"
+                verbatim: "Some botanicals may cause bleeding events when taken alone (e.g., garlic and Ginkgo biloba) and may have anticoagulant, antiplatelet, and/or fibrinolytic properties. These effects would be expected to be additive to the anticoagulant effects of JANTOVEN."
+                evidence_outcome: positive_finding
+                brand_note: "JANTOVEN is a warfarin product. Matched by the lookup service."
+                conditions: []
+              - citation_status: cited
+                source: fda
+                document_id: fda_dailymed_warfarin_setid_19a69a72
+                section_title: "Botanical (Herbal) Products and Foods"
+                verbatim: "Some botanicals and foods can interact with JANTOVEN through CYP450 interactions (e.g., echinacea, grapefruit juice, ginkgo, goldenseal, St. John's wort)."
+                evidence_outcome: positive_finding
+                brand_note: "JANTOVEN is a warfarin product. Matched by the lookup service."
+                conditions: []
+          - kind: named_elsewhere
+            note: "This passage names the item. The record files it under a different heading."
+            citations:
+              - citation_status: cited
+                source: ema_hmpc
+                document_id: EMA/HMPC/321095/2012
+                section_title: "Pharmacokinetic data - Metabolism - Von Moltke et al. 2004"
+                verbatim: "Quercetin was also a strong inhibitor of CYP2C9 (IC50=7.8 microg/ml, 25.8 microM), as was myricetin for CYP2D6 (IC50=9.6 microg/ml, 30.2 microM). It was concluded that a number of flavonol aglycones, as well as the biflavonol amentoflavone, are inhibitors of several human CYP isoforms in vitro. Inhibition of CYP2C9 is of potential concern, since this enzyme is responsible for clearance of some drugs (such as S-warfarin) that have narrow therapeutic ranges in clinical practice. The importance of the in vitro findings requires evaluation in clinical studies."
+                evidence_outcome: positive_finding
+                conditions: []
+          - kind: named_elsewhere
+            note: "This passage names the item. The record files it under a different heading."
+            citations:
+              - citation_status: retained_pre_scope_lock
+                source: pubmed
+                document_id: "PMID:15801937"
+                section_title: "Effect of ginkgo and ginger on warfarin pharmacokinetics in healthy subjects - CYP2C9 activity"
+                verbatim: "The mean ratio (90% CI) for S-7-hydroxywarfarin urinary excretion rate was 1.07 (0.85–1.32) for ginkgo treatment, and 1.00 (0.81–1.23) for ginger coadministration suggesting these herbs did not affect CYP2C9 activity."
+                evidence_outcome: null_finding
+                conditions: []
+          - kind: class
+            partner: anticoagulants and antiplatelet drugs
+            note: "The source named a class. The lookup service matched this item to the class; the source did not name it."
+            citations:
+              - citation_status: cited
+                source: health_canada_nnhpd
+                document_id: mono_ginkgo-biloba_english
+                section_title: "Contraindication(s)"
+                verbatim: "Do not use if you are taking blood thinners or other health products that affect blood coagulation."
+                evidence_outcome: not_applicable
+                source_position: contraindicated
+                conditions: []
+              - citation_status: cited
+                source: ema_hmpc
+                document_id: EMA/HMPC/321097/2012
+                section_title: "Interactions with other medicinal products and other forms of interaction"
+                verbatim: "Ginkgo leaf may increase the effects of\nanticoagulants such as coumarin derivatives."
+                evidence_outcome: positive_finding
+                conditions:
+                  - scope: ["Traditional use"]
+              - citation_status: cited
+                source: ema_hmpc
+                document_id: EMA/HMPC/321097/2012
+                section_title: "Special warnings and precautions for use"
+                verbatim: "In patients with a pathologically increased\nbleeding tendency (haemorrhagic diathesis) and\nconcomitant anticoagulant and antiplatelet\ntreatment, the medicinal product should only be\nused after consultation with a doctor."
+                source_directive: ask_before_use
+                evidence_outcome: not_applicable
+                conditions:
+                  - scope: ["Well-established use"]
+                  - applicability_conditions:
+                      population: [patients_with_haemorrhagic_diathesis_or_concomitant_anticoagulant_or_antiplatelet_treatment]
+          - kind: class
+            note: "The source named an enzyme pathway. The lookup service matched this item to it; the source did not name it."
+            citations:
+              - citation_status: cited
+                source: ema_hmpc
+                document_id: EMA/HMPC/321095/2012
+                section_title: "Pharmacokinetic data - Metabolism - Gaudineau et al. 2004"
+                verbatim: "EGb 761 inhibited all the P450s studied except CYP2D6 (Ki>900 microg/ml). The activity of CYP2C9 was the most affected by EGb 761 (Ki=14 plus-or-minus 4 microg/ml). CYP1A2 (106 plus-or-minus 24 microg/ml), CYP2E1 (127 plus-or-minus 42 microg/ml), and CYP3A4 (155 plus-or-minus 43 microg/ml) were also inhibited but to a lesser extent."
+                evidence_outcome: positive_finding
+                conditions: []
+          - kind: class
+            note: "The source named an enzyme pathway. The lookup service matched this item to it; the source did not name it."
+            citations:
+              - citation_status: cited
+                source: ema_hmpc
+                document_id: EMA/HMPC/321095/2012
+                section_title: "Overall conclusions on clinical pharmacology and efficacy"
+                verbatim: "The influence of Ginkgo biloba on drug metabolising CYPs has been demonstrated with various probe substrates for the corresponding CYPs. Both, an inducing and an inhibitory effect were suggested for Ginkgo biloba on CYP3A4 by results of interaction studies, depending on the study design. Whereas a daily dose of 240 mg EGb 761 and extracts other than EGb 761 supposed an inducing effect, a higher daily dose of EGb 761 assumed an inhibitory effect. An induction of CYP2C9 was assumed at a daily dose of 360 mg of EGb 761. Also inducing effects for Ginkgo biloba extracts other than EGb 761 on CYP2C19 were observed."
+                evidence_outcome: positive_finding
+                conditions:
+                  - applicability_conditions:
+                      dose_range:
+                        threshold: 240
+                        threshold_unit: mg
+                        threshold_direction: at_or_above
+  - pair: "St John's wort with warfarin"
+    lookups:
+      - record: "St John's wort"
+        looking_for: warfarin
+        matches:
+          - kind: class
+            note: "The source named a class. The lookup service matched this item to the class; the source did not name it."
+            citations:
+              - source: ema_hmpc
+                document_id: EMA/HMPC/7695/2021
+                section_title: "Contraindications"
+                verbatim: "Concomitant use with coumarin-type anticoagulants, cyclosporine, everolimus, sirolimus, tacrolimus for systemic use, fosamprenavir, indinavir and other protease inhibitors, nucleoside reverse transcriptase inhibitors, irinotecan, imatinib and other cytostatic agents metabolised by CYP3A4, CYP2B6, CYP2C9, CYP2C19 or transported by P-glycoprotein."
+                source_position: contraindicated
+                conditions:
+                  - applicability_conditions:
+                      dose_range:
+                        threshold: 1
+                        threshold_unit: mg
+                        threshold_direction: above
+                  - applies_to: [well_established_use, traditional_use_high_dose_tier]
+                  - threshold: hyperforin_daily_dose_gt_1_mg
+          - kind: class
+            note: "The source named an enzyme pathway. The lookup service matched this item to it; the source did not name it."
+            citations:
+              - source: ema_hmpc
+                document_id: EMA/HMPC/7695/2021
+                section_title: "Interactions with other medicinal products and other forms of interaction"
+                verbatim: "As the daily intake of hyperforin is less than 1 mg and of a duration of use not longer than 2 weeks no clinically relevant interactions are reported for concomitantly administered drugs which are metabolised via CYP1A2, CYP2B6, CYP2C9, CYP2C19, CYP3A4 or transported by P-glycoprotein."
+                conditions:
+                  - hyperforin_dose_tiers:
+                      - low_dose_tier:
+                          threshold: hyperforin_daily_dose_le_1_mg
+                          interaction_risk: no_clinically_relevant_pk_interactions_reported
+                      - high_dose_tier:
+                          threshold: hyperforin_daily_dose_gt_1_mg
+                          interaction_risk: full_induction_profile_applies
+          - kind: class
+            note: "The source named an enzyme pathway. The lookup service matched this item to it; the source did not name it."
+            citations:
+              - source: ema_hmpc
+                document_id: EMA/HMPC/7695/2021
+                section_title: "Pharmacokinetic properties"
+                verbatim: "Hyperforin induces the activity of the metabolic enzymes CYP3A4, CYP2B6, CYP2C9, CYP2C19 and P-glycoprotein dose-dependently via activation of the PXR system. Therefore, the elimination of other drug substances may be accelerated, resulting in decreased plasma concentrations."
+                conditions:
+                  - applicability_conditions:
+                      dose_range:
+                        threshold: 1
+                        threshold_unit: mg
+                        threshold_direction: above
+                  - hyperforin_threshold_for_induction: "> 1 mg daily"
+          - kind: class
+            note: "The source named an enzyme pathway. The lookup service matched this item to it; the source did not name it."
+            citations:
+              - source: ema_hmpc
+                document_id: EMA/HMPC/7695/2021
+                section_title: "Pharmacokinetic properties"
+                verbatim: "Hyperforin induces the activity of the metabolic enzymes CYP3A4, CYP2B6, CYP2C9, CYP2C19 and P-glycoprotein dose-dependently via activation of the PXR system."
+                conditions:
+                  - applicability_conditions:
+                      dose_range:
+                        threshold: 1
+                        threshold_unit: mg
+                        threshold_direction: above
+                  - hyperforin_threshold_for_induction: "> 1 mg daily"
+          - kind: class
+            note: "The source named an enzyme pathway. The lookup service matched this item to it; the source did not name it."
+            citations:
+              - source: ema_hmpc
+                document_id: EMA/HMPC/7695/2021
+                section_title: "Interactions with other medicinal products and other forms of interaction"
+                verbatim: "Special care should be taken in case of concomitant use of all drug substances the metabolism of which is influenced by CYP3A4, CYP2B6, CYP2C9, CYP2C19 or P-glycoprotein (e.g., amitriptyline, fexofenadine, alprazolam, diazepam, midazolam, methadone, simvastatin, digoxin, finasteride), because a reduction of plasma concentrations is possible."
+                conditions: []
+  - pair: zinc with warfarin
+    lookups:
+      - record: zinc
+        looking_for: warfarin
+        matches:
+          - kind: class
+            partner: other oral medications and health products (concurrent administration)
+            note: "The source named a class. The lookup service matched this item to the class; the source did not name it."
+            citations:
+              - citation_status: cited
+                source: health_canada_nnhpd
+                document_id: hc_nnhpd_multivitamin_mineral_monograph
+                section_title: "Co-administration sub-statements - Products providing calcium, iron or zinc"
+                verbatim: "Products providing calcium, iron or zinc. Take with food. Take a few hours before or after taking other medications or health products."
+                evidence_outcome: not_applicable
+                conditions: []
+  - pair: "ginkgo with St John's wort"
+    lookups:
+      - record: ginkgo
+        looking_for: "St John's wort"
+        matches:
+          - kind: named_elsewhere
+            note: "This passage names the item. The record files it under a different heading."
+            citations:
+              - citation_status: cited
+                source: fda
+                document_id: fda_dailymed_warfarin_setid_19a69a72
+                section_title: "Botanical (Herbal) Products and Foods"
+                verbatim: "Some botanicals and foods can interact with JANTOVEN through CYP450 interactions (e.g., echinacea, grapefruit juice, ginkgo, goldenseal, St. John's wort)."
+                evidence_outcome: positive_finding
+                brand_note: "JANTOVEN is a warfarin product. Matched by the lookup service."
+                conditions: []
+      - record: "St John's wort"
+        looking_for: ginkgo
+        matches:
+          - kind: nothing
+            note: "No statement in this record names this drug or a class it belongs to. That is not a finding of safety."
+  - pair: ginkgo with zinc
+    lookups:
+      - record: ginkgo
+        looking_for: zinc
+        matches:
+          - kind: nothing
+            note: "No statement in this record names this drug or a class it belongs to. That is not a finding of safety."
+      - record: zinc
+        looking_for: ginkgo
+        matches:
+          - kind: class
+            partner: other oral medications and health products (concurrent administration)
+            note: "The source named a class. The lookup service matched this item to the class; the source did not name it."
+            citations:
+              - citation_status: cited
+                source: health_canada_nnhpd
+                document_id: hc_nnhpd_multivitamin_mineral_monograph
+                section_title: "Co-administration sub-statements - Products providing calcium, iron or zinc"
+                verbatim: "Products providing calcium, iron or zinc. Take with food. Take a few hours before or after taking other medications or health products."
+                evidence_outcome: not_applicable
+                conditions: []
+  - pair: "St John's wort with zinc"
+    lookups:
+      - record: "St John's wort"
+        looking_for: zinc
+        matches:
+          - kind: nothing
+            note: "No statement in this record names this drug or a class it belongs to. That is not a finding of safety."
+      - record: zinc
+        looking_for: "St John's wort"
+        matches:
+          - kind: class
+            partner: other oral medications and health products (concurrent administration)
+            note: "The source named a class. The lookup service matched this item to the class; the source did not name it."
+            citations:
+              - citation_status: cited
+                source: health_canada_nnhpd
+                document_id: hc_nnhpd_multivitamin_mineral_monograph
+                section_title: "Co-administration sub-statements - Products providing calcium, iron or zinc"
+                verbatim: "Products providing calcium, iron or zinc. Take with food. Take a few hours before or after taking other medications or health products."
+                evidence_outcome: not_applicable
+                conditions: []

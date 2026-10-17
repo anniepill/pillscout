@@ -1,0 +1,619 @@
+person:
+  Medicines: ["metformin", "glipizide", "lisinopril", "atorvastatin"]
+  Supplements with a record: ["gymnema", "cinnamon", "curcumin", "piperine (black pepper extract)", "green_tea_extract", "magnesium"]
+  No record: ["berberine", "chromium"]
+  Wants to add: ["ginseng"]
+
+pairs_with_passages: ["gymnema + metformin", "gymnema + glipizide", "gymnema + atorvastatin", "cinnamon + metformin", "cinnamon + glipizide", "curcumin + atorvastatin", "green_tea_extract + lisinopril", "ginseng + metformin", "ginseng + glipizide", "ginseng + lisinopril", "ginseng + atorvastatin", "curcumin + piperine"]
+
+passages:
+  - passage: "Gymnema extracts may have other antidiabetic actions, such as enhanced insulin secretion and inhibition of glucose absorption as well as cholesterol-lowering, antioxidant, antiinflammatory, antibacterial, and antineoplastic activities."
+    sources:
+      - item: "gymnema"
+        authority: "NIH LiverTox"
+        document_id: "NBK610217"
+        section_title: "Background - antidiabetic actions"
+        evidence_outcome: "positive_finding"
+    bears_on:
+      - pair: "gymnema + metformin"
+        kind: "class"
+        matched_class: ["antidiabetic"]
+        note: "The source named a class. The lookup service matched this item to the class; the source did not name it."
+      - pair: "gymnema + glipizide"
+        kind: "class"
+        matched_class: ["antidiabetic"]
+        note: "The source named a class. The lookup service matched this item to the class; the source did not name it."
+      - pair: "gymnema + atorvastatin"
+        kind: "class"
+        matched_class: ["cholesterol-lowering"]
+        note: "The source named a class. The lookup service matched this item to the class; the source did not name it."
+  - passage: "Gymnema might affect blood sugar levels and could interfere with blood sugar control during and after surgery. Gymnema should be stopped at least 2 weeks before a scheduled surgery."
+    sources:
+      - item: "gymnema"
+        authority: "Egyptian Drug Authority"
+        document_id: "EDA/HerbalMonograph/GymnemaSylvestre/2023"
+        section_title: "Special warnings and precautions for use - perioperative blood sugar"
+        evidence_outcome: "positive_finding"
+    bears_on:
+      - pair: "gymnema + metformin"
+        kind: "class"
+        matched_class: ["blood sugar"]
+        note: "The source named a class. The lookup service matched this item to the class; the source did not name it."
+      - pair: "gymnema + glipizide"
+        kind: "class"
+        matched_class: ["blood sugar"]
+        note: "The source named a class. The lookup service matched this item to the class; the source did not name it."
+  - passage: "Use cautiously in diabetic patients using hypoglycaemic medications, due to possible potentiation of effects. Serum glucose levels should be monitored, and doses of concomitant hypoglycaemic drugs may require adjustment under the medical supervision."
+    sources:
+      - item: "gymnema"
+        authority: "Egyptian Drug Authority"
+        document_id: "EDA/HerbalMonograph/GymnemaSylvestre/2023"
+        section_title: "Special warnings and precautions for use - hypoglycaemic medications"
+        source_position: "use_with_caution"
+        evidence_outcome: "not_applicable"
+    bears_on:
+      - pair: "gymnema + metformin"
+        kind: "class"
+        partner: "hypoglycaemic drugs"
+        matched_class: ["hypoglycaemic"]
+        note: "The source named a class. The lookup service matched this item to the class; the source did not name it."
+      - pair: "gymnema + glipizide"
+        kind: "class"
+        partner: "hypoglycaemic drugs"
+        matched_class: ["hypoglycaemic"]
+        note: "The source named a class. The lookup service matched this item to the class; the source did not name it."
+  - passage: "Gymnema may potentiate the effects of hypoglycemic drugs in diabetic patients."
+    sources:
+      - item: "gymnema"
+        authority: "Egyptian Drug Authority"
+        document_id: "EDA/HerbalMonograph/GymnemaSylvestre/2023"
+        section_title: "Interactions with other medicinal products and other forms of interaction - hypoglycaemic drugs"
+        evidence_outcome: "positive_finding"
+    bears_on:
+      - pair: "gymnema + metformin"
+        kind: "class"
+        partner: "hypoglycaemic drugs"
+        matched_class: ["hypoglycaemic", "hypoglycemic"]
+        note: "The source named a class. The lookup service matched this item to the class; the source did not name it."
+      - pair: "gymnema + glipizide"
+        kind: "class"
+        partner: "hypoglycaemic drugs"
+        matched_class: ["hypoglycaemic", "hypoglycemic"]
+        note: "The source named a class. The lookup service matched this item to the class; the source did not name it."
+  - passage: "Use cautiously in patients taking antilipemic agents. Concomitant use of gymnema with other lipid-lowering agents may potentiate their effects."
+    sources:
+      - item: "gymnema"
+        authority: "Egyptian Drug Authority"
+        document_id: "EDA/HerbalMonograph/GymnemaSylvestre/2023"
+        section_title: "Special warnings and precautions for use - antilipemic agents"
+        source_position: "use_with_caution"
+        evidence_outcome: "not_applicable"
+    bears_on:
+      - pair: "gymnema + atorvastatin"
+        kind: "class"
+        partner: "lipid-lowering agents"
+        matched_class: ["lipid-lowering"]
+        note: "The source named a class. The lookup service matched this item to the class; the source did not name it."
+  - passage: "Concomitant use of gymnema with other lipid-lowering agents may potentiate their effects."
+    sources:
+      - item: "gymnema"
+        authority: "Egyptian Drug Authority"
+        document_id: "EDA/HerbalMonograph/GymnemaSylvestre/2023"
+        section_title: "Interactions with other medicinal products and other forms of interaction - lipid-lowering agents"
+        evidence_outcome: "positive_finding"
+    bears_on:
+      - pair: "gymnema + atorvastatin"
+        kind: "class"
+        partner: "lipid-lowering agents"
+        matched_class: ["lipid-lowering"]
+        note: "The source named a class. The lookup service matched this item to the class; the source did not name it."
+  - passage: "A- For sweet-taste suppression and weight loss during weight control diet program. B- As an adjunct therapy for diabetes. C- As an adjunct lipid lowering agent in type 2 diabetes."
+    sources:
+      - item: "gymnema"
+        authority: "Egyptian Drug Authority"
+        document_id: "EDA/HerbalMonograph/GymnemaSylvestre/2023"
+        section_title: "Medicinal Uses (Indications)"
+        evidence_outcome: "positive_finding"
+    bears_on:
+      - pair: "gymnema + metformin"
+        kind: "related"
+        reason: "adjunct therapy for diabetes"
+        note: "The lookup service judged this passage relevant to this item. The source did not name it."
+      - pair: "gymnema + glipizide"
+        kind: "related"
+        reason: "adjunct therapy for diabetes"
+        note: "The lookup service judged this passage relevant to this item. The source did not name it."
+      - pair: "gymnema + atorvastatin"
+        kind: "related"
+        reason: "adjunct lipid-lowering agent"
+        note: "The lookup service judged this passage relevant to this item. The source did not name it."
+  - passage: "Gastrointestinal symptoms (e.g. nausea, vomiting, inhibition of bitter/sweet taste), hypoglycaemia and hypersensitivity reactions."
+    sources:
+      - item: "gymnema"
+        authority: "Egyptian Drug Authority"
+        document_id: "EDA/HerbalMonograph/GymnemaSylvestre/2023"
+        section_title: "Undesirable effects - hypoglycaemia"
+        evidence_outcome: "positive_finding"
+      - item: "gymnema"
+        authority: "Egyptian Drug Authority"
+        document_id: "EDA/HerbalMonograph/GymnemaSylvestre/2023"
+        section_title: "Undesirable effects - gastrointestinal and taste"
+        evidence_outcome: "positive_finding"
+      - item: "gymnema"
+        authority: "Egyptian Drug Authority"
+        document_id: "EDA/HerbalMonograph/GymnemaSylvestre/2023"
+        section_title: "Undesirable effects - hypersensitivity"
+        evidence_outcome: "positive_finding"
+    bears_on:
+      - pair: "gymnema + metformin"
+        kind: "related"
+        reason: "causes hypoglycaemia"
+        note: "The lookup service judged this passage relevant to this item. The source did not name it."
+      - pair: "gymnema + glipizide"
+        kind: "related"
+        reason: "causes hypoglycaemia"
+        note: "The lookup service judged this passage relevant to this item. The source did not name it."
+  - passage: "Hypoglycaemia may also occur in nondiabetic patients."
+    sources:
+      - item: "gymnema"
+        authority: "Egyptian Drug Authority"
+        document_id: "EDA/HerbalMonograph/GymnemaSylvestre/2023"
+        section_title: "Special warnings and precautions for use - hypoglycaemia in nondiabetics"
+        evidence_outcome: "positive_finding"
+    bears_on:
+      - pair: "gymnema + metformin"
+        kind: "related"
+        reason: "causes hypoglycaemia"
+        note: "The lookup service judged this passage relevant to this item. The source did not name it."
+      - pair: "gymnema + glipizide"
+        kind: "related"
+        reason: "causes hypoglycaemia"
+        note: "The lookup service judged this passage relevant to this item. The source did not name it."
+  - passage: "Lab test: Gymnema may lead to decrease in blood glucose, glycosylated hemoglobin (HbA1c), LDL and total cholesterol."
+    sources:
+      - item: "gymnema"
+        authority: "Egyptian Drug Authority"
+        document_id: "EDA/HerbalMonograph/GymnemaSylvestre/2023"
+        section_title: "Interactions with other medicinal products and other forms of interaction - laboratory tests"
+        evidence_outcome: "positive_finding"
+    bears_on:
+      - pair: "gymnema + metformin"
+        kind: "related"
+        reason: "lowers glucose and HbA1c"
+        note: "The lookup service judged this passage relevant to this item. The source did not name it."
+      - pair: "gymnema + glipizide"
+        kind: "related"
+        reason: "lowers glucose and HbA1c"
+        note: "The lookup service judged this passage relevant to this item. The source did not name it."
+      - pair: "gymnema + atorvastatin"
+        kind: "related"
+        reason: "lowers LDL and cholesterol"
+        note: "The lookup service judged this passage relevant to this item. The source did not name it."
+  - passage: "Recent studies with a different Cinnamomum species, C. cassia, showed a hypoglycemic effect (Khan et al., 2003; Mang et al., 2006). The studies are not related to C. verum."
+    sources:
+      - item: "cinnamon"
+        authority: "European Medicines Agency (herbal committee)"
+        document_id: "EMA/HMPC/246773/2009"
+        section_title: "Overall conclusions on pharmacodynamics - species caveat"
+        evidence_outcome: "positive_finding"
+    bears_on:
+      - pair: "cinnamon + metformin"
+        kind: "class"
+        matched_class: ["hypoglycemic"]
+        note: "The source named a class. The lookup service matched this item to the class; the source did not name it."
+      - pair: "cinnamon + glipizide"
+        kind: "class"
+        matched_class: ["hypoglycemic"]
+        note: "The source named a class. The lookup service matched this item to the class; the source did not name it."
+  - passage: "Curcumin was found to inhibit the P-gp and CYP3A4 activities in vitro, and to activate CYP3A4 and suppresses P-gp abilities in vivo. (Cheng et al., 2018). Drug interaction was observed in several clinical trials after co-administration of Curcuma longa or curcumin with talinolol, endoxifen, sulphasalazine and tamoxifen. However, the dose of curcumin (300 mg per day, 1200mg 3dd or 2 g per day) used in these studies is higher than the maximum daily dose of 4 g Curcuma longa (corresponding to a maximum of 209 mg curcuminoids) recommended in the monograph."
+    sources:
+      - item: "curcumin"
+        authority: "European Medicines Agency (herbal committee)"
+        document_id: "EMA/HMPC/81467/2025"
+        section_title: "Drug interaction review (in vitro and clinical trials)"
+        evidence_outcome: "positive_finding"
+    bears_on:
+      - pair: "curcumin + atorvastatin"
+        kind: "class"
+        matched_pathway: ["CYP3A4"]
+        note: "The source named an enzyme pathway. The lookup service matched this item to it; the source did not name it."
+  - passage: "Curcumin was found to inhibit the P-gp and CYP3A4 activities in vitro, and to activate CYP3A4 and suppresses P-gp abilities in vivo."
+    sources:
+      - item: "curcumin"
+        authority: "European Medicines Agency (herbal committee)"
+        document_id: "EMA/HMPC/81467/2025"
+        section_title: "Drug interaction review - in vivo CYP3A4 activation"
+        evidence_outcome: "positive_finding"
+    bears_on:
+      - pair: "curcumin + atorvastatin"
+        kind: "class"
+        matched_pathway: ["CYP3A4"]
+        note: "The source named an enzyme pathway. The lookup service matched this item to it; the source did not name it."
+  - passage: "Curcumin was found to inhibit the P-gp and CYP3A4 activities in vitro, and to activate CYP3A4 and suppresses P-gp abilities in vivo. (Cheng et al., 2018). Drug interaction was observed in several clinical trials after co-administration of Curcuma longa or curcumin with talinolol, endoxifen, sulphasalazine and tamoxifen."
+    sources:
+      - item: "curcumin"
+        authority: "European Medicines Agency (herbal committee)"
+        document_id: "EMA/HMPC/81467/2025"
+        section_title: "Drug interaction review - P-gp"
+        evidence_outcome: "positive_finding"
+    bears_on:
+      - pair: "curcumin + atorvastatin"
+        kind: "class"
+        matched_pathway: ["CYP3A4"]
+        note: "The source named an enzyme pathway. The lookup service matched this item to it; the source did not name it."
+  - passage: "Importantly, means of increasing the bioavailability of curcumin were developed using piperine (black pepper) or lipid nanoparticle delivery methods to increase absorption. These high bioavailability forms of purified curcumin were subsequently linked to several cases of liver injury and mentioned as a possible cause of outbreaks of acute hepatitis with jaundice in Italy."
+    sources:
+      - item: "curcumin"
+        authority: "NIH LiverTox"
+        document_id: "NBK548561"
+        section_title: "Bioavailability enhancement and liver injury"
+        evidence_outcome: "positive_finding"
+    bears_on:
+      - pair: "curcumin + piperine"
+        kind: "named"
+        partner: "piperine"
+  - passage: "Papke et al., 2025 identified via a retrospective pathology archive review, 11 patients with turmeric supplement-associated hepatitis. Their Roussel Uclaf causality assessment method (RUCAM) analysis estimated the likelihood of turmeric supplement-associated liver injury to be probable (eight cases) and possible (three). However, in the majority of the reported cases the preparation and the dose used were unknown. In those cases when this information was available patients had used high amounts of curcuminoids and/or turmeric combined with black pepper and in all cases, there was concomitant use of other supplements/ medicinal products."
+    sources:
+      - item: "curcumin"
+        authority: "European Medicines Agency (herbal committee)"
+        document_id: "EMA/HMPC/81467/2025"
+        section_title: "Papke et al. 2025 - turmeric/piperine hepatitis"
+        evidence_outcome: "positive_finding"
+    bears_on:
+      - pair: "curcumin + piperine"
+        kind: "named_elsewhere"
+        note: "This passage names the item. The record files it under a different heading."
+  - passage: "Shoba et al. demonstrated that the bioavailability of curcumin increased twenty-fold when healthy human subjects took a 2 g dose of curcumin in combination with 20 mg of piperine, extracted from black pepper, compared to subjects who took only 2 g of curcumin (Shoba et al., 1998)."
+    sources:
+      - item: "curcumin"
+        authority: "European Medicines Agency (herbal committee)"
+        document_id: "EMA/HMPC/329745/2017"
+        section_title: "Drug interactions and other forms of interaction"
+        evidence_outcome: "positive_finding"
+    bears_on:
+      - pair: "curcumin + piperine"
+        kind: "named"
+        partner: "piperine"
+  - passage: "In those cases where these details were provided, products often contain a pepper (extract) to increase the bioavailability of curcumin, and/or the daily intake of Curcuma longa and/curcumin was higher than the posology of the EU herbal monograph."
+    sources:
+      - item: "curcumin"
+        authority: "European Medicines Agency (herbal committee)"
+        document_id: "EMA/HMPC/81467/2025"
+        section_title: "Assessor's comment (hepatotoxicity, pepper extract bioavailability)"
+        evidence_outcome: "positive_finding"
+    bears_on:
+      - pair: "curcumin + piperine"
+        kind: "named"
+        partner: "piperine"
+  - passage: "Oral curcumin products vary in how much curcumin they actually contain, and they often contain substances from other plants, such as piperine from black pepper. Combining curcumin with piperine is one way to improve the bioavailability of curcumin."
+    sources:
+      - item: "curcumin"
+        authority: "NIH NCCIH"
+        document_id: "nccih_turmeric"
+        section_title: "What Have We Learned?"
+        evidence_outcome: "positive_finding"
+    bears_on:
+      - pair: "curcumin + piperine"
+        kind: "named"
+        partner: "piperine"
+  - passage: "Turmeric may interact with NSAIDs (Non-Steroidal Anti-inflammatory Drugs), antiplatelet agents or antihyperlipidemics, and a case report mentions interaction with warfarin. These findings are mainly based on in vitro data, animal studies or individual case reports. More studies are needed to confirm and assess the clinical significance of these potential interactions (Bowman 2005, Fetrow and Avila 1999, Heck et al., 2000). As clinical data is lacking, these effects are not included in the monograph."
+    sources:
+      - item: "curcumin"
+        authority: "European Medicines Agency (herbal committee)"
+        document_id: "EMA/HMPC/329745/2017"
+        section_title: "Drug interactions and other forms of interaction"
+        evidence_outcome: "positive_finding"
+    bears_on:
+      - pair: "curcumin + atorvastatin"
+        kind: "related"
+        reason: "antihyperlipidemics: lipid-lowering class"
+        note: "The lookup service judged this passage relevant to this item. The source did not name it."
+  - passage: "Ask a health care practitioner/health care provider/health care professional/doctor/ physician before use if you have high blood pressure or glaucoma (Cornelis and El-Sohemy 2007; Chandrasekaran et al. 2005; Noordzij et al. 2005; Avisar et al. 2002; Arya et al. 2000; Jee et al. 1999; Creighton and Stanton 1990)."
+    sources:
+      - item: "green_tea_extract"
+        authority: "Health Canada"
+        document_id: "mono_green-tea-extracts_english"
+        section_title: "Caution(s) and warning(s) - Products providing 40 mg or more caffeine, per day and with a catechins:caffeine ratio lower than 2:1"
+        source_directive: "ask_before_use"
+        evidence_outcome: "positive_finding"
+        conditions:
+          applicability_conditions: {"condition": ["high_blood_pressure", "glaucoma"]}
+    bears_on:
+      - pair: "green_tea_extract + lisinopril"
+        kind: "class"
+        matched_class: ["blood pressure"]
+        note: "The source named a class. The lookup service matched this item to the class; the source did not name it."
+  - passage: "This interpretation is endorsed by studies in human volunteers which investigated the influence of Panax ginseng preparations on the CYP 450 showing no clinically relevant impact on CYP3A, CYP1A2 and CYP2D6."
+    sources:
+      - item: "ginseng"
+        authority: "European Medicines Agency (herbal committee)"
+        document_id: "EMA/HMPC/27745/2023"
+        section_title: "Drug interactions - CYP 450 assessor's comment"
+        evidence_outcome: "null_finding"
+    bears_on:
+      - pair: "ginseng + atorvastatin"
+        kind: "class"
+        partner: "CYP3A4 substrates"
+        matched_pathway: ["CYP3A4"]
+        note: "The source named an enzyme pathway. The lookup service matched this item to it; the source did not name it."
+  - passage: "(Used in Herbal Medicine as) supportive therapy for the promotion of healthy glucose levels (Vuksan et al. 2008; Sievenpiper et al. 2006; Williamson 2003; Tetsutani et al. 2000; WHO 1999; Sotaniemi et al. 1995)."
+    sources:
+      - item: "ginseng"
+        authority: "Health Canada"
+        document_id: "mono_ginseng-panax_english"
+        section_title: "Use(s) or Purpose(s) - healthy glucose levels"
+        evidence_outcome: "positive_finding"
+    bears_on:
+      - pair: "ginseng + metformin"
+        kind: "related"
+        reason: "promotes healthy glucose levels"
+        note: "The lookup service judged this passage relevant to this item. The source did not name it."
+      - pair: "ginseng + glipizide"
+        kind: "related"
+        reason: "promotes healthy glucose levels"
+        note: "The lookup service judged this passage relevant to this item. The source did not name it."
+  - passage: "Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you have diabetes (Brinker 2010; Vuksan et al. 2008; Seely et al. 2008; Sievenpiper et al. 2006; ESCOP 2003; Tetsutani et al. 2000; Sotaniemi et al. 1995; Chin 1991)."
+    sources:
+      - item: "ginseng"
+        authority: "Health Canada"
+        document_id: "mono_ginseng-panax_english"
+        section_title: "Caution(s) and warning(s) - diabetes"
+        source_directive: "ask_before_use"
+        evidence_outcome: "not_applicable"
+    bears_on:
+      - pair: "ginseng + metformin"
+        kind: "related"
+        reason: "caution if you have diabetes"
+        note: "The lookup service judged this passage relevant to this item. The source did not name it."
+      - pair: "ginseng + glipizide"
+        kind: "related"
+        reason: "caution if you have diabetes"
+        note: "The lookup service judged this passage relevant to this item. The source did not name it."
+  - passage: "A \"Ginseng Abuse Syndrome\" has been described in literature, defined as hypertension together with nervousness, sleeplessness, skin eruptions, edema and morning diarrhoea after long-term use of daily doses of up to 15 g of \"ginseng (-preparations)\". However, the used preparations were not clearly defined and included also Panax quinquefolius, Eleutherococcus senticosus and Rumex hymenosepalus. Furthermore, the preparations were not only used orally but also intranasal or by injection and all of the persons reporting the syndrome consumed caffeinated beverages concomitantly. Due to the questionable causality and with regard to the limited recommended daily dose of 6 g and duration of use for not longer than three months, these findings are not regarded to be relevant for safety considerations."
+    sources:
+      - item: "ginseng"
+        authority: "European Medicines Agency (herbal committee)"
+        document_id: "EMA/HMPC/27745/2023"
+        section_title: "Overall conclusions on clinical safety - Ginseng Abuse Syndrome"
+        evidence_outcome: "positive_finding"
+    bears_on:
+      - pair: "ginseng + lisinopril"
+        kind: "related"
+        reason: "ginseng-linked hypertension, dismissed"
+        note: "The lookup service judged this passage relevant to this item. The source did not name it."
+  - passage: "Overall, although there are several hints from in vitro data that interactions with Warfarin, and CYP 3A or P-gp substrates could be possible, so far available clinical data does not confirm these findings."
+    sources:
+      - item: "ginseng"
+        authority: "European Medicines Agency (herbal committee)"
+        document_id: "EMA/HMPC/27745/2023"
+        section_title: "Drug interactions - warfarin assessor's conclusion"
+        evidence_outcome: "null_finding"
+    bears_on:
+      - pair: "ginseng + atorvastatin"
+        kind: "related"
+        reason: "CYP 3A, P-gp spellings"
+        note: "The lookup service judged this passage relevant to this item. The source did not name it."
+
+general_instructions:
+  note: "The source gave a general instruction that applies to anything taken with this supplement."
+  passages:
+    - passage: "Ask a health care practitioner/health care provider/health care professional/doctor/ physician before use if you are taking medications (HC 2025)."
+      sources:
+        - item: "curcumin"
+          authority: "Health Canada"
+          document_id: "turmeric.oral.curcuma.orale"
+          section_title: "Cautions and warnings (concomitant medications)"
+          source_directive: "ask_before_use"
+          evidence_outcome: "not_applicable"
+    - passage: "Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you are taking medications or any other health products, as black/white pepper/piperine may alter their effectiveness (Han 2011; Srinivasan 2007; Khajuria et al. 2002; Bano et al. 1991)."
+      sources:
+        - item: "piperine"
+          authority: "Health Canada"
+          document_id: "blackpepper.poivrenoir3"
+          section_title: "Caution(s) and warning(s) - All products, medication/health-product effectiveness"
+          source_directive: "ask_before_use"
+          evidence_outcome: "positive_finding"
+    - passage: "Ask a health care practitioner/health care provider/health care professional/doctor/ physician before use if you are taking medications."
+      sources:
+        - item: "green_tea_extract"
+          authority: "Health Canada"
+          document_id: "mono_green-tea-extracts_english"
+          section_title: "Caution(s) and warning(s) - All products"
+          source_directive: "ask_before_use"
+          evidence_outcome: "not_applicable"
+
+on_each_item_itself:
+  - passage: "Hypersensitivity to active substances and to other plants of the same family."
+    sources:
+      - item: "gymnema"
+        authority: "Egyptian Drug Authority"
+        document_id: "EDA/HerbalMonograph/GymnemaSylvestre/2023"
+        section_title: "Contraindications"
+        source_position: "contraindicated"
+        evidence_outcome: "not_applicable"
+  - passage: "Use cautiously in patients taking weight loss agents because there may be a potential for additive affects."
+    sources:
+      - item: "gymnema"
+        authority: "Egyptian Drug Authority"
+        document_id: "EDA/HerbalMonograph/GymnemaSylvestre/2023"
+        section_title: "Special warnings and precautions for use - weight loss agents"
+        source_position: "use_with_caution"
+        evidence_outcome: "not_applicable"
+  - passage: "Hypersensitivity to the active substance or to Peru balsam."
+    sources:
+      - item: "cinnamon"
+        authority: "European Medicines Agency (herbal committee)"
+        document_id: "EMA/HMPC/246774/2009"
+        section_title: "Contraindications"
+        source_position: "contraindicated"
+        evidence_outcome: "not_applicable"
+  - passage: "The drug is contraindicated in cases of fever of unknown origin, pregnancy, stomach or duodenal ulcers, and in patients with an allergy to cinnamon or Peru balsam."
+    sources:
+      - item: "cinnamon"
+        authority: "World Health Organization"
+        document_id: "WHO/Monographs/Vol1/Cortex_Cinnamomi"
+        section_title: "Contraindications"
+        source_position: "contraindicated"
+        evidence_outcome: "not_applicable"
+      - item: "cinnamon"
+        authority: "World Health Organization"
+        document_id: "WHO/Monographs/Vol1/Cortex_Cinnamomi"
+        section_title: "Contraindications - fever of unknown origin"
+        source_position: "contraindicated"
+        evidence_outcome: "not_applicable"
+      - item: "cinnamon"
+        authority: "World Health Organization"
+        document_id: "WHO/Monographs/Vol1/Cortex_Cinnamomi"
+        section_title: "Contraindications - stomach or duodenal ulcers"
+        source_position: "contraindicated"
+        evidence_outcome: "not_applicable"
+  - passage: "Stop use and ask a health care practitioner/health care provider/health care professional/doctor/physician if you experience any new symptoms including yellowing of the eyes or skin, dark urine, nausea, vomiting, stomach pain (HC 2025)."
+    sources:
+      - item: "curcumin"
+        authority: "Health Canada"
+        document_id: "turmeric.oral.curcuma.orale"
+        section_title: "Cautions and warnings (hepatotoxicity stop-use)"
+        source_directive: "stop_use_and_ask"
+        evidence_outcome: "not_applicable"
+  - passage: "Hypersensitivity to the active substance."
+    sources:
+      - item: "curcumin"
+        authority: "European Medicines Agency (herbal committee)"
+        document_id: "EMA/HMPC/329755/2017"
+        section_title: "Contraindications"
+        source_position: "contraindicated"
+        evidence_outcome: "not_applicable"
+      - item: "ginseng"
+        authority: "European Medicines Agency (herbal committee)"
+        document_id: "EMA/HMPC/27744/2023"
+        section_title: "Contraindications"
+        source_position: "contraindicated"
+        evidence_outcome: "not_applicable"
+  - passage: "Obstruction of the biliary tract."
+    sources:
+      - item: "curcumin"
+        authority: "World Health Organization"
+        document_id: "WHO/Monographs/Vol1/Rhizoma_Curcumae_Longae"
+        section_title: "Contraindications - biliary tract obstruction"
+        source_position: "contraindicated"
+        evidence_outcome: "not_applicable"
+        conditions:
+          applicability_conditions: {"condition": ["biliary_tract_obstruction"]}
+  - passage: "In cases of gallstones, use only after consultation with a physician (26)."
+    sources:
+      - item: "curcumin"
+        authority: "World Health Organization"
+        document_id: "WHO/Monographs/Vol1/Rhizoma_Curcumae_Longae"
+        section_title: "Contraindications - gallstones conditional caution"
+        source_directive: "ask_before_use"
+        evidence_outcome: "not_applicable"
+        conditions:
+          applicability_conditions: {"condition": ["gallstones"]}
+  - passage: "Due to possible stimulation on bile secretion Curcuma longa is not recommended in case of obstruction of the bile duct, cholangitis, liver disease, gallstones and any other biliary diseases."
+    sources:
+      - item: "curcumin"
+        authority: "European Medicines Agency (herbal committee)"
+        document_id: "EMA/HMPC/329755/2017"
+        section_title: "Special warnings and precautions for use"
+        source_position: "not_recommended"
+        evidence_outcome: "not_applicable"
+        conditions:
+          applicability_conditions: {"condition": ["bile_duct_obstruction", "cholangitis", "liver_disease", "gallstones", "other_biliary_diseases"]}
+  - passage: "Ask a health care practitioner/health care provider/health care professional/doctor/ physician before use if you have a liver or biliary disorder (HC 2025; EMA 2018; Brinker 2010; ESCOP 2003; McGuffin et al. 1997)."
+    sources:
+      - item: "curcumin"
+        authority: "Health Canada"
+        document_id: "turmeric.oral.curcuma.orale"
+        section_title: "Cautions and warnings (liver/biliary disorder)"
+        source_directive: "ask_before_use"
+        evidence_outcome: "not_applicable"
+        conditions:
+          applicability_conditions: {"condition": ["liver_disorder", "biliary_disorder"]}
+  - passage: "Ask a health care practitioner/health care provider/health care professional/doctor/physician for use beyond 12 weeks (Lieberman et al. 2005)."
+    sources:
+      - item: "piperine"
+        authority: "Health Canada"
+        document_id: "blackpepper.poivrenoir3"
+        section_title: "Duration(s) of use - Class II/III"
+        source_directive: "ask_for_use_beyond_duration"
+        evidence_outcome: "positive_finding"
+  - passage: "Ask a health care practitioner/health care provider/health care professional/doctor/physician for use beyond 12 weeks (Nagao et al. 2005; Westerterp-Plantenga et al. 2005; Chantre and Lairon 2002)."
+    sources:
+      - item: "green_tea_extract"
+        authority: "Health Canada"
+        document_id: "mono_green-tea-extracts_english"
+        section_title: "All products"
+        source_directive: "ask_for_use_beyond_duration"
+        evidence_outcome: "positive_finding"
+  - passage: "Ask a health care practitioner/health care provider/health care professional/doctor/ physician before use if you have a liver disorder or an iron deficiency (HC 2017; HC 2007; Cooper et al. 2006; Nelson and Poulter 2004; Zijp et al. 2000)."
+    sources:
+      - item: "green_tea_extract"
+        authority: "Health Canada"
+        document_id: "mono_green-tea-extracts_english"
+        section_title: "Caution(s) and warning(s) - All products"
+        source_directive: "ask_before_use"
+        evidence_outcome: "positive_finding"
+  - passage: "Stop use and ask a health care practitioner/health care provider/health care professional/doctor/physician if you experience any new symptoms including yellowing of the eyes or skin, dark urine, nausea, vomiting, stomach pain (HC 2017; Molinari et al. 2006; Gloro et al. 2005)."
+    sources:
+      - item: "green_tea_extract"
+        authority: "Health Canada"
+        document_id: "mono_green-tea-extracts_english"
+        section_title: "Caution(s) and warning(s) - All products"
+        source_directive: "stop_use_and_ask"
+        evidence_outcome: "positive_finding"
+  - passage: "Do not use if you are pregnant (HC 2010)."
+    sources:
+      - item: "green_tea_extract"
+        authority: "Health Canada"
+        document_id: "mono_green-tea-extracts_english"
+        section_title: "Weight management"
+        source_position: "contraindicated"
+        evidence_outcome: "not_applicable"
+        conditions:
+          applicability_conditions: {"population": ["pregnancy"], "formulation": ["weight_management_products"]}
+  - passage: "Do not use in cases of yin deficiency with heat signs, heat excess, or in the absence of significant qi deficiency (Bensky et al. 2004)."
+    sources:
+      - item: "ginseng"
+        authority: "Health Canada"
+        document_id: "mono_ginseng-panax_english"
+        section_title: "Contraindication(s) - Traditional Chinese Medicine"
+        source_position: "contraindicated"
+        evidence_outcome: "not_applicable"
+  - passage: "Stop use and ask a health care practitioner/health care provider/health care professional/doctor/physician if you experience insomnia, anxiety or headaches (Lee et al. 2008b; Vuksan et al 2008; de Andrade et al.2007; Sievenpiper et al. 2006; Coon and Ernst 2002; Ellis and Reddy 2002; Scaglione et al. 2001; Siegel 1979)."
+    sources:
+      - item: "ginseng"
+        authority: "Health Canada"
+        document_id: "mono_ginseng-panax_english"
+        section_title: "Known adverse reaction(s)"
+        source_directive: "stop_use_and_ask"
+        evidence_outcome: "positive_finding"
+  - passage: "Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you are taking antidepressant medication, blood thinners or digoxin (Brinker 2010; Lee et al. 2008a; Dasgupta and Reyes 2005; Janetzki and Morreale 1997; Gonzalez-Seijo et al. 1995; Shader and Greenblatt 1988; Jones and Runikis 1987; Shader and Greenblatt 1985)."
+    sources:
+      - item: "ginseng"
+        authority: "Health Canada"
+        document_id: "mono_ginseng-panax_english"
+        section_title: "Caution(s) and warning(s) - blood thinners"
+        source_directive: "ask_before_use"
+        evidence_outcome: "not_applicable"
+      - item: "ginseng"
+        authority: "Health Canada"
+        document_id: "mono_ginseng-panax_english"
+        section_title: "Caution(s) and warning(s) - antidepressant medication"
+        source_directive: "ask_before_use"
+        evidence_outcome: "not_applicable"
+      - item: "ginseng"
+        authority: "Health Canada"
+        document_id: "mono_ginseng-panax_english"
+        section_title: "Caution(s) and warning(s) - digoxin"
+        source_directive: "ask_before_use"
+        evidence_outcome: "not_applicable"
+
+nothing_found:
+  note: "No statement in this record names this item or a class it belongs to. That is not a finding of safety."
+  pairs: ["gymnema + lisinopril", "cinnamon + lisinopril", "cinnamon + atorvastatin", "curcumin + metformin", "curcumin + glipizide", "curcumin + lisinopril", "piperine + metformin", "piperine + glipizide", "piperine + lisinopril", "piperine + atorvastatin", "green_tea_extract + metformin", "green_tea_extract + glipizide", "green_tea_extract + atorvastatin", "magnesium + metformin", "magnesium + glipizide", "magnesium + lisinopril", "magnesium + atorvastatin", "gymnema + cinnamon", "gymnema + curcumin", "gymnema + piperine", "gymnema + green_tea_extract", "gymnema + magnesium", "gymnema + ginseng", "cinnamon + curcumin", "cinnamon + piperine", "cinnamon + green_tea_extract", "cinnamon + magnesium", "cinnamon + ginseng", "curcumin + green_tea_extract", "curcumin + magnesium", "curcumin + ginseng", "piperine + green_tea_extract", "piperine + magnesium", "piperine + ginseng", "green_tea_extract + magnesium", "green_tea_extract + ginseng", "magnesium + ginseng"]
+
+no_record:
+  note: "This service has no record for this item. Nothing here is a finding about it, for or against."
+  items: ["berberine", "chromium"]
+
+not_checked: "This service checks supplements against medicines and against each other. It does not check one medicine against another."

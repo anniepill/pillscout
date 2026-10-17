@@ -736,8 +736,8 @@ describe('reach guard over the real corpus', () => {
   it('reaches every citation in the corpus, exactly once each', () => {
     const total = load().reduce((n, r) => n + collect(r.doc, 'citations').length, 0);
     // A probe that found nothing would report clean. The shipped record holds
-    // 115; the floor is what stops a silently narrowed walk passing.
-    expect(total).toBeGreaterThanOrEqual(115);
+    // 115; the exact count is what stops a silently narrowed walk passing.
+    expect(total).toBe(115);
     const wrong = probe('citations', 'evidence_outcome', 'banana_finding');
     expect(wrong.dirty).toEqual([]);
     expect(wrong.zero).toEqual([]);
@@ -789,9 +789,9 @@ describe('reach guard over the real corpus', () => {
       })(doc, '');
     }
     // A probe that enumerated nothing would report clean. The shipped record
-    // holds 775 registered-key positions; the floor is what stops a silently
-    // narrowed walk passing.
-    expect(positions.length).toBeGreaterThanOrEqual(775);
+    // holds 775 registered-key positions; the exact count is what stops a
+    // silently narrowed walk passing.
+    expect(positions.length).toBe(775);
 
     const unreached: string[] = [];
     const multi: string[] = [];
@@ -819,7 +819,7 @@ describe('reach guard over the real corpus', () => {
   it('reaches every unresolved marker in the corpus, exactly once each', () => {
     const total = load().reduce((n, r) => n + collect(r.doc, 'unresolved').length, 0);
     // The shipped record holds 10 markers.
-    expect(total).toBeGreaterThanOrEqual(10);
+    expect(total).toBe(10);
     const wrong = probe('unresolved', 'class', 'banana_class');
     expect(wrong.dirty).toEqual([]);
     expect(wrong.zero).toEqual([]);

@@ -2,6 +2,8 @@
 
 Two rounds of tests, run on 7 and 8 October 2026, asked one question: does a person at home get a better answer from an AI model with PillScout than from the same model without it? Then seven outside reviews read the results. This page shows how the tests were built and scored, so the numbers can be judged for what they are.
 
+The packet the reviewers received, every raw answer, and the seven reviews are in [test/](test/).
+
 ## Read this first
 
 - **One run per model per condition.** No repeats. A single answer can be lucky or unlucky.

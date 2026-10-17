@@ -22,12 +22,14 @@
  * in the direction that matters: a key missing from the walker's copy turns a
  * legitimate source byte into a reported defect.
  *
- * DERIVED, NOT DESIGNED. The key set was read off HEAD rather than imagined.
- * All 939 `verbatim` values in the 21 records sit inside a schema-governed
- * object (711 citation elements, 227 reference_values elements, 1 block
- * wrapper) and none sits at the untyped element level of a loose block, so
- * tagging the schema call sites reaches every one of them. The artifact keys
- * come from the two committed room artifacts.
+ * DERIVED, NOT DESIGNED. The key set was read off the corpus rather than
+ * imagined. Measured on the full private corpus at the time, not on this
+ * repository: all 939 `verbatim` values in its 21 records sat inside a
+ * schema-governed object (711 citation elements, 227 reference_values
+ * elements, 1 block wrapper) and none sat at the untyped element level of a
+ * loose block, so tagging the schema call sites reaches every one of them. The
+ * artifact keys come from the two room artifacts of the full pipeline, not
+ * shipped here.
  *
  * `section_title` is deliberately NOT here, and the exclusion was measured
  * rather than assumed. It is hand-authored (the section heading as an author
@@ -35,7 +37,8 @@
  * room artifact carries a single non-ASCII byte. It stays off the allowlist so
  * that headings remain quoted ASCII-safe going forward; the day one needs a
  * source byte is the day this decision is revisited, deliberately, and not the
- * day a gate quietly stops looking at 711 strings.
+ * day a gate quietly stops looking at 711 strings (the full private corpus's
+ * count at the time).
  */
 import { z } from 'zod';
 

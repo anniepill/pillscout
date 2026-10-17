@@ -1,0 +1,8 @@
+supplements:
+  - ginkgo
+medications:
+  - amoxicillin
+ginkgo with amoxicillin:
+  matches:
+    - kind: nothing
+      note: "No statement in this record names this drug or a class it belongs to. That is not a finding of safety."

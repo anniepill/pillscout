@@ -1,4 +1,4 @@
-Excerpt from the cabinet design document, September 2026. The full document is private.
+Excerpt from the cabinet design document, September 2026. The full document is private. The design assumes a person may not tell their doctor everything they take; the product's answer was never to stand in for the doctor, but to make the list worth taking to one.
 
 ## What PillScout is
 
@@ -101,17 +101,6 @@ This pattern serves two cases:
 - **Composite reads.** The LLM (or, more often, an agent in a multi-skill stack) calls a single composite tool when it needs the full picture in one call. Returns all sections every time, structured by named field. The LLM consumes selectively.
 
 Both shapes ship in v1. The granular tools are the primary surface; the composite tool serves the agent-in-stack case where round-trip count matters more than payload size.
-
-### Why this is defensible
-
-The engine is hard to replicate for the same reasons Plaid's enrichment engine is hard to replicate: the value is in the integration, not any single component.
-
-- Anyone can build an MCP server. The engine is what's behind the protocol.
-- Anyone can build a substance database. The engine is the typology-aware classification, the canonicalized vocabulary, the cited conversion table, and the class-specific verification rules acting in composition.
-- Anyone could attempt to assemble the four reference documents. Doing so well requires real domain research, primary-source verification, cross-model adversarial review, and disciplined maintenance over time. The MDs compound; they cannot be hastily generated.
-- Anyone could attempt to replicate the integration. The integration is distributed across the design doc, the recorded design decisions, the four reference documents, the schema, and the resulting code shape. It is the result of design discipline applied over the entire project lifetime.
-
-The defensible thing is the integrated system. The same logic that protects Plaid protects PillScout: relentless engineering against the reference data, network effects from the loops that compound usage (vocabulary growth, eventual research substrate), and the operational reality that competitors can copy individual components but cannot easily replicate the whole engine without years of equivalent work.
 
 ### What the engine does not do
 

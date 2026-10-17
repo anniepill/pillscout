@@ -12,6 +12,7 @@ Version one was a consumer app that looked more trustworthy than it was: when it
 |---|---|
 | [CASE_STUDY.md](CASE_STUDY.md) | One page: what I built, the test, what I keep |
 | [TEST.md](TEST.md) | The October 2026 test, with the mechanics and the numbers so they can be judged |
+| [test/](test/) | The evidence behind it: the brief, the scorecards, every raw answer, and the seven reviews |
 | [HOW_IT_WAS_BUILT.md](HOW_IT_WAS_BUILT.md) | Tools, the working method, and three moments that show how I think |
 | [FAILURE_MODES.md](FAILURE_MODES.md) | Ten of the fourteen ways a model drifted from the data it was given, and what we changed |
 | [VERSION_ONE.md](VERSION_ONE.md) | The 2025 app and the first MCP server, with screenshots |
@@ -34,7 +35,7 @@ The first is labeled a class effect from a regulator assessment. The second is l
 
 ## How a record was made and checked
 
-- Source documents (EMA monographs and assessment reports, Health Canada monographs, FDA labels, WHO monographs, NIH fact sheets) were held locally and read by code, not by a browser.
+- Every source is free to read. EMA monographs and assessment reports, Health Canada monographs, FDA labels, WHO monographs, NIH fact sheets: documents anyone can open without a subscription. They were held locally and read by code, not by a browser.
 - A model drafted each record. I ruled on every question about what counts as a source and what a quote may carry. Code enforced the rulings on every commit.
 - Each quote was checked against the bytes of the source document. Quotes that could not be matched were labeled, never adjusted.
 - A gate required that every sentence in an FDA label naming the ingredient be either quoted or explicitly excluded, so silence in a record means the source was read and said nothing.
@@ -57,7 +58,7 @@ npm test
 npm run validate -- ingredients/records/ginkgo.yaml
 ```
 
-The tests check the schema and the record's shape; the validator checks the record against 28 schemas and reports one expected warning. One thing it cannot do here: the quotes are anchored to byte positions in source documents that are not in this repository, so the anchors are checked for shape, not resolved. Verifying a quote against its source means opening the named document at the named section.
+The tests check the schema and the record's shape; the validator checks the record against 28 schemas and reports one expected warning. The record is the full ginkgo record with its authoring machinery removed for publication: the citation_gaps and version_history blocks are emptied, the derived word-position index is stripped, the internal ticket references in notes are reworded, and one free-text field that told a reading model how to weigh a claim is deleted, because the corpus states and does not interpret. No quote and no label was changed. One thing it cannot do here: the quotes are anchored to byte positions in source documents that are not in this repository, so the anchors are checked for shape, not resolved. Verifying a quote against its source means opening the named document at the named section.
 
 ## What is not here
 
