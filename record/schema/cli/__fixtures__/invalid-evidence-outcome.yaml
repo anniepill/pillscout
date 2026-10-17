@@ -1,0 +1,50 @@
+# NEGATIVE-TEST FIXTURE. Not a corpus record. Not authored content.
+#
+# This file exists to prove the validator's exit-1 path fires. Before it,
+# the validator had only ever been observed returning 0 on the real corpus,
+# and a gate seen only green is indistinguishable from a gate that never runs.
+#
+# It lives under schema/cli/__fixtures__/ and NOT under ingredients/ because
+# the full pipeline's corpus-wide validator (not shipped here) discovers
+# records with a non-recursive readdirSync('ingredients/records') filtered to
+# .yaml. A fixture placed there would be validated as if it were real corpus
+# content.
+#
+# THE DEFECT, and the only thing wrong with this file:
+#
+#   evidence_outcome: not_reported
+#
+# not_reported is NOT a member of evidenceOutcomeSchema, whose four values are
+# positive_finding, null_finding, mixed_finding, not_applicable. The schema
+# source says so deliberately: "not_reported is deliberately excluded here;
+# source-silence routes to evaluationStatus."
+#
+# It is the representative authoring slip rather than a contrived one. The
+# token is legal on a DIFFERENT field, axis_dose_dependence, which in real
+# records sits two lines below evidence_outcome inside the same citation
+# block. See the same adjacency reproduced below.
+#
+# Every other mapped field here carries a genuine enum member, so the expected
+# result is exactly one failure. If this file ever produces more than one, the
+# fixture has drifted and stopped isolating the defect it was built to test.
+
+name: fixture_substance
+substance_type: nutrient
+status: fixture_only_not_a_record
+
+documented_interactions:
+  status: present
+  items:
+    - interaction_id: fixture_substance__fixture_counterpart
+      citations:
+        - citation_status: cited
+          source: fixture_source
+          document_id: FIXTURE-0001
+          section: "Introduction"
+          section_title: "Introduction"
+          evidence_locator: "Introduction, opening sentences"
+          verbatim: "Placeholder text standing in for a source quotation. This fixture is not derived from any source document and makes no claim about any substance."
+          evidence_methodology: curated_tertiary_synthesis
+          evidence_outcome: not_reported
+          interaction_axis: [not_applicable]
+          axis_dose_dependence: not_reported

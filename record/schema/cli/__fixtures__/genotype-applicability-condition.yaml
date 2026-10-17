@@ -1,0 +1,64 @@
+# POSITIVE-CONTROL FIXTURE. Not a corpus record. Not authored content.
+#
+# The odd one out in this directory: every other fixture here is a negative
+# control that must FAIL. This one must PASS, and it is asserted to produce
+# zero failures.
+#
+# WHAT IT COVERS:
+#
+#   applicability_conditions:
+#     genotype: [cyp2d6_poor_metabolizer]
+#
+# applicabilityConditionsSchema declares six dimensions: population, route,
+# formulation, condition, duration, genotype (a seventh, dose_range, is
+# retired). When this fixture was written, five of them were exercised by the
+# corpus and `genotype` was used by no record, so until this file it was the
+# one declared dimension that had never been parsed against a real value in
+# any direction.
+#
+# A schema slot no input has ever reached is an untested slot. It is
+# indistinguishable, from the outside, from a slot that would throw the
+# moment a record used it, and the first record to carry a genotype
+# constraint would have been the one to find out. That record would be
+# authored under time pressure against a live source, which is the worst
+# moment to discover a schema defect. This fixture moves that discovery to
+# now, where it costs nothing.
+#
+# The block is strict, so this also pins the spelling. If `genotype` were
+# ever renamed or dropped from the declared set, this file starts failing
+# immediately rather than silently ceasing to test anything, which is what a
+# negative control would do in the same situation.
+#
+# The value is a plausible pharmacogenomic stratum in the corpus's snake_case
+# style. It is NOT drawn from a source and makes no claim: the schema types
+# genotype as an open string array whose vocabulary accretes from record
+# application, so the content is irrelevant to what is under test
+# and only the shape matters.
+#
+# population sits beside it, conformant, so the fixture also proves genotype
+# coexists with a dimension already in use rather than only parsing in
+# isolation.
+
+name: fixture_substance
+substance_type: nutrient
+status: fixture_only_not_a_record
+
+documented_interactions:
+  status: present
+  items:
+    - interaction_id: fixture_substance__fixture_counterpart
+      citations:
+        - citation_status: cited
+          source: fixture_source
+          document_id: FIXTURE-0005
+          section: "Introduction"
+          section_title: "Introduction"
+          evidence_locator: "Introduction, opening sentences"
+          verbatim: "Placeholder text standing in for a source quotation. This fixture is not derived from any source document and makes no claim about any substance."
+          evidence_methodology: curated_tertiary_synthesis
+          evidence_outcome: positive_finding
+          interaction_axis: [not_applicable]
+          axis_dose_dependence: not_reported
+          applicability_conditions:
+            population: [adults]
+            genotype: [cyp2d6_poor_metabolizer]

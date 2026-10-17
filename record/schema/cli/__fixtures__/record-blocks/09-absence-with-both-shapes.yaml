@@ -1,0 +1,31 @@
+# NEGATIVE-TEST FIXTURE. Not a corpus record. See 01-present.yaml.
+#
+# STATE 9 of 9: an absence carrying both shapes at once.
+#
+# THE DEFECT, and the only thing wrong with this file: a stated_absence that
+# also carries sources_checked.
+#
+# This is the most likely hand-authored error in the whole set, because it
+# reads as MORE evidence rather than less: the author quoted the authority AND
+# recorded the reading. It is nonetheless two different claims stacked on one
+# block. stated_absence says the authority spoke; not_found says the record
+# read and found nothing. A block asserting both leaves a consumer unable to
+# tell which one the citation supports.
+#
+# It is also the case that motivates the wrapper being a discriminated union
+# rather than one object with optional fields: optional fields would admit
+# this file silently.
+contraindications:
+  status: stated_absence
+  absence_reason: no_statement_required
+  verbatim: "No statement required."
+  citations:
+    - source: health_canada_nnhpd
+      document_id: blackpepper.poivrenoir3
+      section: "Risk information"
+      section_title: "Contraindication(s)"
+      evidence_locator: "Contraindication(s) subsection, sole entry"
+      verbatim: "No statement required."
+  sources_checked:
+    - source: health_canada_nnhpd
+      document_id: blackpepper.poivrenoir3

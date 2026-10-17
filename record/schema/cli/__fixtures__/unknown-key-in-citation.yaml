@@ -1,0 +1,55 @@
+# NEGATIVE-TEST FIXTURE. Not a corpus record. Not authored content.
+#
+# Same reasons for living here rather than under ingredients/ as its three
+# siblings: the full pipeline's corpus-wide validator (not shipped here)
+# discovers records with a non-recursive readdirSync('ingredients/records')
+# filtered to .yaml, so a fixture placed there would be validated as real
+# corpus content.
+#
+# THE DEFECT, and the only thing wrong with this file:
+#
+#   evidence_locater: "Section 4.5, first paragraph"
+#
+# A one-letter misspelling of evidence_locator, which is a REQUIRED key on
+# every citation. It is the representative slip rather than a contrived one,
+# and it is the reason the citation element needed a schema at all. Before
+# citationElementSchema, this file parsed clean twice over: no schema
+# governed the citation object, so the coined `evidence_locater` was neither
+# rejected nor noticed, and the genuine `evidence_locator` was simply absent
+# with nothing to require it.
+#
+# The result was a citation carrying no locator that read as fully covered.
+# A fact a consuming agent cannot query is functionally absent
+# and worse than a recorded absence, because it reads as coverage. This is
+# that failure in its exact form, and it is why the provenance keys are
+# required rather than optional.
+#
+# Note the defect produces ONE finding, not two, even though it breaks two
+# rules at once (unrecognized key present, required key missing). Zod reports
+# both issues from the single strict parse of the citations block, and the
+# walk emits one Failure per registered key, so they arrive joined in one
+# message rather than as two findings. The message names both.
+#
+# Every other field here is conformant, so anything beyond that one finding
+# means the fixture has drifted and stopped isolating the defect under test.
+
+name: fixture_substance
+substance_type: nutrient
+status: fixture_only_not_a_record
+
+documented_interactions:
+  status: present
+  items:
+    - interaction_id: fixture_substance__fixture_counterpart
+      citations:
+        - citation_status: cited
+          source: fixture_source
+          document_id: FIXTURE-0004
+          section: "Introduction"
+          section_title: "Introduction"
+          evidence_locater: "Introduction, opening sentences"
+          verbatim: "Placeholder text standing in for a source quotation. This fixture is not derived from any source document and makes no claim about any substance."
+          evidence_methodology: curated_tertiary_synthesis
+          evidence_outcome: positive_finding
+          interaction_axis: [not_applicable]
+          axis_dose_dependence: not_reported

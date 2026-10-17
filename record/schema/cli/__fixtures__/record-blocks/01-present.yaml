@@ -1,0 +1,41 @@
+# FIXTURE. Not a corpus record. Not authored content.
+#
+# Lives here rather than under ingredients/ because the corpus-wide runner
+# (part of the full pipeline, not shipped here) discovers records with a
+# non-recursive readdirSync('ingredients/records') filtered to .yaml, so a
+# fixture placed there would be validated as real corpus content.
+#
+# STATE 1 of 9: present. The block carries source-stated content.
+#
+# The zinc picolinate contraindication, the one true "Do not use if" sentence
+# an audit found across the six nutrient records. Note that
+# present claims only that content EXISTS; it is not a judgment about what the
+# authority concluded.
+#
+# The second item exercises applies_to_preparation, the optional scope key.
+# A contraindication that attaches to one extract must not
+# read as attaching to the substance at large, which is why the key exists and
+# why the positive fixture carries it rather than leaving it untested.
+contraindications:
+  status: present
+  items:
+    - condition: pregnancy_or_lactation_zinc_picolinate_form_scoped
+      applies_to_preparation: zinc_picolinate
+      citations:
+        - source: health_canada_nnhpd
+          document_id: hc_nnhpd_multivitamin_mineral_monograph
+          section: "Risk information"
+          section_title: "Contraindication(s)"
+          evidence_locator: "Table 14, zinc sourced from zinc picolinate row, all doses"
+          verbatim: "Do not use if you are pregnant or breastfeeding."
+          evidence_methodology: regulator_assessment
+          source_position: contraindicated
+    - condition: unsure_whether_taking_enough_copper
+      citations:
+        - source: health_canada_nnhpd
+          document_id: hc_nnhpd_multivitamin_mineral_monograph
+          section: "Risk information"
+          section_title: "Caution(s) and warning(s)"
+          evidence_locator: "Table 13, Zinc row, pediatric and adult dose bands"
+          verbatim: "Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you are unsure whether you are taking enough copper as zinc supplementation can cause a copper deficiency."
+          evidence_methodology: regulator_assessment

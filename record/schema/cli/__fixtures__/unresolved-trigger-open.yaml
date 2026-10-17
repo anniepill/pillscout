@@ -1,0 +1,56 @@
+# POSITIVE-TEST FIXTURE. Not a corpus record. Not authored content.
+#
+# The companion to unresolved-trigger-fired.yaml, and the only difference
+# between the two files is one value:
+#
+#   must_close_by: before_pilot_pass
+#
+# before_pilot_pass is NOT a member of FIRED_TRIGGERS in
+# schema/cli/check-triggers.ts. Its event has not happened, so this block
+# is legitimately open and gate 6 must stay silent on it. Expected result: zero
+# failures from gate 6.
+#
+# It exists because a gate that fires is only half the check. Gate 6 reads a
+# hand-maintained fired set and reports on membership, and a bug that reported
+# every open block, or ignored the set and reported every block, would pass the
+# fired-side test alone. This file is what distinguishes "the gate fires on an
+# overdue block" from "the gate fires on a block".
+#
+# It lives under schema/cli/__fixtures__/ and NOT under ingredients/ for the
+# reason its companion states: the full pipeline's corpus-wide validator (not
+# shipped here) would validate it as real corpus content.
+#
+# NOT A CONFORMANT RECORD, and no test should read it as one. Like every
+# fixture in this directory it carries a two-block skeleton rather than the
+# required blocks a real record owes, so gate 1 warns on it. Gate 1 reports on
+# the warnings channel and gate 6 on failures, which is what lets this file
+# assert zero failures while remaining a stub. validator-core.test.ts asserts
+# both the zero on the failures channel and, separately, that
+# checkUnresolvedTriggers itself returns nothing, so the zero cannot be
+# satisfied by a gate that never ran.
+
+name: fixture_substance
+substance_type: nutrient
+status: fixture_only_not_a_record
+
+documented_interactions:
+  status: present
+  items:
+    - interaction_id: fixture_substance__fixture_counterpart
+      citations:
+        - citation_status: cited
+          source: fixture_source
+          document_id: FIXTURE-0001
+          section: "Introduction"
+          section_title: "Introduction"
+          evidence_locator: "Introduction, opening sentences"
+          verbatim: "Placeholder text standing in for a source quotation. This fixture is not derived from any source document and makes no claim about any substance."
+          evidence_methodology: curated_tertiary_synthesis
+          evidence_outcome: not_applicable
+          interaction_axis: [not_applicable]
+          axis_dose_dependence: not_reported
+          unresolved:
+            - class: no_slot
+              note: "Placeholder note standing in for an authoring session's account of a fact it could not file. This fixture is not derived from any source document."
+              opened: "2026-09-16"
+              must_close_by: before_pilot_pass

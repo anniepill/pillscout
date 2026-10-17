@@ -1,0 +1,2677 @@
+# PillScout ingredient profile - Ginkgo
+
+id: ginkgo
+substance_type: herb
+canonical_name: ginkgo
+latin_binomial: Ginkgo biloba L.
+
+source_scope_evaluated:
+  policy_class: herbal_traditional
+  policy_version: source_policy_v1
+  evaluated_on: 2026-05-25
+  tier_1_sources:
+    - source: ema_hmpc
+      retrieved_on: 2026-05-25
+    - source: health_canada_nnhpd
+      retrieved_on: 2026-05-25
+  tier_2_sources:
+    - source: who
+      retrieved_on: 2026-05-25
+  tier_3_policy: regulator_cited_only
+  tier_3_sources:
+    - fda_dailymed_warfarin_setid_19a69a72
+    - fda_dailymed_lomitapide_setid_e4c45bb5
+    - fda_dailymed_flibanserin_setid_3819daf3
+  retained_sources_note: "NCCIH and non-regulator-cited PubMed citations from pre-scope-lock authoring are retained in-record with citation_status: retained_pre_scope_lock. WHO 1999 is in scope at Tier 2, pending extraction; its three citations keep retained_pre_scope_lock until a WHO extraction lets them be anchored."
+  next_review_due: 2027-05-25
+
+# ----------------------------------------------------------------------
+# Substance identity
+# ----------------------------------------------------------------------
+
+substance_identity:
+  canonical_name: ginkgo
+  preferred_display_name: Ginkgo
+  latin_binomial: Ginkgo biloba L.
+  family: Ginkgoaceae
+  plant_part: folium
+  plant_part_common_name: leaf
+  aliases:
+    - Ginkgo biloba
+    - ginkgo
+    - ginkgo leaf
+    - Ginkgo folium
+    - Baiguo
+    - Icho
+    - Maidenhair-tree
+    - maidenhair tree
+    - fossil tree
+    - Japanese silver apricot
+    - Eun-haeng
+    - gin-nan
+    - ginan
+    - ginkyo
+    - icho
+    - ityo
+    - kew tree
+    - pei-wen
+    - temple balm
+    - yin guo
+    - yinhsing
+  botanical_synonyms:
+    - Pterophyllus salisburiensis Nelson
+    - Salisburia adiantifolia Smith
+    - Salisburia macrophylla C. Koch
+  identifiers:
+    status: present
+    values:
+      ema_hmpc_botanical_id: "Ginkgo biloba L., folium"
+  named_proprietary_extracts:
+    - name: EGb 761
+      source_attribution: "extensively studied EU-regulated proprietary extract; Schwabe"
+    - name: LI 1370
+      source_attribution: "second commercial extract referenced by WHO and used in some EMA-cited studies"
+
+  safety_relevant_related_substances:
+    - related_part: semen
+      related_part_common_name: seed
+      substance_corpus_status: not_authored
+      safety_relevance: "Fresh ginkgo seeds are toxic when consumed orally, and serious side effects have also occurred in people who consumed roasted ginkgo seeds or the crude ginkgo plant."
+      citation:
+        citation_status: retained_pre_scope_lock
+        retention_note: "NCCIH not promoted to Tier 1/2 for herbal_traditional class; retained from pre-scope-lock authoring."
+        source: nccih
+        document_id: nccih_ginkgo
+        document_published_date: "2025-02"
+        section: "What Do We Know About Safety?"
+        section_title: "What Do We Know About Safety?"
+        evidence_locator: "Safety section, second paragraph"
+        verbatim: "Fresh ginkgo seeds are toxic when consumed orally, and serious side effects have also occurred in people who consumed roasted ginkgo seeds or the crude ginkgo plant."
+        evidence_methodology: curated_tertiary_synthesis
+        evidence_outcome: positive_finding
+        interaction_axis: [not_applicable]
+        axis_dose_dependence: not_reported
+
+# ----------------------------------------------------------------------
+# Regulatory classification
+# ----------------------------------------------------------------------
+
+regulatory_classification:
+  ema_hmpc_status:
+    status: present
+    well_established_use:
+      indications:
+        - improvement_of_age_associated_cognitive_impairment
+        - improvement_of_quality_of_life_in_mild_dementia
+      preparations_covered:
+        - dry_extract_DER_35_to_67_acetone_60pct
+      hmpc_adoption_date: 2015-01-28
+      citations:
+        - citation_status: cited
+          source: ema_hmpc
+          document_id: EMA/HMPC/321097/2012
+          document_published_date: 2015-01-28
+          section: "4.1"
+          section_title: "Therapeutic indications"
+          evidence_locator: "Well-established use column"
+          scope: ["Well-established use"]
+          anchor_id: "d7654c5768f64ade"
+          verbatim: "Herbal medicinal product for the improvement of\n(age-associated) cognitive impairment and of\nquality of life in mild dementia."
+          evidence_methodology: regulator_assessment
+          evidence_outcome: positive_finding
+          attribution_level: not_reported
+          interaction_axis: [not_applicable]
+          axis_dose_dependence: not_reported
+        - citation_status: cited
+          source: ema_hmpc
+          document_id: EMA/HMPC/61601/2015
+          document_published_date: 2015-01-28
+          section: "Appendix II"
+          section_title: "Divergent positions"
+          evidence_locator: "Appendix II, pages 4-12 (one divergent position per HMPC member); 9 member states recorded divergence"
+          anchor_id: "3289f79c047455a5"
+          verbatim: "The evidence does not support the position of Ginkgo biloba L. as having well-established use and\nrecognised efficacy as required by Article 10a of Directive 2001/83/EC in the improvement of quality of\nlife in mild dementia."
+          evidence_methodology: regulator_assessment
+          evidence_outcome: mixed_finding
+          attribution_level: not_reported
+          interaction_axis: [not_applicable]
+          axis_dose_dependence: not_reported
+    traditional_use:
+      indications:
+        - relief_of_heaviness_of_legs_associated_with_minor_circulatory_disorders
+        - sensation_of_cold_hands_and_feet_associated_with_minor_circulatory_disorders
+      preparations_covered:
+        - powdered_herbal_substance
+      hmpc_adoption_date: 2015-01-28
+      citations:
+        - citation_status: cited
+          source: ema_hmpc
+          document_id: EMA/HMPC/321097/2012
+          document_published_date: 2015-01-28
+          section: "4.1"
+          section_title: "Therapeutic indications"
+          evidence_locator: "Traditional use column"
+          scope: ["Traditional use"]
+          anchor_id: "f9d1c99fcce1cd39"
+          verbatim: "Traditional herbal medicinal product for the relief\nof heaviness of legs and the sensation of cold\nhands and feet associated with minor circulatory\ndisorders, after serious conditions have been\nexcluded by a medical doctor."
+          evidence_methodology: regulator_assessment
+          evidence_outcome: positive_finding
+          attribution_level: not_reported
+          interaction_axis: [not_applicable]
+          axis_dose_dependence: not_reported
+
+  atc_code:
+    code: N06DX02
+    description: "Other anti-dementia drugs"
+    citations:
+      - citation_status: cited
+        source: ema_hmpc
+        document_id: EMA/HMPC/321097/2012
+        document_published_date: 2015-01-28
+        section: "5.1"
+        section_title: "Pharmacodynamic properties"
+        evidence_locator: "Well-established use column, ATC code line"
+        scope: ["Well-established use"]
+        anchor_id: "89215f5e79e8595d"
+        verbatim: "Pharmacotherapeutic group: Other anti-dementia\ndrugs\nATC code: N06DX02"
+        evidence_methodology: regulator_assessment
+        evidence_outcome: positive_finding
+        interaction_axis: [not_applicable]
+        axis_dose_dependence: not_reported
+
+  health_canada_nnhpd_status:
+    status: present
+    use_claims:
+      - helps_to_enhance_cognitive_function_in_adults
+      - helps_to_enhance_memory_in_adults
+      - helps_to_support_peripheral_circulation
+    standardized_extract_specification:
+      flavonoid_glycosides_pct_range: "22-27"
+      terpene_lactones_pct_range: "5-7"
+      ginkgolic_acids_max_ppm: 5
+    daily_dose_range_mg: "80-240"
+    age_population: adults_18_and_older
+    citations:
+      - citation_status: cited
+        source: health_canada_nnhpd
+        document_id: mono_ginkgo-biloba_english
+        document_published_date: 2025-07-25
+        section: "Use(s) or Purpose(s)"
+        section_title: "Use(s) or Purpose(s)"
+        evidence_locator: "Three bulleted use claims"
+        verbatim: "Helps to enhance cognitive function in adults. Helps to enhance memory in adults. Helps to support peripheral circulation."
+        evidence_methodology: regulator_assessment
+        evidence_outcome: positive_finding
+        interaction_axis: [not_applicable]
+        axis_dose_dependence: not_reported
+      - citation_status: cited
+        source: health_canada_nnhpd
+        document_id: mono_ginkgo-biloba_english
+        document_published_date: 2025-07-25
+        section: "Dose(s)"
+        section_title: "Methods of Preparation: Standardized Extracts (Dry extract)"
+        evidence_locator: "Quantity(ies) paragraph"
+        verbatim: "80 - 240 milligrams of extract, per day (quantity crude equivalent 4 - 12 grams of dried leaves), standardized to 22-27% flavonoid glycosides and 5-7% terpene lactones; and providing at least 80 milligrams of extract per single dose"
+        evidence_methodology: regulator_assessment
+        evidence_outcome: positive_finding
+        interaction_axis: [not_applicable]
+        axis_dose_dependence: not_reported
+
+  us_regulatory_status: dietary_supplement_DSHEA_1994
+
+# ----------------------------------------------------------------------
+# Pharmacology
+# ----------------------------------------------------------------------
+
+pharmacology:
+  status: present
+
+  active_constituents:
+    primary:
+      - name: ginkgolide_A
+        constituent_class: diterpene_lactone
+        role: contributes_to_pharmacological_activity
+      - name: ginkgolide_B
+        constituent_class: diterpene_lactone
+        role: most_potent_paf_receptor_antagonist
+      - name: ginkgolide_C
+        constituent_class: diterpene_lactone
+        role: contributes_to_pharmacological_activity
+      - name: bilobalide
+        constituent_class: sesquiterpene_lactone
+        role: contributes_to_neuroprotective_activity
+      - name: flavonol_glycosides
+        constituent_class: flavonoid
+        role: contribute_to_antioxidant_and_vasoregulatory_activity
+        component_aglycones: [kaempferol, quercetin, isorhamnetin]
+    toxicologically_relevant_impurity:
+      - name: ginkgolic_acids
+        regulator_limit_ppm: 5
+        regulator_limit_anchors: [ema_hmpc_ph_eur, health_canada_nnhpd_nhpid, who_vol1]
+    safety_relevant_trace_constituent:
+      - name: ginkgotoxin
+        chemical_synonym: not_reported
+        relevance: implicated_in_seizure_threshold_lowering_per_assessment_report
+        levels_per_max_daily_dose_micrograms: "11.4-58.62"
+    citations:
+      - citation_status: cited
+        source: ema_hmpc
+        document_id: EMA/HMPC/321097/2012
+        document_published_date: 2015-01-28
+        section: "2"
+        section_title: "Qualitative and quantitative composition"
+        evidence_locator: "Well-established use column, herbal preparations row"
+        scope: ["Well-established use"]
+        anchor_id: "3b35b34c36a499ea"
+        verbatim: "Dry extract (DER 35-67:1), extraction solvent:\nacetone 60% m/m3"
+        evidence_methodology: regulator_assessment
+        evidence_outcome: positive_finding
+        interaction_axis: [not_applicable]
+        axis_dose_dependence: not_reported
+      - citation_status: retained_pre_scope_lock
+        retention_note: "WHO 1999 monograph in scope at Tier 2 for herbal_traditional class, pending extraction."
+        source: who
+        document_id: WHO/Monographs/Vol1/Folium_Ginkgo
+        document_published_date: 1999-12-31
+        section: "Major chemical constituents"
+        section_title: "Major chemical constituents"
+        evidence_locator: "Major chemical constituents paragraph (PDF page 157)"
+        verbatim: "Characteristic constituents of this plant material are the unique diterpene lactones ginkgolides A, B, C, J, and M and the sesquiterpene lactone bilobalide."
+        evidence_methodology: curated_tertiary_synthesis
+        evidence_outcome: positive_finding
+        interaction_axis: [not_applicable]
+        axis_dose_dependence: not_reported
+      - citation_status: retained_pre_scope_lock
+        retention_note: "WHO 1999 monograph in scope at Tier 2 for herbal_traditional class, pending extraction."
+        source: who
+        document_id: WHO/Monographs/Vol1/Folium_Ginkgo
+        document_published_date: 1999-12-31
+        section: "Dosage forms"
+        section_title: "Dosage forms"
+        evidence_locator: "Dosage forms paragraph (PDF page 158)"
+        verbatim: "Standardized extracts (dry extracts from dried leaves, extracted with acetone and water, drug:extract ratio 35-67:1) contain 22-27% flavone glycosides and 5-7% terpene lactones, of which approximately 2.8-3.4% consists of ginkgolides A, B, and C and 2.6-3.2% bilobalide. The level of ginkgolic acids is below 5 mg/kg."
+        evidence_methodology: curated_tertiary_synthesis
+        evidence_outcome: positive_finding
+        interaction_axis: [not_applicable]
+        axis_dose_dependence: not_reported
+      - citation_status: cited
+        source: ema_hmpc
+        document_id: EMA/HMPC/321095/2012
+        document_published_date: 2015-01-28
+        section: "3.3.1"
+        section_title: "Single dose toxicity"
+        evidence_locator: "Isolated compounds paragraph, Leistner and Drewke 2010 review"
+        verbatim: "A HPLC analysis revealed that different allopathic medications offered by various companies contain between 11.4 and 58.62 micrograms of ginkgotoxin in a recommended maximum daily dose (120-240 mg)."
+        evidence_methodology: regulator_assessment
+        evidence_outcome: positive_finding
+        interaction_axis: [not_applicable]
+        axis_dose_dependence: not_reported
+
+  pharmacokinetics:
+    terpene_lactone_oral_bioavailability:
+      ginkgolide_A_pct: 80
+      ginkgolide_B_pct: 88
+      bilobalide_pct: 79
+    tmax_hours_terpene_lactones: "1-2"
+    elimination_half_life_hours:
+      ginkgolide_A_tablet: "3-4"
+      ginkgolide_A_solution: "5"
+      ginkgolide_B_tablet: "4-6"
+      ginkgolide_B_solution: "9-11"
+      bilobalide_tablet: "2-3"
+      bilobalide_solution: "3-4"
+    citations:
+      - citation_status: cited
+        source: ema_hmpc
+        document_id: EMA/HMPC/321097/2012
+        document_published_date: 2015-01-28
+        section: "5.2"
+        section_title: "Pharmacokinetic properties"
+        evidence_locator: "Well-established use column, full pharmacokinetics paragraph"
+        scope: ["Well-established use"]
+        anchor_id: "5a2c521dfb1811e0"
+        verbatim: "Following oral administration (as solution) of\n120 mg of the Ginkgo extract, the mean absolute\nbioavailability has been shown in humans for the\nterpene lactones ginkgolide A (80%), ginkgolide B\n(88%) and bilobalide (79%). Peak plasma\nconcentrations of terpene lactones were in the\nrange of 16-22 ng/ml for ginkgolide A, 8-10 ng/ml\nfor ginkgolide B and 27-54 ng/ml of bilobalide\nwhen given as tablets. The corresponding half-\nlives of ginkgolide A and B and bilobalide were 3-\n4, 4-6 and 2-3 hours, respectively. 120 mg G.\nbiloba extract given as solution peak plasma\nconcentrations were 25-33 ng/ml, 9-17 ng/ml and\n19-35 ng/ml for ginkgolide A, B and bilobalide,\nrespectively. The related half-life for ginkgolide A\nwas 5 hours, for ginkoglide B 9-11 hours and for\nbilobalide 3-4 hours."
+        evidence_methodology: regulator_assessment
+        evidence_outcome: positive_finding
+        interaction_axis: [pharmacokinetic]
+        axis_dose_dependence: not_reported
+
+  pharmacodynamics:
+    mechanism_summary: "The exact mechanism is not known. Human pharmacological data show increased EEG vigilance in geriatric subjects, reduction in blood viscosity and improved cerebral perfusion in specific areas in healthy men (60-70 years) and reduction in platelet aggregation. Additionally, vasodilating effects on forearm blood vessels causing increased regional blood flow are shown."
+    citations:
+      - citation_status: cited
+        source: ema_hmpc
+        document_id: EMA/HMPC/321097/2012
+        document_published_date: 2015-01-28
+        section: "5.1"
+        section_title: "Pharmacodynamic properties"
+        evidence_locator: "Well-established use column, full pharmacodynamics paragraph"
+        scope: ["Well-established use"]
+        anchor_id: "e0feeafdeb15ba79"
+        verbatim: "The exact mechanism is not known.\nHuman pharmacological data show increased EEG\nvigilance in geriatric subjects, reduction in blood\nviscosity and improved cerebral perfusion in\nspecific areas in healthy men (60-70 years) and\nreduction in platelet aggregation. Additionally,\nvasodilating effects on forearm blood vessels\ncausing increased regional blood flow are shown."
+        evidence_methodology: regulator_assessment
+        evidence_outcome: positive_finding
+        interaction_axis: [pharmacodynamic]
+        axis_dose_dependence: not_reported
+        mechanism:
+          - process: "unknown"
+            target: []
+            mechanism_span: "The exact mechanism is not known."
+
+# ----------------------------------------------------------------------
+# PAF antagonism profile
+# ----------------------------------------------------------------------
+
+paf_antagonism_profile:
+  mechanism_summary: "Ginkgolides A, B, and C antagonize platelet-activating factor (PAF) receptors; ginkgolide B is the most potent. PAF antagonism reduces platelet aggregation and is the mechanism articulated by EMA HMPC assessment report and WHO Vol 1 for ginkgo's antiplatelet pharmacodynamics."
+  driver_constituents:
+    - ginkgolide_A
+    - ginkgolide_B
+    - ginkgolide_C
+  most_potent_constituent: ginkgolide_B
+  citations:
+    - citation_status: cited
+      source: ema_hmpc
+      document_id: EMA/HMPC/321095/2012
+      document_published_date: 2015-01-28
+      section: "3.1.1"
+      section_title: "Primary pharmacodynamic - Inhibitory action on PAF"
+      evidence_locator: "Koch 2005 paragraph, PAF-antagonistic activity quantitative IC50s"
+      verbatim: "PAF-mediated aggregation of human platelets was half-maximally inhibited (IC50) by ginkgolide A, B, C and EGb 761 at concentrations of 13.7, 1.6, 33.2 microM and 23.2 microg/ml, respectively. Of the ginkgolides tested, ginkgolide B exerted by far the most powerful antagonistic effect."
+      evidence_methodology: in_vitro
+      evidence_outcome: positive_finding
+      attribution_level: drug_specific
+      pharmacologic_class: paf_receptor_antagonist
+      interaction_axis: [pharmacodynamic]
+      axis_dose_dependence: dose_dependent
+      effect:
+        - parameter: "platelet aggregation"
+          direction: "inhibited"
+          object: []
+          effect_span: "PAF-mediated aggregation of human platelets was half-maximally inhibited (IC50) by ginkgolide A, B, C and EGb 761 at concentrations of 13.7, 1.6, 33.2 microM and 23.2 microg/ml, respectively."
+    - citation_status: cited
+      source: ema_hmpc
+      document_id: EMA/HMPC/321095/2012
+      document_published_date: 2015-01-28
+      section: "3.1.1"
+      section_title: "Primary pharmacodynamic - Inhibitory action on PAF"
+      evidence_locator: "Akiba 1998 paragraph, EGb 761 extract IC50"
+      verbatim: "Purified ginkgolide A, B and C, which are known to be potent PAF receptor-antagonists, apparently inhibited PAF-induced platelet aggregation, but not oxidant-induced aggregation."
+      evidence_methodology: in_vitro
+      evidence_outcome: positive_finding
+      attribution_level: drug_specific
+      pharmacologic_class: paf_receptor_antagonist
+      interaction_axis: [pharmacodynamic]
+      axis_dose_dependence: not_reported
+      effect:
+        - parameter: "platelet aggregation"
+          direction: "inhibited"
+          object: []
+          hedge_tokens: ["apparently"]
+          effect_span: "which are known to be potent PAF receptor-antagonists, apparently inhibited PAF-induced platelet aggregation"
+    - citation_status: retained_pre_scope_lock
+      retention_note: "WHO 1999 monograph in scope at Tier 2 for herbal_traditional class, pending extraction."
+      source: who
+      document_id: WHO/Monographs/Vol1/Folium_Ginkgo
+      document_published_date: 1999-12-31
+      section: "Pharmacology - Antagonism of platelet-activating factor (PAF)"
+      section_title: "Antagonism of platelet-activating factor (PAF)"
+      evidence_locator: "Pharmacology section, PAF antagonism paragraph (PDF page 160)"
+      verbatim: "The ginkgolides, and in particular ginkgolide B, are known antagonists of PAF. PAF is a potent inducer of platelet aggregation, neutrophil degranulation, and oxygen radical production leading to increased microvascular permeability and bronchoconstriction."
+      evidence_methodology: curated_tertiary_synthesis
+      evidence_outcome: positive_finding
+      attribution_level: drug_specific
+      pharmacologic_class: paf_receptor_antagonist
+      interaction_axis: [pharmacodynamic]
+      axis_dose_dependence: not_reported
+      mechanism:
+        - process: "antagonism"
+          target: ["PAF"]
+          agent: {"term":"ginkgolide B","role":"constituent"}
+          mechanism_span: "and in particular ginkgolide B, are known antagonists of PAF."
+      mechanism_marks:
+        - kind: not_a_mechanism
+          reason: other_sense
+          span: "is a potent inducer of"
+    - citation_status: cited
+      source: ema_hmpc
+      document_id: EMA/HMPC/321097/2012
+      document_published_date: 2015-01-28
+      section: "4.6"
+      section_title: "Fertility, pregnancy and lactation"
+      evidence_locator: "Well-established use column, Pregnancy paragraph"
+      scope: ["Well-established use"]
+      anchor_id: "c63777b7af6066c7"
+      verbatim: "G. biloba extracts may impair the ability of\nplatelets to aggregate. The tendency for bleeding\nmay be increased."
+      evidence_methodology: regulator_assessment
+      evidence_outcome: positive_finding
+      interaction_axis: [pharmacodynamic]
+      axis_dose_dependence: not_reported
+      effect:
+        - parameter: "bleeding"
+          direction: "increased"
+          object: []
+          hedge_tokens: ["may"]
+          effect_span: "The tendency for bleeding\nmay be increased."
+
+# ----------------------------------------------------------------------
+# Bleeding risk profile
+# ----------------------------------------------------------------------
+
+bleeding_risk_profile:
+  unresolved:
+    - class: anchor_gap
+      note: "Health Canada NNHPD monograph mono_ginkgo-biloba_english, Cautions and Warnings, the perioperative-use caution. Uncarried: the room holds the document, no extraction is committed for it and no rule module reads it, so no anchor can be resolved yet."
+      opened: 2026-09-19
+      must_close_by: before_pilot_pass
+  substance_level_statement: "Ginkgo extracts may increase susceptibility to bleeding via PAF-antagonism-mediated reduction in platelet aggregation. Case-report literature documents bleeding events in single-organ contexts (eye, nose, cerebral, gastrointestinal); controlled-study and meta-analysis literature does not show increased bleeding risk relative to placebo at recommended doses. Regulator labels reflect both literatures: EMA monograph 4.4 elevates bleeding susceptibility to special-warning placement and recommends consultation in patients with concomitant anticoagulant or antiplatelet treatment, while monograph 4.5 cites the warfarin null finding directly."
+  citations:
+    - citation_status: cited
+      source: ema_hmpc
+      document_id: EMA/HMPC/321097/2012
+      document_published_date: 2015-01-28
+      section: "4.4"
+      section_title: "Special warnings and precautions for use"
+      evidence_locator: "Well-established use column, bleeding tendency paragraph"
+      scope: ["Well-established use"]
+      anchor_id: "0af63424203d16a2"
+      verbatim: "In patients with a pathologically increased\nbleeding tendency (haemorrhagic diathesis) and\nconcomitant anticoagulant and antiplatelet\ntreatment, the medicinal product should only be\nused after consultation with a doctor."
+      source_directive: ask_before_use
+      directive_span: "after consultation"
+      evidence_methodology: regulator_assessment
+      evidence_outcome: not_applicable
+      interaction_axis: [pharmacodynamic]
+      axis_dose_dependence: not_reported
+      applicability_conditions:
+        population: [patients_with_haemorrhagic_diathesis_or_concomitant_anticoagulant_or_antiplatelet_treatment]
+    - citation_status: cited
+      source: ema_hmpc
+      document_id: EMA/HMPC/321097/2012
+      document_published_date: 2015-01-28
+      section: "4.4"
+      section_title: "Special warnings and precautions for use"
+      evidence_locator: "Well-established use column, bleeding susceptibility paragraph"
+      scope: ["Well-established use"]
+      anchor_id: "2187a758864ff466"
+      verbatim: "Preparations containing Ginkgo might increase\nsusceptibility to bleeding, the medicinal product\nshould be discontinued as a precaution 3 to 4\ndays prior to surgery."
+      evidence_methodology: regulator_assessment
+      evidence_outcome: positive_finding
+      interaction_axis: [pharmacodynamic]
+      axis_dose_dependence: not_reported
+      effect:
+        - parameter: "bleeding"
+          direction: "increased"
+          object: []
+          hedge_tokens: ["might"]
+          effect_span: "Preparations containing Ginkgo might increase\nsusceptibility to bleeding, the medicinal product\nshould be discontinued as a precaution 3 to 4\ndays prior to surgery."
+    - citation_status: cited
+      source: ema_hmpc
+      document_id: EMA/HMPC/321097/2012
+      document_published_date: 2015-01-28
+      section: "4.5"
+      section_title: "Interactions with other medicinal products and other forms of interaction"
+      evidence_locator: "Well-established use column, anticoagulants paragraph"
+      scope: ["Well-established use"]
+      anchor_id: "7e3d52bd262862f3"
+      verbatim: "If the medicinal product is taken concomitantly\nwith anticoagulants (e.g. phenprocoumon and\nwarfarin) or antiplatelet drugs (e.g. clopidogrel,\nacetylsalicylic acid and other non-steroidal anti-\ninflammatory drugs), their effect may be\ninfluenced."
+      evidence_methodology: regulator_assessment
+      evidence_outcome: not_applicable
+      attribution_level: class_effect
+      pharmacologic_class: anticoagulants_or_antiplatelet_drugs
+      interaction_axis: [pharmacodynamic]
+      axis_dose_dependence: not_reported
+    - citation_status: cited
+      source: ema_hmpc
+      document_id: EMA/HMPC/321097/2012
+      document_published_date: 2015-01-28
+      section: "4.5"
+      section_title: "Interactions with other medicinal products and other forms of interaction"
+      evidence_locator: "Well-established use column, warfarin null finding paragraph"
+      scope: ["Well-established use"]
+      anchor_id: "5ea054678ed2ef75"
+      verbatim: "Available studies with warfarin do not indicate that\nthere is an interaction between warfarin and G.\nbiloba products, but adequate monitoring is\nadvised when starting, when changing G. biloba\ndose, when ending G. biloba intake or if changing\nproduct."
+      evidence_methodology: regulator_assessment
+      evidence_outcome: null_finding
+      interaction_axis: [pharmacokinetic, pharmacodynamic]
+      axis_dose_dependence: not_reported
+    - citation_status: cited
+      source: ema_hmpc
+      document_id: EMA/HMPC/321097/2012
+      document_published_date: 2015-01-28
+      section: "4.8"
+      section_title: "Undesirable effects"
+      evidence_locator: "Well-established use column, Blood and lymphatic system disorders"
+      scope: ["Well-established use"]
+      anchor_id: "f820d2c92a77b2e6"
+      verbatim: "Bleeding of individual organs has been reported\n(eye, nose, cerebral and gastrointestinal\nhaemorrhage). The frequency is not known."
+      evidence_methodology: regulator_assessment
+      evidence_outcome: positive_finding
+      frequency_qualifier: not_known
+      interaction_axis: [pharmacodynamic]
+      axis_dose_dependence: not_reported
+      effect:
+        - parameter: "bleeding"
+          direction: "reported"
+          object: []
+          effect_span: "Bleeding of individual organs has been reported\n(eye, nose, cerebral and gastrointestinal\nhaemorrhage)."
+    - citation_status: cited
+      source: ema_hmpc
+      document_id: EMA/HMPC/321095/2012
+      document_published_date: 2015-01-28
+      section: "5.3"
+      section_title: "Adverse events and serious adverse events and deaths"
+      evidence_locator: "Bleeding case-report enumeration, page 112"
+      verbatim: "Referring to published case reports the use of Ginkgo biloba has been associated with different bleeding incidents: Spontaneous bleeding of the nose, ecchymosis and haemorrhoidal bleeding (Bent et al. 2005); Postoperative bleeding (Bebbington et al. 2005, Yagmur et al. 2005, Fessenden et al. 2001, Norred and Finlayson 2000); Bleeding complications after liver transplantation (Hauser et al. 2002); Retrobulbar haemorrhage (Fong and Kinnear 2003); Hyphema (Schneider et al. 2002, Rosenblatt and Mindel 1997); Cerebral haemorrhage (Meisel et al. 2003, Benjamin et al. 2001); Subarachnoid haemorrhage (Vale 1998); Parietal lobe haemorrhage (Matthews 1998); Subdural haematoma (Miller and Freeman 2002, Gilbert 1997, Rowin and Lewis 1996)."
+      evidence_methodology: case_series
+      evidence_outcome: positive_finding
+      interaction_axis: [pharmacodynamic]
+      axis_dose_dependence: not_reported
+    - citation_status: cited
+      source: ema_hmpc
+      document_id: EMA/HMPC/321095/2012
+      document_published_date: 2015-01-28
+      section: "5.3"
+      section_title: "Adverse events - BfArM pharmacovigilance database"
+      evidence_locator: "BfArM database paragraph, June 20 2012 snapshot"
+      verbatim: "According to the pharmacovigilance database of the BfArM 74 cases of haemorrhage during the intake of Ginkgo biloba medicinal products are reported in Germany (June 20, 2012). It should be kept in mind that these are suspected cases of adverse events and a causal link on an individual basis is not proven with certainty. The specific location of bleeding incidences of reported adverse events (with 5 or more than 5 cases mentioned) are as followed: epistaxis, cerebral haemorrhage, gastrointestinal haemorrhage, gastric ulcer haemorrhage, haematoma, eye haemorrhage, melaena and decreased haemoglobin value. Included in the 74 reported adverse events are five cases of deaths."
+      evidence_methodology: pharmacovigilance_database
+      evidence_outcome: positive_finding
+      interaction_axis: [pharmacodynamic]
+      axis_dose_dependence: not_reported
+      effect:
+        - parameter: "haemorrhage"
+          direction: "cases of"
+          object: []
+          effect_span: "According to the pharmacovigilance database of the BfArM 74 cases of haemorrhage during the intake of Ginkgo biloba medicinal products are reported in Germany (June 20, 2012)."
+        - parameter: "epistaxis"
+          direction: "reported"
+          object: []
+          effect_span: "reported adverse events (with 5 or more than 5 cases mentioned) are as followed: epistaxis, cerebral haemorrhage, gastrointestinal haemorrhage, gastric ulcer haemorrhage, haematoma, eye haemorrhage, melaena and decreased haemoglobin value"
+        - parameter: "cerebral haemorrhage"
+          direction: "reported"
+          object: []
+          effect_span: "reported adverse events (with 5 or more than 5 cases mentioned) are as followed: epistaxis, cerebral haemorrhage, gastrointestinal haemorrhage, gastric ulcer haemorrhage, haematoma, eye haemorrhage, melaena and decreased haemoglobin value"
+        - parameter: "gastrointestinal haemorrhage"
+          direction: "reported"
+          object: []
+          effect_span: "reported adverse events (with 5 or more than 5 cases mentioned) are as followed: epistaxis, cerebral haemorrhage, gastrointestinal haemorrhage, gastric ulcer haemorrhage, haematoma, eye haemorrhage, melaena and decreased haemoglobin value"
+        - parameter: "gastric ulcer haemorrhage"
+          direction: "reported"
+          object: []
+          effect_span: "reported adverse events (with 5 or more than 5 cases mentioned) are as followed: epistaxis, cerebral haemorrhage, gastrointestinal haemorrhage, gastric ulcer haemorrhage, haematoma, eye haemorrhage, melaena and decreased haemoglobin value"
+        - parameter: "haematoma"
+          direction: "reported"
+          object: []
+          effect_span: "reported adverse events (with 5 or more than 5 cases mentioned) are as followed: epistaxis, cerebral haemorrhage, gastrointestinal haemorrhage, gastric ulcer haemorrhage, haematoma, eye haemorrhage, melaena and decreased haemoglobin value"
+        - parameter: "eye haemorrhage"
+          direction: "reported"
+          object: []
+          effect_span: "reported adverse events (with 5 or more than 5 cases mentioned) are as followed: epistaxis, cerebral haemorrhage, gastrointestinal haemorrhage, gastric ulcer haemorrhage, haematoma, eye haemorrhage, melaena and decreased haemoglobin value"
+        - parameter: "melaena"
+          direction: "reported"
+          object: []
+          effect_span: "reported adverse events (with 5 or more than 5 cases mentioned) are as followed: epistaxis, cerebral haemorrhage, gastrointestinal haemorrhage, gastric ulcer haemorrhage, haematoma, eye haemorrhage, melaena and decreased haemoglobin value"
+        - parameter: "haemoglobin value"
+          direction: "decreased"
+          object: []
+          effect_span: "reported adverse events (with 5 or more than 5 cases mentioned) are as followed: epistaxis, cerebral haemorrhage, gastrointestinal haemorrhage, gastric ulcer haemorrhage, haematoma, eye haemorrhage, melaena and decreased haemoglobin value"
+        - parameter: "death"
+          direction: "cases of"
+          object: []
+          effect_span: "Included in the 74 reported adverse events are five cases of deaths."
+    - citation_status: cited
+      source: ema_hmpc
+      document_id: EMA/HMPC/321095/2012
+      document_published_date: 2015-01-28
+      section: "5.3"
+      section_title: "Reviews and meta-analyses - Kellermann and Kloft 2011"
+      evidence_locator: "Kellermann meta-analysis conclusion paragraph"
+      verbatim: "Based on meta-analysis of haemostasis outcomes, comparison of mean difference or baseline change between treatment and placebo groups did not indicate a higher bleeding risk associated with standardised Ginkgo biloba leaf extract. This finding ultimately contributes to an informed evaluation of Ginkgo biloba leaf extract use, including patient self-medication."
+      evidence_methodology: meta_analysis
+      evidence_outcome: null_finding
+      interaction_axis: [pharmacodynamic]
+      axis_dose_dependence: not_reported
+      mechanism_marks:
+        - kind: not_an_effect
+          reason: negated
+          span: "bleeding risk"
+    - citation_status: cited
+      source: ema_hmpc
+      document_id: EMA/HMPC/321095/2012
+      document_published_date: 2015-01-28
+      section: "5.3"
+      section_title: "DeKosky et al. 2008 GEM study secondary findings"
+      evidence_locator: "DeKosky GEM major bleeding paragraph"
+      verbatim: "Of particular note rates of major bleeding did not differ between the treatment groups (HR, 0.97; 95% CI, 0.77-1.23; p=0.81), and bleeding incidence did not differ for individuals taking aspirin and assigned to either EGb 761 or placebo (rates of 1.98 and 1.76 per 100 person-years, respectively, p=0.44)."
+      evidence_methodology: rct
+      evidence_outcome: null_finding
+      interaction_axis: [pharmacodynamic]
+      axis_dose_dependence: not_reported
+      mechanism_marks:
+        - kind: not_an_effect
+          reason: negated
+          span: "major bleeding"
+    - citation_status: retained_pre_scope_lock
+      retention_note: "Non-regulator-cited primary literature; outside Tier 3 regulator-cited-only policy; retained from pre-scope-lock authoring as substance-level null finding."
+      source: pubmed
+      document_id: pmid_15801937_abstract
+      document_published_date: 2005-04-01
+      section: "Results"
+      section_title: "Effect of ginkgo and ginger on the pharmacokinetics and pharmacodynamics of warfarin in healthy subjects"
+      evidence_locator: "Abstract Results paragraph; substance-level claim on INR and platelet aggregation"
+      anchor_id: "999790196fcc9301"
+      verbatim: "INR and platelet aggregation were not affected by administration of ginkgo or ginger alone."
+      evidence_methodology: rct
+      evidence_outcome: null_finding
+      interaction_axis: [pharmacodynamic]
+      axis_dose_dependence: not_reported
+    - citation_status: retained_pre_scope_lock
+      retention_note: "NCCIH not promoted to Tier 1/2 for herbal_traditional class; retained from pre-scope-lock authoring."
+      source: nccih
+      document_id: nccih_ginkgo
+      document_published_date: "2025-02"
+      section: "What Do We Know About Safety?"
+      section_title: "What Do We Know About Safety?"
+      evidence_locator: "Safety section, anticoagulant paragraph"
+      verbatim: "Ginkgo may increase the risk of bleeding in people who are taking anticoagulant drugs, such as warfarin."
+      evidence_methodology: curated_tertiary_synthesis
+      evidence_outcome: positive_finding
+      attribution_level: class_effect
+      pharmacologic_class: anticoagulants
+      interaction_axis: [pharmacodynamic]
+      axis_dose_dependence: not_reported
+      effect:
+        - parameter: "bleeding"
+          direction: "increased"
+          object: []
+          hedge_tokens: ["may"]
+          condition_spans: ["in people who are taking anticoagulant drugs"]
+          effect_span: "Ginkgo may increase the risk of bleeding in people who are taking anticoagulant drugs, such as warfarin."
+
+# ----------------------------------------------------------------------
+# Enzyme inhibition profile
+# ----------------------------------------------------------------------
+
+enzyme_inhibition_profile:
+  evidence_anchor: in_vitro
+  inhibited_enzymes_in_vitro:
+    - enzyme: CYP2C9
+      ki_microg_per_ml: "14"
+      strongest_in_panel: true
+    - enzyme: CYP1A2
+      ki_microg_per_ml: "106"
+    - enzyme: CYP2E1
+      ki_microg_per_ml: "127"
+    - enzyme: CYP3A4
+      ki_microg_per_ml: "155"
+  citations:
+    - citation_status: cited
+      source: ema_hmpc
+      document_id: EMA/HMPC/321095/2012
+      document_published_date: 2015-01-28
+      section: "3.2"
+      section_title: "Pharmacokinetic data - Metabolism - Gaudineau et al. 2004"
+      evidence_locator: "Gaudineau 2004 paragraph, in vitro CYP inhibition Ki values"
+      verbatim: "EGb 761 inhibited all the P450s studied except CYP2D6 (Ki>900 microg/ml). The activity of CYP2C9 was the most affected by EGb 761 (Ki=14 plus-or-minus 4 microg/ml). CYP1A2 (106 plus-or-minus 24 microg/ml), CYP2E1 (127 plus-or-minus 42 microg/ml), and CYP3A4 (155 plus-or-minus 43 microg/ml) were also inhibited but to a lesser extent."
+      evidence_methodology: in_vitro
+      evidence_outcome: positive_finding
+      attribution_level: drug_specific
+      interaction_axis: [pharmacokinetic]
+      axis_dose_dependence: not_reported
+      mechanism:
+        - process: "inhibition"
+          target: ["cytochrome P450"]
+          agent: {"term":"EGb 761","role":"ingredient"}
+          mechanism_span: "EGb 761 inhibited all the P450s studied except CYP2D6 (Ki>900 microg/ml)."
+        - process: "inhibition"
+          target: ["CYP1A2","CYP2E1","CYP3A4"]
+          mechanism_span: "CYP1A2 (106 plus-or-minus 24 microg/ml), CYP2E1 (127 plus-or-minus 42 microg/ml), and CYP3A4 (155 plus-or-minus 43 microg/ml) were also inhibited"
+    - citation_status: cited
+      source: ema_hmpc
+      document_id: EMA/HMPC/321095/2012
+      document_published_date: 2015-01-28
+      section: "3.2"
+      section_title: "Pharmacokinetic data - Metabolism - Von Moltke et al. 2004"
+      evidence_locator: "Von Moltke 2004 paragraph, flavonol aglycone IC50s and CYP2C9 narrative"
+      verbatim: "Quercetin was also a strong inhibitor of CYP2C9 (IC50=7.8 microg/ml, 25.8 microM), as was myricetin for CYP2D6 (IC50=9.6 microg/ml, 30.2 microM). It was concluded that a number of flavonol aglycones, as well as the biflavonol amentoflavone, are inhibitors of several human CYP isoforms in vitro. Inhibition of CYP2C9 is of potential concern, since this enzyme is responsible for clearance of some drugs (such as S-warfarin) that have narrow therapeutic ranges in clinical practice. The importance of the in vitro findings requires evaluation in clinical studies."
+      evidence_methodology: in_vitro
+      evidence_outcome: positive_finding
+      attribution_level: drug_specific
+      interaction_axis: [pharmacokinetic]
+      axis_dose_dependence: not_reported
+      human_relevance:
+        - value: unknown
+          grade_span: "The importance of the in vitro findings requires evaluation in clinical studies"
+          bases:
+            - basis: not_reported
+          findings:
+            - finding_span: "Quercetin was also a strong inhibitor of CYP2C9 (IC50=7.8 microg/ml, 25.8 microM), as was myricetin for CYP2D6 (IC50=9.6 microg/ml, 30.2 microM)"
+            - finding_span: "a number of flavonol aglycones, as well as the biflavonol amentoflavone, are inhibitors of several human CYP isoforms in vitro"
+      mechanism:
+        - process: "inhibition"
+          target: ["CYP2C9"]
+          agent: {"term":"Quercetin","role":"other"}
+          mechanism_span: "Quercetin was also a strong inhibitor of CYP2C9 (IC50=7.8 microg/ml, 25.8 microM)"
+        - process: "inhibition"
+          target: ["cytochrome P450"]
+          agent: {"term":"flavonol aglycones","role":"other"}
+          mechanism_span: "It was concluded that a number of flavonol aglycones, as well as the biflavonol amentoflavone, are inhibitors of several human CYP isoforms in vitro."
+      mechanism_marks:
+        - kind: not_a_mechanism
+          reason: other_sense
+          span: "Inhibition"
+    - citation_status: retained_pre_scope_lock
+      retention_note: "Non-regulator-cited primary literature; outside Tier 3 regulator-cited-only policy; retained from pre-scope-lock authoring as substance-level null finding."
+      source: pubmed
+      document_id: "PMID:15801937"
+      document_published_date: 2005-04-01
+      section: "Results"
+      section_title: "Effect of ginkgo and ginger on warfarin pharmacokinetics in healthy subjects - CYP2C9 activity"
+      evidence_locator: "Abstract Results paragraph, S-7-hydroxywarfarin urinary excretion rate ratio"
+      verbatim: "The mean ratio (90% CI) for S-7-hydroxywarfarin urinary excretion rate was 1.07 (0.85–1.32) for ginkgo treatment, and 1.00 (0.81–1.23) for ginger coadministration suggesting these herbs did not affect CYP2C9 activity."
+      evidence_methodology: rct
+      evidence_outcome: null_finding
+      interaction_axis: [pharmacokinetic]
+      axis_dose_dependence: not_reported
+
+# ----------------------------------------------------------------------
+# Enzyme induction profile
+# ----------------------------------------------------------------------
+
+enzyme_induction_profile:
+  evidence_anchor: clinical
+  induction_signals:
+    - enzyme: CYP3A4
+      driver_extract_and_dose: "EGb 761 240 mg/day mild signal; higher doses show inhibition signal (mixed direction in clinical literature)"
+    - enzyme: CYP2C9
+      driver_extract_and_dose: "EGb 761 360 mg/day clinical induction signal"
+    - enzyme: CYP2C19
+      driver_extract_and_dose: "non-EGb-761 extracts in clinical interaction studies"
+  citations:
+    - citation_status: cited
+      source: ema_hmpc
+      document_id: EMA/HMPC/321097/2012
+      document_published_date: 2015-01-28
+      section: "4.5"
+      section_title: "Interactions with other medicinal products and other forms of interaction"
+      evidence_locator: "Well-established use column, efavirenz paragraph"
+      scope: ["Well-established use"]
+      anchor_id: "66462152e4ffe70a"
+      verbatim: "Concomitant use of G. biloba preparations and\nefavirenz is not recommended; plasma\nconcentrations of efavirenz may be decreased\nbecause of induction of CYP3A4 (see also section\n4.4)."
+      evidence_methodology: regulator_assessment
+      evidence_outcome: positive_finding
+      source_position: not_recommended
+      position_span: "not recommended"
+      attribution_level: drug_specific
+      interaction_axis: [pharmacokinetic]
+      axis_dose_dependence: not_reported
+      mechanism:
+        - process: "induction"
+          target: ["CYP3A4"]
+          mechanism_span: "because of induction of CYP3A4 (see also section\n4.4)."
+      effect:
+        - parameter: "concentrations"
+          direction: "decreased"
+          object: [{"term":"efavirenz","role":"partner"}]
+          hedge_tokens: ["may"]
+          effect_span: "plasma\nconcentrations of efavirenz may be decreased"
+    - citation_status: cited
+      source: ema_hmpc
+      document_id: EMA/HMPC/321095/2012
+      document_published_date: 2015-01-28
+      section: "4.4"
+      section_title: "Overall conclusions on clinical pharmacology and efficacy"
+      evidence_locator: "Clinical pharmacology paragraph, mixed-direction CYP3A4 narrative"
+      verbatim: "The influence of Ginkgo biloba on drug metabolising CYPs has been demonstrated with various probe substrates for the corresponding CYPs. Both, an inducing and an inhibitory effect were suggested for Ginkgo biloba on CYP3A4 by results of interaction studies, depending on the study design. Whereas a daily dose of 240 mg EGb 761 and extracts other than EGb 761 supposed an inducing effect, a higher daily dose of EGb 761 assumed an inhibitory effect. An induction of CYP2C9 was assumed at a daily dose of 360 mg of EGb 761. Also inducing effects for Ginkgo biloba extracts other than EGb 761 on CYP2C19 were observed."
+      evidence_methodology: regulator_assessment
+      evidence_outcome: positive_finding
+      attribution_level: drug_specific
+      interaction_axis: [pharmacokinetic]
+      axis_dose_dependence: dose_dependent
+      mechanism:
+        - process: "induction"
+          target: ["CYP3A4"]
+          agent: {"term":"Ginkgo","role":"ingredient"}
+          hedge_tokens: ["suggested"]
+          mechanism_span: "Both, an inducing and an inhibitory effect were suggested for Ginkgo biloba on CYP3A4 by results of interaction studies, depending on the study design."
+        - process: "inhibition"
+          target: ["CYP3A4"]
+          agent: {"term":"Ginkgo","role":"ingredient"}
+          hedge_tokens: ["suggested"]
+          mechanism_span: "Both, an inducing and an inhibitory effect were suggested for Ginkgo biloba on CYP3A4 by results of interaction studies, depending on the study design."
+        - process: "induction"
+          target: ["CYP2C9"]
+          agent: {"term":"EGb 761","role":"ingredient"}
+          hedge_tokens: ["assumed"]
+          mechanism_span: "An induction of CYP2C9 was assumed at a daily dose of 360 mg of EGb 761."
+        - process: "induction"
+          target: ["CYP2C19"]
+          agent: {"term":"Ginkgo","role":"ingredient"}
+          mechanism_span: "Also inducing effects for Ginkgo biloba extracts other than EGb 761 on CYP2C19 were observed."
+    - citation_status: cited
+      source: ema_hmpc
+      document_id: EMA/HMPC/321095/2012
+      document_published_date: 2015-01-28
+      section: "5.3"
+      section_title: "Naccarato et al. 2012 efavirenz case report"
+      evidence_locator: "Naccarato 2012 paragraph"
+      verbatim: "The authors suggested an inducing effect of Ginkgo biloba on EFV metabolism leading to virological breakthrough, based on the influence of Ginkgo biloba on the CYP450 biotransformation."
+      evidence_methodology: case_report
+      evidence_outcome: positive_finding
+      attribution_level: drug_specific
+      interaction_axis: [pharmacokinetic]
+      axis_dose_dependence: not_reported
+
+# ----------------------------------------------------------------------
+# Transporter inhibition profile
+# ----------------------------------------------------------------------
+
+transporter_inhibition_profile:
+  inhibited_transporters:
+    - transporter: P_glycoprotein
+      inhibition_site: intestinal
+  citations:
+    - citation_status: cited
+      source: ema_hmpc
+      document_id: EMA/HMPC/321097/2012
+      document_published_date: 2015-01-28
+      section: "4.5"
+      section_title: "Interactions with other medicinal products and other forms of interaction"
+      evidence_locator: "Well-established use column, talinolol P-gp paragraph"
+      scope: ["Well-established use"]
+      anchor_id: "339c4d557d6f4643"
+      verbatim: "An interaction study with talinolol indicates that G.\nbiloba may inhibit P-glycoprotein at the intestinal\nlevel. This may give rise to increased exposure of\ndrugs markedly affected by P-glycoprotein in the\nintestine such as dabigatran etexilate. Caution is\nadvised if combining G. biloba and dabigatran."
+      evidence_methodology: regulator_assessment
+      evidence_outcome: positive_finding
+      attribution_level: class_effect
+      pharmacologic_class: P_glycoprotein_substrates
+      interaction_axis: [pharmacokinetic]
+      axis_dose_dependence: not_reported
+      mechanism:
+        - process: "inhibition"
+          target: ["P-glycoprotein"]
+          agent: {"term":"G. biloba","role":"ingredient"}
+          hedge_tokens: ["may"]
+          mechanism_span: "An interaction study with talinolol indicates that G.\nbiloba may inhibit P-glycoprotein at the intestinal\nlevel."
+      effect:
+        - parameter: "exposure"
+          direction: "increased"
+          object: [{"term":"drugs","role":"other"},{"term":"dabigatran etexilate","role":"partner"}]
+          hedge_tokens: ["may"]
+          effect_span: "This may give rise to increased exposure of\ndrugs markedly affected by P-glycoprotein in the\nintestine such as dabigatran etexilate."
+    - citation_status: cited
+      source: ema_hmpc
+      document_id: EMA/HMPC/321095/2012
+      document_published_date: 2015-01-28
+      section: "3.2"
+      section_title: "Pharmacokinetic interactions - Hellum and Nilsen 2008"
+      evidence_locator: "Hellum 2008 paragraph, P-gp IC50"
+      verbatim: "Ginkgo biloba inhibited CYP3A4 activity (IC50 value of 668 plus-or-minus 66 microg/ml) and P-gp activity (IC50 value of 23.6 microg/ml). The low IC50 value for Ginkgo biloba may indicate an inhibition of P-gp in the small intestine in vivo."
+      evidence_methodology: in_vitro
+      evidence_outcome: positive_finding
+      attribution_level: drug_specific
+      interaction_axis: [pharmacokinetic]
+      axis_dose_dependence: not_reported
+      mechanism:
+        - process: "inhibition"
+          target: ["CYP3A4","P-glycoprotein"]
+          agent: {"term":"Ginkgo","role":"ingredient"}
+          mechanism_span: "Ginkgo biloba inhibited CYP3A4 activity (IC50 value of 668 plus-or-minus 66 microg/ml) and P-gp activity (IC50 value of 23.6 microg/ml)."
+        - process: "inhibition"
+          target: ["P-glycoprotein"]
+          agent: {"term":"Ginkgo","role":"ingredient"}
+          hedge_tokens: ["may"]
+          mechanism_span: "The low IC50 value for Ginkgo biloba may indicate an inhibition of P-gp in the small intestine in vivo."
+    - citation_status: cited
+      source: ema_hmpc
+      document_id: EMA/HMPC/321095/2012
+      document_published_date: 2015-01-28
+      section: "4.4"
+      section_title: "Overall conclusions on clinical pharmacology and efficacy - talinolol"
+      evidence_locator: "P-gp clinical paragraph"
+      verbatim: "The inhibitory effect of Ginkgo biloba extract on the pharmacokinetics of the P-gp substrate talinolol was studied in healthy volunteers. The observed increase of Cmax by 33% and AUC by 21% without any significant alterations in Tmax and T1/2 of talinolol supports the hypothesis of Blonk et al. (2012): that a possible explanation for the increase in Cmax and bioavailability of a drug when combined with EGb 761 could be the inhibition of P-gp by EGb 761."
+      evidence_methodology: rct
+      evidence_outcome: positive_finding
+      attribution_level: drug_specific
+      interaction_axis: [pharmacokinetic]
+      axis_dose_dependence: not_reported
+      mechanism:
+        - process: "inhibition"
+          target: ["P-glycoprotein"]
+          agent: {"term":"EGb 761","role":"ingredient"}
+          hedge_tokens: ["possible","could"]
+          mechanism_span: "that a possible explanation for the increase in Cmax and bioavailability of a drug when combined with EGb 761 could be the inhibition of P-gp by EGb 761."
+      mechanism_marks:
+        - kind: not_an_effect
+          reason: negated
+          span: "T1/2"
+        - kind: not_an_effect
+          reason: negated
+          span: "Tmax"
+
+# ----------------------------------------------------------------------
+# Seizure risk profile
+# ----------------------------------------------------------------------
+
+seizure_risk_profile:
+  mechanism_summary: "EMA HMPC monograph 4.4 (well-established use column) states that in patients with epilepsy, onset of further seizures promoted by intake of Ginkgo preparations cannot be excluded. The monograph articulates no mechanism. The EMA assessment report carries the mechanism claim and hedges it as an argument rather than a finding: it has been argued that this might be associated with the 4'-O-methylpyridoxine content. The assessment report's single dose toxicity section (3.3.1, Leistner and Drewke 2010 review) separately reports that extracts derived from dried Ginkgo biloba leaves contain ginkgotoxin, at between 11.4 and 58.62 micrograms in a recommended maximum daily dose (120-240 mg), and that a dosage of 11 mg/kg of isolated ginkgotoxin triggered seizures in guinea pigs. No held source states that ginkgotoxin and 4'-O-methylpyridoxine are the same compound, so this record does not collapse them. WHO Vol 1 1999 does not address seizure risk (zero occurrences of seizure, convulsion or epilepsy in its Folium Ginkgo monograph)."
+  driver_constituent: ginkgotoxin
+  citations:
+    - citation_status: cited
+      source: ema_hmpc
+      document_id: EMA/HMPC/321097/2012
+      document_published_date: 2015-01-28
+      section: "4.4"
+      section_title: "Special warnings and precautions for use"
+      evidence_locator: "Well-established use column, epilepsy paragraph"
+      scope: ["Well-established use"]
+      anchor_id: "34afe064a15f56dc"
+      verbatim: "In patients with epilepsy, onset of further seizures\n\u2013 promoted by intake of Ginkgo preparations \u2013\ncannot be excluded."
+      evidence_methodology: regulator_assessment
+      evidence_outcome: positive_finding
+      attribution_level: not_reported
+      interaction_axis: [pharmacodynamic]
+      axis_dose_dependence: not_reported
+      applicability_conditions:
+        population: [patients_with_epilepsy]
+      effect:
+        - parameter: "seizures"
+          direction: "promoted"
+          object: []
+          hedge_tokens: ["cannot be excluded"]
+          condition_spans: ["In patients with epilepsy"]
+          effect_span: "In patients with epilepsy, onset of further seizures\n\u2013 promoted by intake of Ginkgo preparations \u2013\ncannot be excluded."
+    - citation_status: cited
+      source: ema_hmpc
+      document_id: EMA/HMPC/321095/2012
+      document_published_date: 2015-01-28
+      section: "3.3.1"
+      section_title: "Single dose toxicity - Ginkgotoxin"
+      evidence_locator: "Ginkgotoxin paragraph, Leistner and Drewke 2010 review"
+      verbatim: "A dosage of 11 mg/kg of the isolated ginkgotoxin triggered seizures in guinea pigs."
+      evidence_methodology: regulator_assessment
+      evidence_outcome: positive_finding
+      interaction_axis: [pharmacodynamic]
+      axis_dose_dependence: dose_dependent
+    - citation_status: cited
+      source: ema_hmpc
+      document_id: EMA/HMPC/321095/2012
+      document_published_date: 2015-01-28
+      section: "5.3"
+      section_title: "Adverse events and serious adverse events and deaths"
+      evidence_locator: "Granger 2001 case report paragraph"
+      verbatim: "Granger (2001) describes two patients with well-controlled epilepsy, compliant with their anti-epileptic medication (1200 mg sodium valproate daily), who developed seizures within two weeks of using Ginkgo biloba products (not further specified, 120 mg daily)."
+      evidence_methodology: case_report
+      evidence_outcome: positive_finding
+      attribution_level: drug_specific
+      interaction_axis: [pharmacodynamic]
+      axis_dose_dependence: not_reported
+
+# ----------------------------------------------------------------------
+# Posology
+# ----------------------------------------------------------------------
+
+posology:
+  dose:
+    status: present
+    unresolved:
+      - class: anchor_gap
+        note: "Health Canada NNHPD monograph, Ginkgo biloba, Dose(s): the dose sentence and the population label printed with it, both owed here. The sentence is quoted unanchored under regulatory_classification.health_canada_nnhpd_status. Uncarried: the room holds the document, no extraction is committed and no rule module reads it."
+        opened: 2026-09-24
+        must_close_by: before_pilot_pass
+    citations:
+      - citation_status: cited
+        source: ema_hmpc
+        document_id: EMA/HMPC/321097/2012
+        document_published_date: 2015-01-28
+        section: "4.2"
+        section_title: "Posology and method of administration"
+        evidence_locator: "Well-established use column, Posology, population label and single and daily dose"
+        scope: ["Well-established use"]
+        anchor_id: "5460c756c8d21c76"
+        verbatim: "Adults and elderly\nSingle dose: 120-240 mg\nDaily dose: 240 mg"
+        evidence_methodology: regulator_assessment
+        evidence_outcome: positive_finding
+        interaction_axis: [not_applicable]
+        axis_dose_dependence: not_reported
+      - citation_status: cited
+        source: ema_hmpc
+        document_id: EMA/HMPC/321097/2012
+        document_published_date: 2015-01-28
+        section: "4.2"
+        section_title: "Posology and method of administration"
+        evidence_locator: "Traditional use column, Posology, population label and single and daily dose"
+        scope: ["Traditional use"]
+        anchor_id: "3676fad91ada1f5f"
+        verbatim: "Adults and elderly\nSingle dose: 250-360 mg\nDaily dose: 750 mg"
+        evidence_methodology: regulator_assessment
+        evidence_outcome: positive_finding
+        interaction_axis: [not_applicable]
+        axis_dose_dependence: not_reported
+  duration_of_use:
+    status: present
+    citations:
+      - citation_status: cited
+        source: ema_hmpc
+        document_id: EMA/HMPC/321097/2012
+        document_published_date: 2015-01-28
+        section: "4.2"
+        section_title: "Posology and method of administration"
+        evidence_locator: "Well-established use column, Duration of use, first sentence"
+        scope: ["Well-established use"]
+        anchor_id: "d0926497ad4fe716"
+        verbatim: "Treatment should last for at least 8 weeks."
+        evidence_methodology: regulator_assessment
+        evidence_outcome: positive_finding
+        interaction_axis: [not_applicable]
+        axis_dose_dependence: not_reported
+      - citation_status: cited
+        source: ema_hmpc
+        document_id: EMA/HMPC/321097/2012
+        document_published_date: 2015-01-28
+        section: "4.2"
+        section_title: "Posology and method of administration"
+        evidence_locator: "Well-established use column, Duration of use, second sentence"
+        scope: ["Well-established use"]
+        anchor_id: "e0de6674151a622a"
+        verbatim: "If there is no symptomatic improvement after\n3 months, or if pathological symptoms should\nintensify, the doctor should check whether\ncontinuation of treatment is still justified."
+        evidence_methodology: regulator_assessment
+        evidence_outcome: not_applicable
+        interaction_axis: [not_applicable]
+        axis_dose_dependence: not_reported
+      - citation_status: cited
+        source: ema_hmpc
+        document_id: EMA/HMPC/321097/2012
+        document_published_date: 2015-01-28
+        section: "4.2"
+        section_title: "Posology and method of administration"
+        evidence_locator: "Traditional use column, Duration of use"
+        scope: ["Traditional use"]
+        anchor_id: "c9aaae77ac8aee0d"
+        verbatim: "If the symptoms persist for more than 2 weeks, a\ndoctor or a qualified health care practitioner\nshould be consulted."
+        source_directive: ask_if_symptoms_persist
+        directive_span: "symptoms persist"
+        evidence_methodology: regulator_assessment
+        evidence_outcome: not_applicable
+        interaction_axis: [not_applicable]
+        axis_dose_dependence: not_reported
+
+# ----------------------------------------------------------------------
+# Hepatotoxicity assessment
+# ----------------------------------------------------------------------
+
+hepatotoxicity_assessment:
+  status: present
+  regulator_disposition: not_stated_in_held_sources
+  citations: []
+
+# ----------------------------------------------------------------------
+# Contraindications
+# ----------------------------------------------------------------------
+
+contraindications:
+  status: present
+  items:
+    - condition: hypersensitivity_to_active_substance
+      citations:
+        - citation_status: cited
+          source: ema_hmpc
+          document_id: EMA/HMPC/321097/2012
+          document_published_date: 2015-01-28
+          section: "4.3"
+          section_title: "Contraindications"
+          evidence_locator: "Well-established use column"
+          scope: ["Well-established use"]
+          anchor_id: "3a8bd208b1dfa091"
+          verbatim: "Hypersensitivity to the active substance."
+          evidence_methodology: regulator_assessment
+          evidence_outcome: not_applicable
+          source_position: contraindicated
+          interaction_axis: [pharmacodynamic]
+          axis_dose_dependence: not_reported
+        - citation_status: cited
+          source: ema_hmpc
+          document_id: EMA/HMPC/321097/2012
+          document_published_date: 2015-01-28
+          section: "4.3"
+          section_title: "Contraindications"
+          evidence_locator: "Traditional use column"
+          scope: ["Traditional use"]
+          anchor_id: "3a8bd208b1dfa091"
+          verbatim: "Hypersensitivity to the active substance."
+          evidence_methodology: regulator_assessment
+          evidence_outcome: not_applicable
+          source_position: contraindicated
+          interaction_axis: [pharmacodynamic]
+          axis_dose_dependence: not_reported
+    - condition: pregnancy
+      applies_to_preparation: well_established_use_dry_extract
+      citations:
+        - citation_status: cited
+          source: ema_hmpc
+          document_id: EMA/HMPC/321097/2012
+          document_published_date: 2015-01-28
+          section: "4.3"
+          section_title: "Contraindications"
+          evidence_locator: "Well-established use column"
+          scope: ["Well-established use"]
+          anchor_id: "ed3341af472285e1"
+          verbatim: "Pregnancy (see section 4.6. \u2018Fertility, pregnancy\nand lactation\u2019)."
+          evidence_methodology: regulator_assessment
+          evidence_outcome: not_applicable
+          source_position: contraindicated
+          interaction_axis: [not_applicable]
+          axis_dose_dependence: not_reported
+          applicability_conditions:
+            population: [pregnancy]
+
+# ----------------------------------------------------------------------
+# Other warnings and precautions
+# ----------------------------------------------------------------------
+
+other_warnings_and_precautions:
+  status: present
+  unresolved:
+    - class: anchor_gap
+      note: "WHO Monographs Volume 1, Folium Ginkgo, Warnings, a recorded absence from a Tier 2 source. Uncarried: the room holds the document, no extraction is committed and no rule module reads it."
+      opened: 2026-09-19
+      must_close_by: before_pilot_pass
+    - class: anchor_gap
+      note: "WHO Monographs Volume 1, Folium Ginkgo, Other precautions, a recorded absence covering general precautions, drug and laboratory-test interactions, teratogenic effects and paediatric use. Uncarried: the room holds the document, no extraction is committed and no rule module reads it."
+      opened: 2026-09-19
+      must_close_by: before_pilot_pass
+  items:
+    - citations:
+        - citation_status: cited
+          source: ema_hmpc
+          document_id: EMA/HMPC/321097/2012
+          document_published_date: 2015-01-28
+          section: "4.2"
+          section_title: "Posology and method of administration"
+          evidence_locator: "Traditional use column, Duration of use"
+          scope: ["Traditional use"]
+          anchor_id: "c9aaae77ac8aee0d"
+          verbatim: "If the symptoms persist for more than 2 weeks, a\ndoctor or a qualified health care practitioner\nshould be consulted."
+          source_directive: ask_if_symptoms_persist
+          directive_span: "symptoms persist"
+          evidence_methodology: regulator_assessment
+          evidence_outcome: not_applicable
+          interaction_axis: [not_applicable]
+          axis_dose_dependence: not_reported
+    - citations:
+        - citation_status: cited
+          source: ema_hmpc
+          document_id: EMA/HMPC/321097/2012
+          document_published_date: 2015-01-28
+          section: "4.4"
+          section_title: "Special warnings and precautions for use"
+          evidence_locator: "Well-established use column, symptoms-worsen consult sentence"
+          scope: ["Well-established use"]
+          anchor_id: "e163c8a2801a24d8"
+          verbatim: "If the symptoms worsen during the use of the\nmedicinal product, a doctor or a pharmacist\nshould be consulted."
+          source_directive: ask_if_symptoms_persist
+          directive_span: "symptoms worsen"
+          evidence_methodology: regulator_assessment
+          evidence_outcome: not_applicable
+          interaction_axis: [not_applicable]
+          axis_dose_dependence: not_reported
+    - citations:
+        - citation_status: cited
+          source: ema_hmpc
+          document_id: EMA/HMPC/321097/2012
+          document_published_date: 2015-01-28
+          section: "4.4"
+          section_title: "Special warnings and precautions for use"
+          evidence_locator: "Traditional use column, symptoms-worsen consult sentence"
+          scope: ["Traditional use"]
+          anchor_id: "ff5de9807038056e"
+          verbatim: "If the symptoms worsen during the use of the\nmedicinal product, a doctor or a qualified\nhealthcare professional should be consulted."
+          source_directive: ask_if_symptoms_persist
+          directive_span: "symptoms worsen"
+          evidence_methodology: regulator_assessment
+          evidence_outcome: not_applicable
+          interaction_axis: [not_applicable]
+          axis_dose_dependence: not_reported
+    - citations:
+        - citation_status: cited
+          source: ema_hmpc
+          document_id: EMA/HMPC/321097/2012
+          document_published_date: 2015-01-28
+          section: "4.8"
+          section_title: "Undesirable effects"
+          evidence_locator: "Well-established use column, closing consult sentence"
+          scope: ["Well-established use"]
+          anchor_id: "29dcb7772e3d1fa2"
+          verbatim: "If other adverse reactions not mentioned above\noccur, a doctor or a pharmacist should be\nconsulted."
+          evidence_methodology: regulator_assessment
+          evidence_outcome: not_applicable
+          interaction_axis: [not_applicable]
+          axis_dose_dependence: not_reported
+    - citations:
+        - citation_status: cited
+          source: ema_hmpc
+          document_id: EMA/HMPC/321097/2012
+          document_published_date: 2015-01-28
+          section: "4.8"
+          section_title: "Undesirable effects"
+          evidence_locator: "Traditional use column, closing consult sentence"
+          scope: ["Traditional use"]
+          anchor_id: "6d3812489c5cb750"
+          verbatim: "If other adverse reactions not mentioned above\noccur, a doctor or a qualified health care\npractitioner should be consulted."
+          evidence_methodology: regulator_assessment
+          evidence_outcome: not_applicable
+          interaction_axis: [not_applicable]
+          axis_dose_dependence: not_reported
+
+# ----------------------------------------------------------------------
+# Pregnancy and lactation
+# ----------------------------------------------------------------------
+
+pregnancy_lactation:
+  pregnancy:
+    status: present
+    unresolved:
+      - class: anchor_gap
+        note: "EMA assessment report EMA/HMPC/321095/2012, reproductive and developmental toxicity, the stated basis for the well-established-use pregnancy contraindication. Uncarried, and load-bearing for that contraindication. Waits on the assessment-report module: no extraction, no rule."
+        opened: 2026-09-19
+        must_close_by: before_pilot_pass
+    citations:
+      - citation_status: cited
+        source: ema_hmpc
+        document_id: EMA/HMPC/321097/2012
+        document_published_date: 2015-01-28
+        section: "4.6"
+        section_title: "Fertility, pregnancy and lactation"
+        evidence_locator: "Well-established use column, full pregnancy paragraph"
+        scope: ["Well-established use"]
+        anchor_id: "267123e308dc8261"
+        verbatim: "G. biloba extracts may impair the ability of\nplatelets to aggregate. The tendency for bleeding\nmay be increased. Animal studies are insufficient\nwith respect to reproductive toxicity (see section\n5.3).\nThe use is contraindicated in pregnancy (see\nsection 4.3)"
+        evidence_methodology: regulator_assessment
+        evidence_outcome: not_applicable
+        evaluation_status: not_evaluated
+        source_position: contraindicated
+        position_span: "contraindicated"
+        interaction_axis: [pharmacodynamic]
+        axis_dose_dependence: not_reported
+        applicability_conditions:
+          population: [pregnancy]
+        effect:
+          - parameter: "bleeding"
+            direction: "increased"
+            object: []
+            hedge_tokens: ["may"]
+            effect_span: "The tendency for bleeding\nmay be increased."
+      - citation_status: cited
+        source: health_canada_nnhpd
+        document_id: mono_ginkgo-biloba_english
+        document_published_date: 2025-07-25
+        section: "Cautions and Warnings"
+        section_title: "Cautions and Warnings"
+        evidence_locator: "Cautions list, pregnancy and breastfeeding bullet"
+        verbatim: "Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you are pregnant or breastfeeding."
+        source_directive: ask_before_use
+        directive_span: "before use"
+        evidence_methodology: regulator_assessment
+        evidence_outcome: not_applicable
+        interaction_axis: [not_applicable]
+        axis_dose_dependence: not_reported
+        applicability_conditions:
+          population: [pregnancy_or_lactation]
+      - citation_status: retained_pre_scope_lock
+        retention_note: "NCCIH not promoted to Tier 1/2 for herbal_traditional class; retained from pre-scope-lock authoring."
+        source: nccih
+        document_id: nccih_ginkgo
+        document_published_date: "2025-02"
+        section: "What Do We Know About Safety?"
+        section_title: "What Do We Know About Safety?"
+        evidence_locator: "Safety section, pregnancy paragraph"
+        verbatim: "Ginkgo may be unsafe for use during pregnancy. It might cause early labor or extra bleeding during delivery if used near that time. Little is known about whether it's safe to use ginkgo while breastfeeding."
+        evidence_methodology: curated_tertiary_synthesis
+        evidence_outcome: positive_finding
+        interaction_axis: [pharmacodynamic]
+        axis_dose_dependence: not_reported
+        applicability_conditions:
+          population: [pregnancy_or_lactation]
+        effect:
+          - parameter: "early labor"
+            direction: "cause"
+            object: []
+            hedge_tokens: ["might"]
+            effect_span: "It might cause early labor or extra bleeding during delivery if used near that time."
+          - parameter: "bleeding"
+            direction: "increased"
+            object: []
+            hedge_tokens: ["might"]
+            effect_span: "It might cause early labor or extra bleeding during delivery if used near that time."
+      - citation_status: cited
+        source: ema_hmpc
+        document_id: EMA/HMPC/321097/2012
+        document_published_date: 2015-01-28
+        section: "4.6"
+        section_title: "Fertility, pregnancy and lactation"
+        evidence_locator: "Traditional use column, pregnancy and lactation statement"
+        scope: ["Traditional use"]
+        anchor_id: "8b09a973f7875a7b"
+        verbatim: "Safety during pregnancy and lactation has not\nbeen established. In the absence of sufficient\ndata, the use during pregnancy and lactation is\nnot recommended."
+        evidence_methodology: regulator_assessment
+        evidence_outcome: not_applicable
+        evaluation_status: not_evaluated
+        source_position: not_recommended
+        position_span: "not recommended"
+        interaction_axis: [not_applicable]
+        axis_dose_dependence: not_reported
+        applicability_conditions:
+          population: [pregnancy_or_lactation]
+  lactation:
+    status: present
+    citations:
+      - citation_status: cited
+        source: ema_hmpc
+        document_id: EMA/HMPC/321097/2012
+        document_published_date: 2015-01-28
+        section: "4.6"
+        section_title: "Fertility, pregnancy and lactation"
+        evidence_locator: "Well-established use column, lactation paragraph"
+        scope: ["Well-established use"]
+        anchor_id: "349d971cf8ef5ef1"
+        verbatim: "It is unknown whether G. biloba metabolites are\nexcreted in human milk. A risk to the\nnewborns/infants cannot be excluded.\nIn the absence of sufficient data, the use during\nlactation is not recommended."
+        evidence_methodology: regulator_assessment
+        evidence_outcome: not_applicable
+        evaluation_status: not_evaluated
+        source_position: not_recommended
+        position_span: "not recommended"
+        interaction_axis: [not_applicable]
+        axis_dose_dependence: not_reported
+        applicability_conditions:
+          population: [lactation]
+      - citation_status: cited
+        source: health_canada_nnhpd
+        document_id: mono_ginkgo-biloba_english
+        document_published_date: 2025-07-25
+        section: "Cautions and Warnings"
+        section_title: "Cautions and Warnings"
+        evidence_locator: "Cautions list, pregnancy and breastfeeding bullet"
+        verbatim: "Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you are pregnant or breastfeeding."
+        source_directive: ask_before_use
+        directive_span: "before use"
+        evidence_methodology: regulator_assessment
+        evidence_outcome: not_applicable
+        interaction_axis: [not_applicable]
+        axis_dose_dependence: not_reported
+        applicability_conditions:
+          population: [pregnancy_or_lactation]
+      - citation_status: retained_pre_scope_lock
+        retention_note: "NCCIH not promoted to Tier 1/2 for herbal_traditional class; retained from pre-scope-lock authoring."
+        source: nccih
+        document_id: nccih_ginkgo
+        document_published_date: "2025-02"
+        section: "What Do We Know About Safety?"
+        section_title: "What Do We Know About Safety?"
+        evidence_locator: "Safety section, pregnancy paragraph"
+        verbatim: "Ginkgo may be unsafe for use during pregnancy. It might cause early labor or extra bleeding during delivery if used near that time. Little is known about whether it's safe to use ginkgo while breastfeeding."
+        evidence_methodology: curated_tertiary_synthesis
+        evidence_outcome: positive_finding
+        interaction_axis: [pharmacodynamic]
+        axis_dose_dependence: not_reported
+        applicability_conditions:
+          population: [pregnancy_or_lactation]
+        effect:
+          - parameter: "early labor"
+            direction: "cause"
+            object: []
+            hedge_tokens: ["might"]
+            effect_span: "It might cause early labor or extra bleeding during delivery if used near that time."
+          - parameter: "bleeding"
+            direction: "increased"
+            object: []
+            hedge_tokens: ["might"]
+            effect_span: "It might cause early labor or extra bleeding during delivery if used near that time."
+      - citation_status: cited
+        source: ema_hmpc
+        document_id: EMA/HMPC/321097/2012
+        document_published_date: 2015-01-28
+        section: "4.6"
+        section_title: "Fertility, pregnancy and lactation"
+        evidence_locator: "Traditional use column, pregnancy and lactation statement"
+        scope: ["Traditional use"]
+        anchor_id: "8b09a973f7875a7b"
+        verbatim: "Safety during pregnancy and lactation has not\nbeen established. In the absence of sufficient\ndata, the use during pregnancy and lactation is\nnot recommended."
+        evidence_methodology: regulator_assessment
+        evidence_outcome: not_applicable
+        evaluation_status: not_evaluated
+        source_position: not_recommended
+        position_span: "not recommended"
+        interaction_axis: [not_applicable]
+        axis_dose_dependence: not_reported
+        applicability_conditions:
+          population: [pregnancy_or_lactation]
+  fertility:
+    status: present
+    citations:
+      - citation_status: cited
+        source: ema_hmpc
+        document_id: EMA/HMPC/321097/2012
+        document_published_date: 2015-01-28
+        section: "4.6"
+        section_title: "Fertility, pregnancy and lactation"
+        evidence_locator: "Well-established use column, fertility paragraph"
+        scope: ["Well-established use"]
+        anchor_id: "119c2246c053b2aa"
+        verbatim: "No specific studies with G. biloba in humans have\nbeen conducted to evaluate effects on fertility. In\na study in female mice effects on fertility were\nseen (see section 5.3)."
+        evidence_methodology: regulator_assessment
+        evidence_outcome: not_applicable
+        evaluation_status: not_evaluated
+        interaction_axis: [not_applicable]
+        axis_dose_dependence: not_reported
+        applicability_conditions:
+          population: [fertility]
+      - citation_status: cited
+        source: ema_hmpc
+        document_id: EMA/HMPC/321097/2012
+        document_published_date: 2015-01-28
+        section: "4.6"
+        section_title: "Fertility, pregnancy and lactation"
+        evidence_locator: "Traditional use column, fertility statement"
+        scope: ["Traditional use"]
+        anchor_id: "5312ebcc45f0c754"
+        verbatim: "No fertility data."
+        evidence_methodology: regulator_assessment
+        evidence_outcome: not_applicable
+        evaluation_status: not_evaluated
+        interaction_axis: [not_applicable]
+        axis_dose_dependence: not_reported
+        applicability_conditions:
+          population: [fertility]
+
+# ----------------------------------------------------------------------
+# Pediatric use
+# ----------------------------------------------------------------------
+
+pediatric_use:
+  status: present
+  citations:
+    - citation_status: cited
+      source: ema_hmpc
+      document_id: EMA/HMPC/321097/2012
+      document_published_date: 2015-01-28
+      section: "4.2"
+      section_title: "Posology and method of administration"
+      evidence_locator: "Well-established use column, children and adolescents statement"
+      scope: ["Well-established use"]
+      anchor_id: "8728514660407254"
+      verbatim: "There is no relevant indication for children and\nadolescents."
+      evidence_methodology: regulator_assessment
+      evidence_outcome: not_applicable
+      evaluation_status: not_evaluated
+      interaction_axis: [not_applicable]
+      axis_dose_dependence: not_reported
+      applicability_conditions:
+        population: [paediatric]
+    - citation_status: cited
+      source: ema_hmpc
+      document_id: EMA/HMPC/321097/2012
+      document_published_date: 2015-01-28
+      section: "4.2"
+      section_title: "Posology and method of administration"
+      evidence_locator: "Traditional use column, children and adolescents statement"
+      scope: ["Traditional use"]
+      anchor_id: "2573177642bda347"
+      verbatim: "The use in children and adolescents under\n18 years of age is not recommended (see section\n4.4 \u2018Special warnings and precautions for use\u2019)."
+      evidence_methodology: regulator_assessment
+      evidence_outcome: not_applicable
+      evaluation_status: not_evaluated
+      source_position: not_recommended
+      position_span: "not recommended"
+      interaction_axis: [not_applicable]
+      axis_dose_dependence: not_reported
+      applicability_conditions:
+        population: [paediatric_below_18_years]
+    - citation_status: cited
+      source: ema_hmpc
+      document_id: EMA/HMPC/321097/2012
+      document_published_date: 2015-01-28
+      section: "4.4"
+      section_title: "Special warnings and precautions for use"
+      evidence_locator: "Traditional use column, children and adolescents statement"
+      scope: ["Traditional use"]
+      anchor_id: "8d70d1d87abfcbfe"
+      verbatim: "The use in children and adolescents under\n18 years of age has not been established due to\nlack of adequate data."
+      evidence_methodology: regulator_assessment
+      evidence_outcome: not_applicable
+      evaluation_status: not_evaluated
+      interaction_axis: [not_applicable]
+      axis_dose_dependence: not_reported
+      applicability_conditions:
+        population: [paediatric_below_18_years]
+
+special_populations:
+  renal_impairment:
+    status: not_found_in_checked_sources
+    sources_checked:
+      - source: ema_hmpc
+        document_id: "EMA/HMPC/321097/2012"
+      - source: ema_hmpc
+        document_id: "EMA/HMPC/61601/2015"
+    sources_pending:
+      - source: ema_hmpc
+        document_id: "EMA/HMPC/321095/2012"
+        pending_reason: third_party_content_flagged
+        clears_on: extraction_accounted
+      - source: health_canada_nnhpd
+        document_id: "mono_ginkgo-biloba_english"
+        pending_reason: no_extraction_rule
+        clears_on: extraction_accounted
+      - source: nccih
+        document_id: "nccih_ginkgo"
+        pending_reason: no_extraction_rule
+        clears_on: extraction_accounted
+      - source: pubmed
+        document_id: "PMID:15801937"
+        pending_reason: governance_ceiling
+        clears_on: no_clearing_event
+      - source: pubmed
+        document_id: "pmid_15801937_abstract"
+        pending_reason: governance_ceiling
+        clears_on: no_clearing_event
+      - source: who
+        document_id: "WHO/Monographs/Vol1/Folium_Ginkgo"
+        pending_reason: no_extraction_rule
+        clears_on: extraction_accounted
+  hepatic_impairment:
+    status: not_found_in_checked_sources
+    sources_checked:
+      - source: ema_hmpc
+        document_id: "EMA/HMPC/321097/2012"
+      - source: ema_hmpc
+        document_id: "EMA/HMPC/61601/2015"
+    sources_pending:
+      - source: ema_hmpc
+        document_id: "EMA/HMPC/321095/2012"
+        pending_reason: third_party_content_flagged
+        clears_on: extraction_accounted
+      - source: health_canada_nnhpd
+        document_id: "mono_ginkgo-biloba_english"
+        pending_reason: no_extraction_rule
+        clears_on: extraction_accounted
+      - source: nccih
+        document_id: "nccih_ginkgo"
+        pending_reason: no_extraction_rule
+        clears_on: extraction_accounted
+      - source: pubmed
+        document_id: "PMID:15801937"
+        pending_reason: governance_ceiling
+        clears_on: no_clearing_event
+      - source: pubmed
+        document_id: "pmid_15801937_abstract"
+        pending_reason: governance_ceiling
+        clears_on: no_clearing_event
+      - source: who
+        document_id: "WHO/Monographs/Vol1/Folium_Ginkgo"
+        pending_reason: no_extraction_rule
+        clears_on: extraction_accounted
+  older_adults:
+    status: not_found_in_checked_sources
+    sources_checked:
+      - source: ema_hmpc
+        document_id: "EMA/HMPC/321097/2012"
+      - source: ema_hmpc
+        document_id: "EMA/HMPC/61601/2015"
+    sources_pending:
+      - source: ema_hmpc
+        document_id: "EMA/HMPC/321095/2012"
+        pending_reason: third_party_content_flagged
+        clears_on: extraction_accounted
+      - source: health_canada_nnhpd
+        document_id: "mono_ginkgo-biloba_english"
+        pending_reason: no_extraction_rule
+        clears_on: extraction_accounted
+      - source: nccih
+        document_id: "nccih_ginkgo"
+        pending_reason: no_extraction_rule
+        clears_on: extraction_accounted
+      - source: pubmed
+        document_id: "PMID:15801937"
+        pending_reason: governance_ceiling
+        clears_on: no_clearing_event
+      - source: pubmed
+        document_id: "pmid_15801937_abstract"
+        pending_reason: governance_ceiling
+        clears_on: no_clearing_event
+      - source: who
+        document_id: "WHO/Monographs/Vol1/Folium_Ginkgo"
+        pending_reason: no_extraction_rule
+        clears_on: extraction_accounted
+
+# ----------------------------------------------------------------------
+# Driving and machinery
+# ----------------------------------------------------------------------
+
+driving_and_machinery:
+  status: present
+  citations:
+    - citation_status: cited
+      source: ema_hmpc
+      document_id: EMA/HMPC/321097/2012
+      document_published_date: 2015-01-28
+      section: "4.7"
+      section_title: "Effects on ability to drive and use machines"
+      evidence_locator: "Well-established use column"
+      scope: ["Well-established use"]
+      anchor_id: "687ad830edc775d5"
+      verbatim: "No adequate studies on the effect on the ability to\ndrive and use machines have been performed."
+      evidence_methodology: regulator_assessment
+      evidence_outcome: not_applicable
+      evaluation_status: not_evaluated
+      interaction_axis: [not_applicable]
+      axis_dose_dependence: not_reported
+    - citation_status: cited
+      source: ema_hmpc
+      document_id: EMA/HMPC/321097/2012
+      document_published_date: 2015-01-28
+      section: "4.7"
+      section_title: "Effects on ability to drive and use machines"
+      evidence_locator: "Traditional use column"
+      scope: ["Traditional use"]
+      anchor_id: "687ad830edc775d5"
+      verbatim: "No adequate studies on the effect on the ability to\ndrive and use machines have been performed."
+      evidence_methodology: regulator_assessment
+      evidence_outcome: not_applicable
+      evaluation_status: not_evaluated
+      interaction_axis: [not_applicable]
+      axis_dose_dependence: not_reported
+
+# ----------------------------------------------------------------------
+# Documented adverse reactions
+# ----------------------------------------------------------------------
+
+documented_adverse_reactions:
+  status: present
+  items:
+    - reaction_class: gastrointestinal_disorders
+      citations:
+        - citation_status: cited
+          source: ema_hmpc
+          document_id: EMA/HMPC/321097/2012
+          document_published_date: 2015-01-28
+          section: "4.8"
+          section_title: "Undesirable effects"
+          evidence_locator: "Well-established use column, Gastrointestinal disorders row"
+          scope: ["Well-established use"]
+          anchor_id: "5ccf4d83933c7d3b"
+          verbatim: "Common: diarrhoea, abdominal pain, nausea,\nvomiting"
+          evidence_methodology: regulator_assessment
+          evidence_outcome: positive_finding
+          frequency_qualifier: common
+          interaction_axis: [pharmacodynamic]
+          axis_dose_dependence: not_reported
+    - reaction_class: hypersensitivity_reactions
+      citations:
+        - citation_status: cited
+          source: ema_hmpc
+          document_id: EMA/HMPC/321097/2012
+          document_published_date: 2015-01-28
+          section: "4.8"
+          section_title: "Undesirable effects"
+          evidence_locator: "Well-established use column, Immune system disorders row"
+          scope: ["Well-established use"]
+          anchor_id: "3ff365c24b877d87"
+          verbatim: "Hypersensitivity reactions (allergic shock) may\noccur. The frequency is not known."
+          evidence_methodology: regulator_assessment
+          evidence_outcome: positive_finding
+          frequency_qualifier: not_known
+          interaction_axis: [pharmacodynamic]
+          axis_dose_dependence: not_reported
+          effect:
+            - parameter: "hypersensitivity reactions"
+              direction: "occur"
+              object: []
+              hedge_tokens: ["may"]
+              effect_span: "Hypersensitivity reactions (allergic shock) may\noccur."
+        - citation_status: cited
+          source: ema_hmpc
+          document_id: EMA/HMPC/321097/2012
+          document_published_date: 2015-01-28
+          section: "4.8"
+          section_title: "Undesirable effects"
+          evidence_locator: "Well-established use column, Skin and subcutaneous tissue disorders row"
+          scope: ["Well-established use"]
+          anchor_id: "b7dcd7f6e55caa44"
+          verbatim: "Allergic skin reactions (erythema, oedema, itching\nand rash) may also occur. The frequencies are not\nknown."
+          evidence_methodology: regulator_assessment
+          evidence_outcome: positive_finding
+          frequency_qualifier: not_known
+          interaction_axis: [pharmacodynamic]
+          axis_dose_dependence: not_reported
+          effect:
+            - parameter: "allergic skin reactions"
+              direction: "occur"
+              object: []
+              hedge_tokens: ["may"]
+              effect_span: "Allergic skin reactions (erythema, oedema, itching\nand rash) may also occur."
+    - reaction_class: nervous_system_disorders
+      citations:
+        - citation_status: cited
+          source: ema_hmpc
+          document_id: EMA/HMPC/321097/2012
+          document_published_date: 2015-01-28
+          section: "4.8"
+          section_title: "Undesirable effects"
+          evidence_locator: "Well-established use column, Nervous system disorders row"
+          scope: ["Well-established use"]
+          anchor_id: "87c4b848fcfbb809"
+          verbatim: "Very common: headache"
+          evidence_methodology: regulator_assessment
+          evidence_outcome: positive_finding
+          frequency_qualifier: very_common
+          interaction_axis: [pharmacodynamic]
+          axis_dose_dependence: not_reported
+    - reaction_class: gastrointestinal_disorders_headaches_and_allergic_reactions
+      citations:
+        - citation_status: cited
+          source: ema_hmpc
+          document_id: EMA/HMPC/321097/2012
+          document_published_date: 2015-01-28
+          section: "4.8"
+          section_title: "Undesirable effects"
+          evidence_locator: "Traditional use column, undesirable effects statement"
+          scope: ["Traditional use"]
+          anchor_id: "360e950becee871e"
+          verbatim: "Gastrointestinal disorders, headaches and allergic\nreactions have been reported. The frequency is\nnot known."
+          evidence_methodology: regulator_assessment
+          evidence_outcome: positive_finding
+          frequency_qualifier: not_known
+          interaction_axis: [pharmacodynamic]
+          axis_dose_dependence: not_reported
+          effect:
+            - parameter: "gastrointestinal disorders"
+              direction: "reported"
+              object: []
+              effect_span: "Gastrointestinal disorders, headaches and allergic\nreactions have been reported."
+            - parameter: "headache"
+              direction: "reported"
+              object: []
+              effect_span: "Gastrointestinal disorders, headaches and allergic\nreactions have been reported."
+            - parameter: "allergic reactions"
+              direction: "reported"
+              object: []
+              effect_span: "Gastrointestinal disorders, headaches and allergic\nreactions have been reported."
+    - reaction_class: nervous_system_disorders
+      citations:
+        - citation_status: cited
+          source: ema_hmpc
+          document_id: EMA/HMPC/321097/2012
+          document_published_date: 2015-01-28
+          section: "4.8"
+          section_title: "Undesirable effects"
+          evidence_locator: "Well-established use column, Nervous system disorders row"
+          scope: ["Well-established use"]
+          anchor_id: "47ceaccdd2be71d8"
+          verbatim: "Common: dizziness"
+          evidence_methodology: regulator_assessment
+          evidence_outcome: positive_finding
+          frequency_qualifier: common
+          interaction_axis: [pharmacodynamic]
+          axis_dose_dependence: not_reported
+    - reaction_class: blood_and_lymphatic_system_disorders
+      citations:
+        - citation_status: cited
+          source: ema_hmpc
+          document_id: EMA/HMPC/321097/2012
+          document_published_date: 2015-01-28
+          section: "4.8"
+          section_title: "Undesirable effects"
+          evidence_locator: "Well-established use column, Blood and lymphatic system disorders"
+          scope: ["Well-established use"]
+          anchor_id: "f820d2c92a77b2e6"
+          verbatim: "Bleeding of individual organs has been reported\n(eye, nose, cerebral and gastrointestinal\nhaemorrhage). The frequency is not known."
+          evidence_methodology: regulator_assessment
+          evidence_outcome: positive_finding
+          frequency_qualifier: not_known
+          interaction_axis: [pharmacodynamic]
+          axis_dose_dependence: not_reported
+          effect:
+            - parameter: "bleeding"
+              direction: "reported"
+              object: []
+              effect_span: "Bleeding of individual organs has been reported\n(eye, nose, cerebral and gastrointestinal\nhaemorrhage)."
+
+# ----------------------------------------------------------------------
+# Overdose
+# ----------------------------------------------------------------------
+
+overdose:
+  status: present
+  posture: no_specific_overdose_data_for_well_established_extract
+  citations:
+    - citation_status: cited
+      source: ema_hmpc
+      document_id: EMA/HMPC/321097/2012
+      document_published_date: 2015-01-28
+      section: "4.9"
+      section_title: "Overdose"
+      evidence_locator: "Well-established use column"
+      scope: ["Well-established use"]
+      anchor_id: "bf8aba51ea6eb0f8"
+      verbatim: "No case of overdose has been reported."
+      evidence_methodology: regulator_assessment
+      evidence_outcome: null_finding
+      interaction_axis: [not_applicable]
+      axis_dose_dependence: not_reported
+    - citation_status: cited
+      source: ema_hmpc
+      document_id: EMA/HMPC/321097/2012
+      document_published_date: 2015-01-28
+      section: "4.9"
+      section_title: "Overdose"
+      evidence_locator: "Traditional use column"
+      scope: ["Traditional use"]
+      anchor_id: "bf8aba51ea6eb0f8"
+      verbatim: "No case of overdose has been reported."
+      evidence_methodology: regulator_assessment
+      evidence_outcome: null_finding
+      interaction_axis: [not_applicable]
+      axis_dose_dependence: not_reported
+
+# ----------------------------------------------------------------------
+# Preclinical safety
+# ----------------------------------------------------------------------
+
+preclinical_safety:
+  status: present
+  chronic_toxicity:
+    citations:
+      - citation_status: cited
+        source: ema_hmpc
+        document_id: EMA/HMPC/321097/2012
+        document_published_date: 2015-01-28
+        section: "5.3"
+        section_title: "Preclinical safety data"
+        evidence_locator: "Well-established use column, Chronic toxicity heading, full paragraph"
+        scope: ["Well-established use"]
+        anchor_id: "058e0f562c648042"
+        verbatim: "Chronic toxicity was tested orally over 6 months\nin rats and dogs with daily dosages of 20 and\n100 mg/kg BW (corresponding to safety factor of\nup to 3.3 in rats and 11.6 in dogs), as well as with\nincremental doses of 300, 400 and 500 mg/kg BW\n(rat) or 300 and 400 mg/kg BW (dog)\n(corresponding to a safety factor of up to 16.8 in\nrats and 46.3 in dogs). The results showed only\nfor dogs a low toxicity in the highest dosage\ngroup."
+        evidence_methodology: animal_study
+        evidence_outcome: positive_finding
+        evaluation_status: evaluated
+        interaction_axis: [not_applicable]
+        axis_dose_dependence: not_reported
+  carcinogenicity:
+    citations:
+      - citation_status: cited
+        source: ema_hmpc
+        document_id: EMA/HMPC/321097/2012
+        document_published_date: 2015-01-28
+        section: "5.3"
+        section_title: "Preclinical safety data"
+        evidence_locator: "Well-established use column, Mutagenicity, carcinogenicity heading, first paragraph"
+        scope: ["Well-established use"]
+        anchor_id: "767e30059302a9cc"
+        verbatim: "Tests on genotoxicity and carcinogenicity are not\navailable for the Ginkgo biloba dry extract."
+        evidence_methodology: regulator_assessment
+        evidence_outcome: not_applicable
+        evaluation_status: not_evaluated
+        interaction_axis: [not_applicable]
+        axis_dose_dependence: not_reported
+      - citation_status: cited
+        source: ema_hmpc
+        document_id: EMA/HMPC/321097/2012
+        document_published_date: 2015-01-28
+        section: "5.3"
+        section_title: "Preclinical safety data"
+        evidence_locator: "Well-established use column, Mutagenicity, carcinogenicity heading, third paragraph, rodent-specificity statement"
+        scope: ["Well-established use"]
+        anchor_id: "32966bcd3520bc37"
+        verbatim: "The thyroid gland tumours found in a rat\ncarcinogenicity study and hepatocellular\ncarcinoma found in a mouse carcinogenicity study\nare considered rodent specific, non-genotoxic\nresponse associated (with long-term treatment)\nwith high doses of hepatic enzyme inducers.\nThese types of tumours are not considered\nrelevant to humans."
+        evidence_methodology: animal_study
+        evidence_outcome: positive_finding
+        evaluation_status: evaluated
+        interaction_axis: [not_applicable]
+        axis_dose_dependence: not_reported
+        human_relevance:
+          - value: not_relevant
+            grade_span: "These types of tumours are not considered\nrelevant to humans"
+            bases:
+              - basis: species_specific_mechanism
+                basis_span: "are considered rodent specific, non-genotoxic\nresponse associated (with long-term treatment)\nwith high doses of hepatic enzyme inducers"
+            findings:
+              - finding_span: "The thyroid gland tumours found in a rat\ncarcinogenicity study"
+              - finding_span: "hepatocellular\ncarcinoma found in a mouse carcinogenicity study"
+  reproductive_toxicity:
+    citations:
+      - citation_status: cited
+        source: ema_hmpc
+        document_id: EMA/HMPC/321097/2012
+        document_published_date: 2015-01-28
+        section: "5.3"
+        section_title: "Preclinical safety data"
+        evidence_locator: "Traditional use column, preclinical safety statement"
+        scope: ["Traditional use"]
+        anchor_id: "950e54f9b261f972"
+        verbatim: "Adequate tests on reproductive toxicity and tests\non genotoxicity and carcinogenicity have not been\nperformed."
+        evidence_methodology: regulator_assessment
+        evidence_outcome: not_applicable
+        evaluation_status: not_evaluated
+        interaction_axis: [not_applicable]
+        axis_dose_dependence: not_reported
+      - citation_status: cited
+        source: ema_hmpc
+        document_id: EMA/HMPC/321097/2012
+        document_published_date: 2015-01-28
+        section: "5.3"
+        section_title: "Preclinical safety data"
+        evidence_locator: "Well-established use column, Reproductive toxicity heading, first two paragraphs"
+        scope: ["Well-established use"]
+        anchor_id: "c35b32d93844d762"
+        verbatim: "Only limited information is available on\nreproductive toxicity of the Ginkgo biloba dry\nextract. The published data are contradictory.\nWhile an older study in rats and rabbits and a\nnewer study in mice revealed no teratogenic,\nembryotoxic or adverse reproductive effects,\nanother study in mice showed effects on\nreproductive parameters, such as fertility and\nreproductive performance and it evoked vaginal\nbleeding. Also tests with unspecified or slightly\ndifferent Ginkgo extracts pointed towards effects\non fetal development (with and without maternal\ntoxicity) or caused subcutaneous bleeding,\nhypopigmentation, growth inhibition and\nanophthalmia in chicken embryos."
+        evidence_methodology: animal_study
+        evidence_outcome: mixed_finding
+        evaluation_status: evaluated
+        interaction_axis: [not_applicable]
+        axis_dose_dependence: not_reported
+      - citation_status: cited
+        source: ema_hmpc
+        document_id: EMA/HMPC/321097/2012
+        document_published_date: 2015-01-28
+        section: "5.3"
+        section_title: "Preclinical safety data"
+        evidence_locator: "Well-established use column, Reproductive toxicity heading, adequacy statement"
+        scope: ["Well-established use"]
+        anchor_id: "1cc8f80fe6095a2d"
+        verbatim: "Adequate tests on reproductive toxicity do not\nexist."
+        evidence_methodology: regulator_assessment
+        evidence_outcome: not_applicable
+        evaluation_status: not_evaluated
+        interaction_axis: [not_applicable]
+        axis_dose_dependence: not_reported
+  genotoxicity:
+    citations:
+      - citation_status: cited
+        source: ema_hmpc
+        document_id: EMA/HMPC/321097/2012
+        document_published_date: 2015-01-28
+        section: "5.3"
+        section_title: "Preclinical safety data"
+        evidence_locator: "Well-established use column, Mutagenicity, carcinogenicity heading, second paragraph, first two sentences"
+        scope: ["Well-established use"]
+        anchor_id: "b68be835bfac09a6"
+        verbatim: "An extract similar to the monograph relevant\nextract was tested in a series of studies for\ngenotoxicity and carcinogenicity. It was positive\nfor gene mutation in bacteria."
+        evidence_methodology: in_vitro
+        evidence_outcome: positive_finding
+        evaluation_status: evaluated
+        interaction_axis: [not_applicable]
+        axis_dose_dependence: not_reported
+      - citation_status: cited
+        source: ema_hmpc
+        document_id: EMA/HMPC/321097/2012
+        document_published_date: 2015-01-28
+        section: "5.3"
+        section_title: "Preclinical safety data"
+        evidence_locator: "Well-established use column, Mutagenicity, carcinogenicity heading, second paragraph, micronucleus test sentence"
+        scope: ["Well-established use"]
+        anchor_id: "cdbfec4007f3f1f5"
+        verbatim: "A peripheral mouse\nerythrocytes micronucleus test provided a\nnegative result in male and an equivocal result in\nfemale animals."
+        evidence_methodology: animal_study
+        evidence_outcome: mixed_finding
+        evaluation_status: evaluated
+        interaction_axis: [not_applicable]
+        axis_dose_dependence: not_reported
+      - citation_status: cited
+        source: ema_hmpc
+        document_id: EMA/HMPC/321097/2012
+        document_published_date: 2015-01-28
+        section: "5.3"
+        section_title: "Preclinical safety data"
+        evidence_locator: "Well-established use column, Mutagenicity, carcinogenicity heading, third paragraph, final sentence"
+        scope: ["Well-established use"]
+        anchor_id: "692c35464b279982"
+        verbatim: "The extract did not induce\nmeasurable genotoxic effects in mice up to\n2000 mg/kg."
+        evidence_methodology: animal_study
+        evidence_outcome: null_finding
+        evaluation_status: evaluated
+        interaction_axis: [not_applicable]
+        axis_dose_dependence: not_reported
+
+# ----------------------------------------------------------------------
+# Documented interactions
+# ----------------------------------------------------------------------
+
+documented_interactions:
+  status: present
+  unresolved:
+    - class: anchor_gap
+      note: "EMA assessment report EMA/HMPC/321095/2012, section 4.1.2, the named-drug interaction studies. Nine drugs carry a study there and none has a ginkgo-side citation on this record. Uncarried; waits on the assessment-report module, which has no extraction and no rule."
+      opened: 2026-09-19
+      must_close_by: before_pilot_pass
+  items:
+    - partner: acetylsalicylic acid
+      citations:
+        - citation_status: cited
+          source: ema_hmpc
+          document_id: EMA/HMPC/321097/2012
+          document_published_date: 2015-01-28
+          section: "4.5"
+          section_title: "Interactions with other medicinal products and other forms of interaction"
+          evidence_locator: "Well-established use column, anticoagulants/antiplatelet drugs paragraph"
+          scope: ["Well-established use"]
+          anchor_id: "7e3d52bd262862f3"
+          verbatim: "If the medicinal product is taken concomitantly\nwith anticoagulants (e.g. phenprocoumon and\nwarfarin) or antiplatelet drugs (e.g. clopidogrel,\nacetylsalicylic acid and other non-steroidal anti-\ninflammatory drugs), their effect may be\ninfluenced."
+          evidence_methodology: regulator_assessment
+          evidence_outcome: not_applicable
+          attribution_level: class_effect
+          pharmacologic_class: anticoagulants_or_antiplatelet_drugs
+          interaction_axis: [pharmacodynamic]
+          axis_dose_dependence: not_reported
+        - citation_status: cited
+          source: ema_hmpc
+          document_id: EMA/HMPC/321095/2012
+          document_published_date: 2015-01-28
+          section: "4.1.1"
+          section_title: "Pharmacodynamic interactions - Wolf 2006"
+          evidence_locator: "Wolf 2006 aspirin coadministration paragraph"
+          verbatim: "Wolf (2006) suggests that coadministration of aspirin and EGb 761 to 50 healthy male volunteers (20-44 years) in a double-blind, double-dummy study did not prolong coagulation parameters, including bleeding time and agonist-induced platelet aggregation, compared to aspirin alone."
+          evidence_methodology: controlled_study
+          evidence_outcome: null_finding
+          attribution_level: drug_specific
+          interaction_axis: [pharmacodynamic]
+          axis_dose_dependence: not_reported
+
+    - partner: anticoagulants and antiplatelet drugs
+      citations:
+        - citation_status: cited
+          source: health_canada_nnhpd
+          document_id: mono_ginkgo-biloba_english
+          document_published_date: 2025-07-25
+          section: "Contraindication(s)"
+          section_title: "Contraindication(s)"
+          evidence_locator: "Contraindications list, blood thinners bullet"
+          verbatim: "Do not use if you are taking blood thinners or other health products that affect blood coagulation."
+          evidence_methodology: regulator_assessment
+          evidence_outcome: not_applicable
+          source_position: contraindicated
+          position_span: "Do not use"
+          attribution_level: class_effect
+          interaction_axis: [pharmacodynamic]
+          axis_dose_dependence: not_reported
+          mechanism_marks:
+            - kind: not_an_effect
+              reason: partner_class
+              span: "coagulation"
+        - citation_status: cited
+          source: ema_hmpc
+          document_id: EMA/HMPC/321097/2012
+          document_published_date: 2015-01-28
+          section: "4.5"
+          section_title: "Interactions with other medicinal products and other forms of interaction"
+          evidence_locator: "Traditional use column, anticoagulants statement"
+          scope: ["Traditional use"]
+          anchor_id: "f15113531eae0208"
+          verbatim: "Ginkgo leaf may increase the effects of\nanticoagulants such as coumarin derivatives."
+          evidence_methodology: regulator_assessment
+          evidence_outcome: positive_finding
+          attribution_level: class_effect
+          pharmacologic_class: anticoagulants
+          interaction_axis: [pharmacodynamic]
+          axis_dose_dependence: not_reported
+          effect:
+            - parameter: "effects"
+              direction: "increased"
+              object: [{"term":"anticoagulants","role":"partner"},{"term":"coumarin derivatives","role":"other"}]
+              hedge_tokens: ["may"]
+              effect_span: "Ginkgo leaf may increase the effects of\nanticoagulants such as coumarin derivatives."
+        - citation_status: cited
+          source: ema_hmpc
+          document_id: EMA/HMPC/321097/2012
+          document_published_date: 2015-01-28
+          section: "4.4"
+          section_title: "Special warnings and precautions for use"
+          evidence_locator: "Well-established use column, bleeding tendency paragraph"
+          scope: ["Well-established use"]
+          anchor_id: "0af63424203d16a2"
+          verbatim: "In patients with a pathologically increased\nbleeding tendency (haemorrhagic diathesis) and\nconcomitant anticoagulant and antiplatelet\ntreatment, the medicinal product should only be\nused after consultation with a doctor."
+          source_directive: ask_before_use
+          directive_span: "after consultation"
+          evidence_methodology: regulator_assessment
+          evidence_outcome: not_applicable
+          interaction_axis: [pharmacodynamic]
+          axis_dose_dependence: not_reported
+          applicability_conditions:
+            population: [patients_with_haemorrhagic_diathesis_or_concomitant_anticoagulant_or_antiplatelet_treatment]
+
+    - partner: high blood pressure medications
+      citations:
+        - citation_status: cited
+          source: health_canada_nnhpd
+          document_id: mono_ginkgo-biloba_english
+          document_published_date: 2025-07-25
+          section: "Caution(s) and warning(s)"
+          section_title: "Caution(s) and warning(s)"
+          evidence_locator: "Cautions list, diabetes/high blood pressure/seizure medications bullet"
+          verbatim: "Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you are taking diabetes, high blood pressure or seizure medications."
+          source_directive: ask_before_use
+          directive_span: "before use"
+          evidence_methodology: regulator_assessment
+          evidence_outcome: not_applicable
+          attribution_level: class_effect
+          interaction_axis: [pharmacodynamic]
+          axis_dose_dependence: not_reported
+
+    - partner: cilostazol
+      citations:
+        - citation_status: cited
+          source: ema_hmpc
+          document_id: EMA/HMPC/321095/2012
+          document_published_date: 2015-01-28
+          section: "4.1.1"
+          section_title: "Pharmacodynamic interactions - Aruna and Naidu 2007"
+          unresolved:
+            - class: anchor_gap
+              note: "EMA assessment report EMA/HMPC/321095/2012, section 4.1.1, Aruna and Naidu 2007, the qualifying sentence that follows the span this citation carries. Uncarried. Waits on the assessment-report module."
+              opened: 2026-09-19
+              must_close_by: before_pilot_pass
+          evidence_locator: "Aruna and Naidu 2007 cilostazol/clopidogrel coadministration paragraph"
+          verbatim: "Coadministration of Ginkgo biloba (not further specified) at an oral dose of 120 or 240 mg, either with cilostazol or clopidogrel to 10 healthy male volunteers in a randomised, open-label, crossover study did not enhance antiplatelet activity. Ginkgo biloba potentiated the bleeding time prolongation effect of cilostazol."
+          evidence_methodology: rct
+          evidence_outcome: positive_finding
+          attribution_level: drug_specific
+          interaction_axis: [pharmacodynamic]
+          axis_dose_dependence: not_reported
+          effect:
+            - parameter: "bleeding time"
+              direction: "potentiated"
+              object: [{"term":"cilostazol","role":"partner"}]
+              effect_span: "Ginkgo biloba potentiated the bleeding time prolongation effect of cilostazol."
+
+    - partner: clopidogrel
+      citations:
+        - citation_status: cited
+          source: ema_hmpc
+          document_id: EMA/HMPC/321097/2012
+          document_published_date: 2015-01-28
+          section: "4.5"
+          section_title: "Interactions with other medicinal products and other forms of interaction"
+          evidence_locator: "Well-established use column, anticoagulants/antiplatelet drugs paragraph"
+          scope: ["Well-established use"]
+          anchor_id: "7e3d52bd262862f3"
+          verbatim: "If the medicinal product is taken concomitantly\nwith anticoagulants (e.g. phenprocoumon and\nwarfarin) or antiplatelet drugs (e.g. clopidogrel,\nacetylsalicylic acid and other non-steroidal anti-\ninflammatory drugs), their effect may be\ninfluenced."
+          evidence_methodology: regulator_assessment
+          evidence_outcome: not_applicable
+          attribution_level: class_effect
+          pharmacologic_class: anticoagulants_or_antiplatelet_drugs
+          interaction_axis: [pharmacodynamic]
+          axis_dose_dependence: not_reported
+        - citation_status: cited
+          source: ema_hmpc
+          document_id: EMA/HMPC/321095/2012
+          document_published_date: 2015-01-28
+          section: "4.1.1"
+          section_title: "Pharmacodynamic interactions - Aruna and Naidu 2007"
+          evidence_locator: "Aruna and Naidu 2007 cilostazol/clopidogrel coadministration paragraph"
+          verbatim: "Coadministration of Ginkgo biloba (not further specified) at an oral dose of 120 or 240 mg, either with cilostazol or clopidogrel to 10 healthy male volunteers in a randomised, open-label, crossover study did not enhance antiplatelet activity. Ginkgo biloba potentiated the bleeding time prolongation effect of cilostazol."
+          evidence_methodology: rct
+          evidence_outcome: null_finding
+          attribution_level: drug_specific
+          interaction_axis: [pharmacodynamic]
+          axis_dose_dependence: not_reported
+          mechanism_marks:
+            - kind: not_an_effect
+              reason: other_partner
+              span: "bleeding time"
+
+    - partner: dabigatran etexilate
+      citations:
+        - citation_status: cited
+          source: ema_hmpc
+          document_id: EMA/HMPC/321097/2012
+          document_published_date: 2015-01-28
+          section: "4.5"
+          section_title: "Interactions with other medicinal products and other forms of interaction"
+          evidence_locator: "Well-established use column, talinolol P-glycoprotein paragraph"
+          scope: ["Well-established use"]
+          anchor_id: "339c4d557d6f4643"
+          verbatim: "An interaction study with talinolol indicates that G.\nbiloba may inhibit P-glycoprotein at the intestinal\nlevel. This may give rise to increased exposure of\ndrugs markedly affected by P-glycoprotein in the\nintestine such as dabigatran etexilate. Caution is\nadvised if combining G. biloba and dabigatran."
+          evidence_methodology: regulator_assessment
+          evidence_outcome: positive_finding
+          attribution_level: class_effect
+          pharmacologic_class: P_glycoprotein_substrates
+          interaction_axis: [pharmacokinetic]
+          axis_dose_dependence: not_reported
+          mechanism:
+            - process: "inhibition"
+              target: ["P-glycoprotein"]
+              agent: {"term":"G. biloba","role":"ingredient"}
+              hedge_tokens: ["may"]
+              mechanism_span: "An interaction study with talinolol indicates that G.\nbiloba may inhibit P-glycoprotein at the intestinal\nlevel."
+          effect:
+            - parameter: "exposure"
+              direction: "increased"
+              object: [{"term":"drugs","role":"other"},{"term":"dabigatran etexilate","role":"partner"}]
+              hedge_tokens: ["may"]
+              effect_span: "This may give rise to increased exposure of\ndrugs markedly affected by P-glycoprotein in the\nintestine such as dabigatran etexilate."
+
+    - partner: diabetes medications
+      citations:
+        - citation_status: cited
+          source: health_canada_nnhpd
+          document_id: mono_ginkgo-biloba_english
+          document_published_date: 2025-07-25
+          section: "Caution(s) and warning(s)"
+          section_title: "Caution(s) and warning(s)"
+          evidence_locator: "Cautions list, diabetes/high blood pressure/seizure medications bullet"
+          verbatim: "Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you are taking diabetes, high blood pressure or seizure medications."
+          source_directive: ask_before_use
+          directive_span: "before use"
+          evidence_methodology: regulator_assessment
+          evidence_outcome: not_applicable
+          attribution_level: class_effect
+          pharmacologic_class: diabetes_medications
+          interaction_axis: [pharmacodynamic]
+          axis_dose_dependence: not_reported
+
+    - partner: efavirenz
+      citations:
+        - citation_status: cited
+          source: ema_hmpc
+          document_id: EMA/HMPC/321097/2012
+          document_published_date: 2015-01-28
+          section: "4.5"
+          section_title: "Interactions with other medicinal products and other forms of interaction"
+          evidence_locator: "Well-established use column, efavirenz paragraph"
+          scope: ["Well-established use"]
+          anchor_id: "66462152e4ffe70a"
+          verbatim: "Concomitant use of G. biloba preparations and\nefavirenz is not recommended; plasma\nconcentrations of efavirenz may be decreased\nbecause of induction of CYP3A4 (see also section\n4.4)."
+          evidence_methodology: regulator_assessment
+          evidence_outcome: positive_finding
+          source_position: not_recommended
+          position_span: "not recommended"
+          attribution_level: drug_specific
+          interaction_axis: [pharmacokinetic]
+          axis_dose_dependence: not_reported
+          mechanism:
+            - process: "induction"
+              target: ["CYP3A4"]
+              mechanism_span: "because of induction of CYP3A4 (see also section\n4.4)."
+          effect:
+            - parameter: "concentrations"
+              direction: "decreased"
+              object: [{"term":"efavirenz","role":"partner"}]
+              hedge_tokens: ["may"]
+              effect_span: "plasma\nconcentrations of efavirenz may be decreased"
+        - citation_status: cited
+          source: ema_hmpc
+          document_id: EMA/HMPC/321095/2012
+          document_published_date: 2015-01-28
+          section: "5.3"
+          section_title: "Naccarato et al. 2012 efavirenz case report"
+          evidence_locator: "Naccarato 2012 paragraph"
+          verbatim: "The authors suggested an inducing effect of Ginkgo biloba on EFV metabolism leading to virological breakthrough, based on the influence of Ginkgo biloba on the CYP450 biotransformation."
+          evidence_methodology: case_report
+          evidence_outcome: positive_finding
+          attribution_level: drug_specific
+          interaction_axis: [pharmacokinetic]
+          axis_dose_dependence: not_reported
+        - citation_status: cited
+          source: ema_hmpc
+          document_id: EMA/HMPC/321097/2012
+          document_published_date: 2015-01-28
+          section: "4.4"
+          section_title: "Special warnings and precautions for use"
+          evidence_locator: "Well-established use column, efavirenz sentence"
+          scope: ["Well-established use"]
+          anchor_id: "91b2561823dad98a"
+          verbatim: "Concomitant use of Ginkgo biloba containing\nproducts and efavirenz is not recommended (see\nsection 4.5)."
+          evidence_methodology: regulator_assessment
+          evidence_outcome: not_applicable
+          source_position: not_recommended
+          position_span: "not recommended"
+          attribution_level: drug_specific
+          interaction_axis: [not_reported]
+          axis_dose_dependence: not_reported
+
+    - partner: metformin
+      citations:
+        - citation_status: cited
+          source: ema_hmpc
+          document_id: EMA/HMPC/321095/2012
+          document_published_date: 2015-01-28
+          section: "3.2"
+          section_title: "Pharmacokinetic interactions - Kudolo et al. 2006"
+          evidence_locator: "Kudolo et al. 2006 metformin coingestion paragraph"
+          verbatim: "In conclusion, coingestion of 120 mg EGb 761 and 500 mg metformin did not significantly affect the pharmacokinetic properties of metformin."
+          evidence_methodology: controlled_study
+          evidence_outcome: null_finding
+          attribution_level: drug_specific
+          interaction_axis: [pharmacokinetic]
+          axis_dose_dependence: not_reported
+
+    - partner: nifedipine
+      citations:
+        - citation_status: cited
+          source: ema_hmpc
+          document_id: EMA/HMPC/321097/2012
+          document_published_date: 2015-01-28
+          section: "4.5"
+          section_title: "Interactions with other medicinal products and other forms of interaction"
+          evidence_locator: "Well-established use column, nifedipine paragraph"
+          scope: ["Well-established use"]
+          anchor_id: "5bd50a68ecc07b7d"
+          verbatim: "One interaction study has indicated that the C\nmax\nof nifedipine may be increased by G biloba. In\nsome individuals, increases by up to 100% were\nobserved resulting in dizziness and increased\nseverity of hot flushes."
+          evidence_methodology: regulator_assessment
+          evidence_outcome: positive_finding
+          attribution_level: drug_specific
+          interaction_axis: [pharmacokinetic]
+          axis_dose_dependence: not_reported
+          effect:
+            - parameter: "Cmax"
+              direction: "increased"
+              object: [{"term":"nifedipine","role":"partner"}]
+              hedge_tokens: ["may"]
+              effect_span: "One interaction study has indicated that the C\nmax\nof nifedipine may be increased by G biloba."
+
+    - partner: phenprocoumon
+      citations:
+        - citation_status: cited
+          source: ema_hmpc
+          document_id: EMA/HMPC/321097/2012
+          document_published_date: 2015-01-28
+          section: "4.5"
+          section_title: "Interactions with other medicinal products and other forms of interaction"
+          evidence_locator: "Well-established use column, anticoagulants/antiplatelet drugs paragraph"
+          scope: ["Well-established use"]
+          anchor_id: "7e3d52bd262862f3"
+          verbatim: "If the medicinal product is taken concomitantly\nwith anticoagulants (e.g. phenprocoumon and\nwarfarin) or antiplatelet drugs (e.g. clopidogrel,\nacetylsalicylic acid and other non-steroidal anti-\ninflammatory drugs), their effect may be\ninfluenced."
+          evidence_methodology: regulator_assessment
+          evidence_outcome: not_applicable
+          attribution_level: class_effect
+          pharmacologic_class: anticoagulants_or_antiplatelet_drugs
+          interaction_axis: [pharmacodynamic]
+          axis_dose_dependence: not_reported
+
+    - partner: seizure medications
+      citations:
+        - citation_status: cited
+          source: health_canada_nnhpd
+          document_id: mono_ginkgo-biloba_english
+          document_published_date: 2025-07-25
+          section: "Caution(s) and warning(s)"
+          section_title: "Caution(s) and warning(s)"
+          evidence_locator: "Cautions list, diabetes/high blood pressure/seizure medications bullet"
+          verbatim: "Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you are taking diabetes, high blood pressure or seizure medications."
+          source_directive: ask_before_use
+          directive_span: "before use"
+          evidence_methodology: regulator_assessment
+          evidence_outcome: not_applicable
+          attribution_level: class_effect
+          interaction_axis: [pharmacodynamic]
+          axis_dose_dependence: not_reported
+
+    - partner: talinolol
+      citations:
+        - citation_status: cited
+          source: ema_hmpc
+          document_id: EMA/HMPC/321097/2012
+          document_published_date: 2015-01-28
+          section: "4.5"
+          section_title: "Interactions with other medicinal products and other forms of interaction"
+          evidence_locator: "Well-established use column, talinolol P-glycoprotein paragraph"
+          scope: ["Well-established use"]
+          anchor_id: "339c4d557d6f4643"
+          verbatim: "An interaction study with talinolol indicates that G.\nbiloba may inhibit P-glycoprotein at the intestinal\nlevel. This may give rise to increased exposure of\ndrugs markedly affected by P-glycoprotein in the\nintestine such as dabigatran etexilate. Caution is\nadvised if combining G. biloba and dabigatran."
+          evidence_methodology: regulator_assessment
+          evidence_outcome: positive_finding
+          attribution_level: class_effect
+          pharmacologic_class: P_glycoprotein_substrates
+          interaction_axis: [pharmacokinetic]
+          axis_dose_dependence: not_reported
+          mechanism:
+            - process: "inhibition"
+              target: ["P-glycoprotein"]
+              agent: {"term":"G. biloba","role":"ingredient"}
+              hedge_tokens: ["may"]
+              mechanism_span: "An interaction study with talinolol indicates that G.\nbiloba may inhibit P-glycoprotein at the intestinal\nlevel."
+          effect:
+            - parameter: "exposure"
+              direction: "increased"
+              object: [{"term":"drugs","role":"other"},{"term":"dabigatran etexilate","role":"other"}]
+              hedge_tokens: ["may"]
+              effect_span: "This may give rise to increased exposure of\ndrugs markedly affected by P-glycoprotein in the\nintestine such as dabigatran etexilate."
+        - citation_status: cited
+          source: ema_hmpc
+          document_id: EMA/HMPC/321095/2012
+          document_published_date: 2015-01-28
+          section: "4.4"
+          section_title: "Overall conclusions on clinical pharmacology and efficacy - talinolol"
+          evidence_locator: "P-gp clinical talinolol paragraph"
+          verbatim: "The observed increase of Cmax by 33% and AUC by 21% without any significant alterations in Tmax and T1/2 of talinolol supports the hypothesis of Blonk et al. (2012): that a possible explanation for the increase in Cmax and bioavailability of a drug when combined with EGb 761 could be the inhibition of P-gp by EGb 761."
+          evidence_methodology: rct
+          evidence_outcome: positive_finding
+          attribution_level: drug_specific
+          interaction_axis: [pharmacokinetic]
+          axis_dose_dependence: not_reported
+          mechanism:
+            - process: "inhibition"
+              target: ["P-glycoprotein"]
+              agent: {"term":"EGb 761","role":"ingredient"}
+              hedge_tokens: ["possible","could"]
+              mechanism_span: "that a possible explanation for the increase in Cmax and bioavailability of a drug when combined with EGb 761 could be the inhibition of P-gp by EGb 761."
+          mechanism_marks:
+            - kind: not_an_effect
+              reason: negated
+              span: "T1/2"
+            - kind: not_an_effect
+              reason: negated
+              span: "Tmax"
+
+    - partner: ticlopidine
+      citations:
+        - citation_status: cited
+          source: ema_hmpc
+          document_id: EMA/HMPC/321095/2012
+          document_published_date: 2015-01-28
+          section: "4.1.2"
+          section_title: "Pharmacokinetic interactions - Lu et al. 2006 ticlopidine study"
+          unresolved:
+            - class: anchor_gap
+              note: "EMA assessment report EMA/HMPC/321095/2012, section 4.1.2, Lu et al. 2006, the transporter-inhibition sentence immediately before the span this citation carries. Uncarried. Waits on the assessment-report module."
+              opened: 2026-09-19
+              must_close_by: before_pilot_pass
+          evidence_locator: "Lu et al. 2006 ticlopidine OATP-B coadministration paragraph"
+          verbatim: "When EGb 761 is coadministered with ticlopidine there were no changes in the pharmacokinetic parameters of ticlopidine."
+          evidence_methodology: controlled_study
+          evidence_outcome: null_finding
+          attribution_level: drug_specific
+          interaction_axis: [pharmacokinetic]
+          axis_dose_dependence: not_reported
+
+    - partner: warfarin
+      citations:
+        - citation_status: cited
+          source: ema_hmpc
+          document_id: EMA/HMPC/321097/2012
+          document_published_date: 2015-01-28
+          section: "4.5"
+          section_title: "Interactions with other medicinal products and other forms of interaction"
+          evidence_locator: "Well-established use column, anticoagulants/antiplatelet drugs paragraph"
+          scope: ["Well-established use"]
+          anchor_id: "7e3d52bd262862f3"
+          verbatim: "If the medicinal product is taken concomitantly\nwith anticoagulants (e.g. phenprocoumon and\nwarfarin) or antiplatelet drugs (e.g. clopidogrel,\nacetylsalicylic acid and other non-steroidal anti-\ninflammatory drugs), their effect may be\ninfluenced."
+          evidence_methodology: regulator_assessment
+          evidence_outcome: not_applicable
+          attribution_level: class_effect
+          pharmacologic_class: anticoagulants_or_antiplatelet_drugs
+          interaction_axis: [pharmacodynamic]
+          axis_dose_dependence: not_reported
+        - citation_status: cited
+          source: ema_hmpc
+          document_id: EMA/HMPC/321097/2012
+          document_published_date: 2015-01-28
+          section: "4.5"
+          section_title: "Interactions with other medicinal products and other forms of interaction"
+          evidence_locator: "Well-established use column, warfarin null finding paragraph"
+          scope: ["Well-established use"]
+          anchor_id: "5ea054678ed2ef75"
+          verbatim: "Available studies with warfarin do not indicate that\nthere is an interaction between warfarin and G.\nbiloba products, but adequate monitoring is\nadvised when starting, when changing G. biloba\ndose, when ending G. biloba intake or if changing\nproduct."
+          evidence_methodology: regulator_assessment
+          evidence_outcome: null_finding
+          attribution_level: drug_specific
+          interaction_axis: [pharmacokinetic, pharmacodynamic]
+          axis_dose_dependence: not_reported
+        - citation_status: cited
+          source: ema_hmpc
+          document_id: EMA/HMPC/321095/2012
+          document_published_date: 2015-01-28
+          section: "4.1.1"
+          section_title: "Pharmacodynamic interactions - Jiang et al. 2005"
+          evidence_locator: "Jiang et al. 2005 warfarin clotting-status paragraph"
+          verbatim: "International normalised ratio of prothrombine time and platelet aggregation were not affected by Ginkgo biloba coadministration. Therefore, EGb 761 at recommended doses does not significantly affect clotting status or pharmacodynamics of warfarin in healthy subjects."
+          evidence_methodology: rct
+          evidence_outcome: null_finding
+          attribution_level: drug_specific
+          interaction_axis: [pharmacodynamic]
+          axis_dose_dependence: not_reported
+        - citation_status: retained_pre_scope_lock
+          retention_note: "Non-regulator-cited primary literature; outside Tier 3 regulator-cited-only policy; retained from pre-scope-lock authoring as supplementary partner-level null finding. Same study is regulator-cited via the EMA assessment 4.1.1 citation above (the primary anchor)."
+          source: pubmed
+          document_id: pmid_15801937_abstract
+          document_published_date: 2005-04-01
+          section: "Results"
+          section_title: "Effect of ginkgo and ginger on the pharmacokinetics and pharmacodynamics of warfarin in healthy subjects"
+          evidence_locator: "Abstract Results paragraph; INR and platelet aggregation"
+          anchor_id: "999790196fcc9301"
+          verbatim: "INR and platelet aggregation were not affected by administration of ginkgo or ginger alone."
+          evidence_methodology: rct
+          evidence_outcome: null_finding
+          attribution_level: drug_specific
+          interaction_axis: [pharmacodynamic]
+          axis_dose_dependence: not_reported
+        - citation_status: retained_pre_scope_lock
+          retention_note: "NCCIH not promoted to Tier 1/2 for herbal_traditional class; retained from pre-scope-lock authoring as supplementary partner-level corroboration. Primary anchor is the EMA monograph 4.5 class statement above."
+          source: nccih
+          document_id: nccih_ginkgo
+          document_published_date: "2025-02"
+          section: "What Do We Know About Safety?"
+          section_title: "What Do We Know About Safety?"
+          evidence_locator: "Safety section, anticoagulant paragraph"
+          verbatim: "Ginkgo may increase the risk of bleeding in people who are taking anticoagulant drugs, such as warfarin."
+          evidence_methodology: curated_tertiary_synthesis
+          evidence_outcome: positive_finding
+          attribution_level: class_effect
+          pharmacologic_class: anticoagulants
+          interaction_axis: [pharmacodynamic]
+          axis_dose_dependence: not_reported
+          effect:
+            - parameter: "bleeding"
+              direction: "increased"
+              object: []
+              hedge_tokens: ["may"]
+              condition_spans: ["in people who are taking anticoagulant drugs"]
+              effect_span: "Ginkgo may increase the risk of bleeding in people who are taking anticoagulant drugs, such as warfarin."
+        - citation_status: cited
+          source: fda
+          document_id: fda_dailymed_warfarin_setid_19a69a72
+          document_published_date: 2025-07-08
+          section: "7.5"
+          section_title: "Botanical (Herbal) Products and Foods"
+          unresolved:
+            - class: anchor_gap
+              note: "FDA DailyMed fda_dailymed_warfarin_setid_19a69a72, section 7.5, the paragraph's opening INR-monitoring sentence and its two sentences on the absence of controlled studies and on manufacturing standardization. Uncarried, and this citation's locator claims more of the paragraph than it carries. No SPL extraction rule exists."
+              opened: 2026-09-19
+              must_close_by: before_pilot_pass
+          evidence_locator: "Section 7.5, botanicals-and-bleeding paragraph, first two sentences"
+          verbatim: "Some botanicals may cause bleeding events when taken alone (e.g., garlic and Ginkgo biloba) and may have anticoagulant, antiplatelet, and/or fibrinolytic properties. These effects would be expected to be additive to the anticoagulant effects of JANTOVEN."
+          evidence_methodology: regulator_assessment
+          evidence_outcome: positive_finding
+          attribution_level: drug_specific
+          interaction_axis: [pharmacodynamic]
+          axis_dose_dependence: not_reported
+          effect:
+            - parameter: "anticoagulant effects"
+              direction: "additive"
+              object: [{"term":"JANTOVEN","role":"partner"}]
+              hedge_tokens: ["expected"]
+              effect_span: "These effects would be expected to be additive to the anticoagulant effects of JANTOVEN."
+        - citation_status: cited
+          source: fda
+          document_id: fda_dailymed_warfarin_setid_19a69a72
+          document_published_date: 2025-07-08
+          section: "7.5"
+          section_title: "Botanical (Herbal) Products and Foods"
+          evidence_locator: "Section 7.5, botanicals-and-bleeding paragraph, CYP450 sentence"
+          verbatim: "Some botanicals and foods can interact with JANTOVEN through CYP450 interactions (e.g., echinacea, grapefruit juice, ginkgo, goldenseal, St. John's wort)."
+          evidence_methodology: regulator_assessment
+          evidence_outcome: positive_finding
+          attribution_level: drug_specific
+          interaction_axis: [pharmacokinetic]
+          axis_dose_dependence: not_reported
+
+    - partner: lomitapide
+      citations:
+        - citation_status: cited
+          source: fda
+          document_id: fda_dailymed_lomitapide_setid_e4c45bb5
+          document_published_date: 2026-01-20
+          section: "7.2"
+          section_title: "Weak CYP3A4 Inhibitors"
+          evidence_locator: "Section 7.2, weak-CYP3A4-inhibitor paragraph, first two sentences"
+          verbatim: "Weak CYP3A4 inhibitors (such as alprazolam, amiodarone, amlodipine, atorvastatin, bicalutamide, cilostazol, cimetidine, cyclosporine, fluoxetine, fluvoxamine, ginkgo, goldenseal, isoniazid, lapatinib, nilotinib, pazopanib, ranitidine, ranolazine, ticagrelor, zileuton) can increase lomitapide exposure approximately 2-fold [see Clinical Pharmacology (12.3) ] . When administered with weak CYP3A4 inhibitors, the dose of JUXTAPID should be decreased by half."
+          evidence_methodology: regulator_assessment
+          evidence_outcome: positive_finding
+          attribution_level: drug_specific
+          interaction_axis: [pharmacokinetic]
+          axis_dose_dependence: not_reported
+          mechanism:
+            - process: "inhibition"
+              target: ["CYP3A4"]
+              agent: {"term":"ginkgo","role":"ingredient"}
+              mechanism_span: "Weak CYP3A4 inhibitors (such as alprazolam, amiodarone, amlodipine, atorvastatin, bicalutamide, cilostazol, cimetidine, cyclosporine, fluoxetine, fluvoxamine, ginkgo, goldenseal, isoniazid, lapatinib, nilotinib, pazopanib, ranitidine, ranolazine, ticagrelor, zileuton) can increase lomitapide exposure approximately 2-fold [see Clinical Pharmacology (12.3) ] ."
+          effect:
+            - parameter: "exposure"
+              direction: "increased"
+              object: [{"term":"lomitapide","role":"partner"}]
+              effect_span: "Weak CYP3A4 inhibitors (such as alprazolam, amiodarone, amlodipine, atorvastatin, bicalutamide, cilostazol, cimetidine, cyclosporine, fluoxetine, fluvoxamine, ginkgo, goldenseal, isoniazid, lapatinib, nilotinib, pazopanib, ranitidine, ranolazine, ticagrelor, zileuton) can increase lomitapide exposure approximately 2-fold [see Clinical Pharmacology (12.3) ] ."
+
+    - partner: ADDYI
+      unresolved:
+        - class: anchor_gap
+          note: "FDA DailyMed fda_dailymed_flibanserin_setid_3819daf3, Patient Information and section 5.2, the line naming ginkgo among herbal supplements and the direction on multiple concomitant weak CYP3A4 inhibitors. Uncarried. No SPL extraction rule exists."
+          opened: 2026-09-19
+          must_close_by: before_pilot_pass
+      citations:
+        - citation_status: cited
+          source: fda
+          document_id: fda_dailymed_flibanserin_setid_3819daf3
+          document_published_date: 2025-12-22
+          section: "7"
+          section_title: "DRUG INTERACTIONS"
+          evidence_locator: "Section 7 drug-interaction table, Weak CYP3A4 Inhibitors group, heading through Preventing or Managing DI row"
+          verbatim: "Weak CYP3A4 Inhibitors Examples Oral contraceptives, cimetidine, fluoxetine, ginkgo, ranitidine Clinical Implications The concomitant use of ADDYI with multiple weak CYP3A4 inhibitors may increase the risk of adverse reactions. Preventing or Managing DI Discuss the use of multiple weak CYP3A4 inhibitors with the patient when prescribing ADDYI."
+          evidence_methodology: regulator_assessment
+          evidence_outcome: positive_finding
+          attribution_level: drug_specific
+          interaction_axis: [pharmacokinetic]
+          axis_dose_dependence: not_reported
+          applicability_conditions:
+            condition: [multiple_weak_cyp3a4_inhibitors]
+          relevance_marks:
+            - kind: not_a_grade
+              reason: heading_or_title
+              span: "Clinical Implications"
+
+# ----------------------------------------------------------------------
+# Citation gaps
+# ----------------------------------------------------------------------
+
+citation_gaps: []
+
+# ----------------------------------------------------------------------
+# Version history
+# ----------------------------------------------------------------------
+
+version_history: []
+
+# ----------------------------------------------------------------------
+# Friction
+# ----------------------------------------------------------------------
+
+friction:
+
+# end of record

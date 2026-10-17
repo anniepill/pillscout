@@ -1,0 +1,51 @@
+# NEGATIVE-TEST FIXTURE. Not a corpus record. Not authored content.
+#
+# Same reasons for living here rather than under ingredients/ as the other
+# fixtures: the full pipeline's corpus-wide validator (not shipped here)
+# discovers records with a non-recursive readdirSync('ingredients/records')
+# filtered to .yaml, so a fixture placed there would be validated as real
+# corpus content.
+#
+# THE DEFECT, and the only thing wrong with this file:
+#
+#   applicability_conditions:
+#     dose_range:
+#       threshold: 1000
+#       threshold_unit: mg_per_day
+#       threshold_direction: at_or_above
+#
+# dose_range is retired: the quote carries the dose. The block below is the shape the field had while it was declared, so
+# it is conformant to the retired schema in every key and value, and the only
+# reason it fails now is that applicabilityConditionsSchema no longer declares
+# dose_range and is strict. A refusal for any other reason means the fixture
+# has drifted and stopped isolating the retirement.
+#
+# population beside it is conformant, so the fixture also proves the parent
+# block does not false-fire on a valid neighbour.
+
+name: fixture_substance
+substance_type: nutrient
+status: fixture_only_not_a_record
+
+documented_interactions:
+  status: present
+  items:
+    - interaction_id: fixture_substance__fixture_counterpart
+      citations:
+        - citation_status: cited
+          source: fixture_source
+          document_id: FIXTURE-0003
+          section: "Introduction"
+          section_title: "Introduction"
+          evidence_locator: "Introduction, opening sentences"
+          verbatim: "Placeholder text standing in for a source quotation. This fixture is not derived from any source document and makes no claim about any substance."
+          evidence_methodology: curated_tertiary_synthesis
+          evidence_outcome: positive_finding
+          interaction_axis: [not_applicable]
+          axis_dose_dependence: not_reported
+          applicability_conditions:
+            population: [adults]
+            dose_range:
+              threshold: 1000
+              threshold_unit: mg_per_day
+              threshold_direction: at_or_above

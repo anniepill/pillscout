@@ -1,0 +1,20 @@
+# NEGATIVE-TEST FIXTURE. Not a corpus record. See 01-present.yaml.
+#
+# STATE 7 of 9: a missing required block. The ONLY fixture that exercises
+# gate 1.
+#
+# THE DEFECT: this record answers none of the eighteen required questions. It
+# is the shape of the corpus as an audit once found it, in miniature:
+# nothing here says that contraindications were considered and nothing says
+# they were not, and a consuming agent cannot tell the two apart.
+#
+# Gate 1 is the only gate that can see this, because the validator's walk is
+# key-driven and visits only keys that exist. It reports one warning per
+# absent block, and it reports them as WARNINGS rather than failures until
+# every record is backfilled.
+#
+# substance_type: nutrient is load-bearing here. It adds reference_values to
+# the expected list, so this file also pins the substance_type conditional.
+id: fixture_missing_blocks
+substance_type: nutrient
+canonical_name: fixture_missing_blocks

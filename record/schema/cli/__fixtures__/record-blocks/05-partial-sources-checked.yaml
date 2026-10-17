@@ -1,0 +1,20 @@
+# NEGATIVE-TEST FIXTURE. Not a corpus record. See 01-present.yaml.
+#
+# STATE 5 of 9: a sources_checked entry in the retired shape.
+#
+# THE DEFECT, and the only thing wrong with this file: the second entry still
+# carries the sections list an author used to type.
+#
+# The key existed to make a stub cost something: an entry naming a document
+# had to record what was read in it. Now a checked document is read whole
+# through its committed extraction and the lists are derived, never typed, so
+# the key retired and a strict entry refuses it, typed or empty.
+contraindications:
+  status: not_found
+  sources_checked:
+    - source: nih_ods
+      document_id: nih_ods_calcium
+    - source: health_canada_nnhpd
+      document_id: hc_nnhpd_multivitamin_mineral_monograph
+      sections:
+        - "Table 14. Contraindications"

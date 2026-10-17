@@ -1,0 +1,16 @@
+# NEGATIVE-TEST FIXTURE. Not a corpus record. See 01-present.yaml.
+#
+# STATE 4 of 9: malformed absence.
+#
+# THE DEFECT, and the only thing wrong with this file: a stated_absence with
+# no verbatim and no citations. It asserts that an authority stated there is
+# nothing while supplying nothing the claim can be checked against.
+#
+# This is the shape a stated_absence collapses into when it is authored from
+# an impression rather than from bytes, and it is the reason verbatim and
+# citations are required on the variant rather than optional. Without them the
+# state is indistinguishable from not_found while carrying a much stronger
+# claim.
+contraindications:
+  status: stated_absence
+  absence_reason: no_statement_required

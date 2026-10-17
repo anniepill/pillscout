@@ -1,0 +1,26 @@
+# NEGATIVE-TEST FIXTURE. Not a corpus record. See 01-present.yaml.
+#
+# STATE 6 of 9: wrong absence_reason.
+#
+# THE DEFECT, and the only thing wrong with this file:
+#
+#   absence_reason: nobody_looked
+#
+# Not a member of the three-value enum. The coined value is chosen to be the
+# plausible one rather than a contrived typo: "nobody looked" is a real state
+# of the world, and it is exactly the state stated_absence must NOT be used
+# for. A record whose sources were not read has no absence to state; it has a
+# not_found at best, and at worst it has nothing.
+#
+# Closing the enum is what stops the field from absorbing that meaning.
+contraindications:
+  status: stated_absence
+  absence_reason: nobody_looked
+  verbatim: "No statement required."
+  citations:
+    - source: health_canada_nnhpd
+      document_id: blackpepper.poivrenoir3
+      section: "Risk information"
+      section_title: "Contraindication(s)"
+      evidence_locator: "Contraindication(s) subsection, sole entry"
+      verbatim: "No statement required."

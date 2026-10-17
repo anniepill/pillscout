@@ -1,0 +1,55 @@
+# NEGATIVE-TEST FIXTURE. Not a corpus record. Not authored content.
+#
+# Companion to invalid-evidence-outcome.yaml, same purpose and same reasons
+# for living here rather than under ingredients/: the full pipeline's
+# corpus-wide validator (not shipped here) discovers records with a
+# non-recursive readdirSync('ingredients/records') filtered to .yaml, so a
+# fixture placed there would be validated as real corpus content.
+#
+# THE DEFECT, and the only thing wrong with this file:
+#
+#   applicability_conditions:
+#     patient_subgroup: [renal_impairment]
+#
+# applicability_conditions declares a CLOSED set of six dimensions:
+# population, route, formulation, condition, duration, genotype (a seventh,
+# dose_range, is retired). patient_subgroup is not one of them.
+#
+# It is the representative slip rather than a contrived one. The coined name
+# is plausible, reads as a population constraint, and sits beside `population`
+# which is the dimension it duplicates. Until this block was made strict the
+# schema was a plain z.object(), which STRIPS unrecognized keys and returns
+# success, so a record carrying this parsed clean and the block reported as
+# covered while the coined key was silently discarded.
+#
+# population below is fully conformant. It is present so the fixture proves
+# the strict object does not false-fire on a valid neighbour, and so the walk
+# has real work to do beyond the single defect.
+#
+# Every other mapped field carries a genuine enum member, so the expected
+# result is exactly one failure. More than one means the fixture has drifted
+# and stopped isolating the defect it was built to test.
+
+name: fixture_substance
+substance_type: nutrient
+status: fixture_only_not_a_record
+
+documented_interactions:
+  status: present
+  items:
+    - interaction_id: fixture_substance__fixture_counterpart
+      citations:
+        - citation_status: cited
+          source: fixture_source
+          document_id: FIXTURE-0002
+          section: "Introduction"
+          section_title: "Introduction"
+          evidence_locator: "Introduction, opening sentences"
+          verbatim: "Placeholder text standing in for a source quotation. This fixture is not derived from any source document and makes no claim about any substance."
+          evidence_methodology: curated_tertiary_synthesis
+          evidence_outcome: positive_finding
+          interaction_axis: [not_applicable]
+          axis_dose_dependence: not_reported
+          applicability_conditions:
+            population: [adults]
+            patient_subgroup: [renal_impairment]

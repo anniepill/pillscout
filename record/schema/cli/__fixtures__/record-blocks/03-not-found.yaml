@@ -1,0 +1,17 @@
+# FIXTURE. Not a corpus record. See 01-present.yaml for why it lives here.
+#
+# STATE 3 of 9: not_found. Every document the record cites, its
+# tier_3_sources apart, is checked, and none addresses the question. Checked
+# means extracted with every block carried or dispositioned.
+#
+# The shape only: a schema parse cannot see whether these documents are
+# checked, which is the absence gate's question (part of the full pipeline,
+# not shipped here). An entry names its document by source and document_id;
+# the sections an author once typed here are retired.
+contraindications:
+  status: not_found
+  sources_checked:
+    - source: nih_ods
+      document_id: nih_ods_calcium
+    - source: health_canada_nnhpd
+      document_id: hc_nnhpd_multivitamin_mineral_monograph

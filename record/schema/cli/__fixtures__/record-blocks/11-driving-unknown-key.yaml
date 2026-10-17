@@ -1,0 +1,24 @@
+# FIXTURE. Not a corpus record. Not authored content.
+#
+# STATE 11: the driving_and_machinery block with a coined key.
+#
+# The known-positive for strictness. `effects_on_driving` is exactly the shape
+# of key an authoring session invents when the block it needs is not quite the
+# block it has, and the whole point of registering this schema in FIELD_SCHEMAS
+# is that such a key fails rather than riding along unread. Without a strict
+# present variant this fixture would parse clean and the coined key would be
+# functionally absent, which is worse than a recorded absence because it
+# reads as coverage.
+driving_and_machinery:
+  status: present
+  basis: no_adequate_studies_performed
+  effects_on_driving: none_stated
+  citations:
+    - source: ema_hmpc
+      document_id: EMA/HMPC/321097/2012
+      document_published_date: 2015-01-28
+      section: "4.7"
+      section_title: "Effects on ability to drive and use machines"
+      evidence_locator: "Well-established use column"
+      verbatim: "No adequate studies on the effect on the ability to\ndrive and use machines have been performed."
+      evidence_methodology: regulator_assessment

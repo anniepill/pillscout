@@ -1,0 +1,39 @@
+# FIXTURE. Not a corpus record. Not authored content.
+#
+# Lives here rather than under ingredients/ because the corpus-wide runner
+# (part of the full pipeline, not shipped here) discovers records with a
+# non-recursive readdirSync('ingredients/records') filtered to .yaml, so a
+# fixture placed there would be validated as real corpus content.
+#
+# STATE 10: the driving_and_machinery FINDINGS block, present.
+#
+# It carried `basis: no_adequate_studies_performed` until free-string
+# `basis` retired from every block outside ginkgo's three
+# pregnancy_lactation poles. The key is gone from the shared shape, so a
+# fixture carrying it would now fail the strict parse; and it should not
+# carry it anyway, because what the block says is what its citations say.
+#
+# The ginkgo 4.7 case that opened the block. Both
+# monograph columns carry the same sentence, and that sentence is a DECLARED
+# ABSENCE: the regulator states that no studies were performed. A declared
+# absence is a statement the record carries, not silence it disposes of, which
+# is the whole reason this block exists rather than the section being written
+# off as states_nothing_in_scope.
+#
+# It carried basis_by_use_category, a per-column companion, until the key
+# retired. What a column concludes is carried by
+# the citation that states it, whose scope names the column; ginkgo cites this
+# sentence once per column, and this fixture carries the first of the two.
+driving_and_machinery:
+  status: present
+  citations:
+    - source: ema_hmpc
+      document_id: EMA/HMPC/321097/2012
+      document_published_date: 2015-01-28
+      section: "4.7"
+      section_title: "Effects on ability to drive and use machines"
+      evidence_locator: "Well-established use column"
+      verbatim: "No adequate studies on the effect on the ability to\ndrive and use machines have been performed."
+      evidence_methodology: regulator_assessment
+      evidence_outcome: not_applicable
+      evaluation_status: not_evaluated

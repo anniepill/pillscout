@@ -1,0 +1,59 @@
+# NEGATIVE-TEST FIXTURE. Not a corpus record. Not authored content.
+#
+# THE DEFECT, and the only thing wrong with this file:
+#
+#   citation_gaps:
+#     - citation_status: cited_but_unverifiable
+#
+# cited_but_unverifiable is not a member of citationStatusSchema. The value
+# is placed under citation_gaps, NOT inside a citations list, and that
+# placement is the entire point of the fixture.
+#
+# WHAT IT GUARDS:
+#
+# The walk stops descending at a BLOCK schema and continues past a LEAF one.
+# Registering the citations list as a block moved a large share of the
+# corpus's enum-tagged fields behind a single stop, so the risk this file
+# covers is a later change that widens the stop condition to every
+# FIELD_SCHEMAS hit, or that classifies an enum as a block. Either would
+# leave the validator still passing the corpus and still failing its negative
+# controls, while quietly no longer reaching leaf fields the walk is the only
+# thing that visits.
+#
+# citation_status is the right probe because it is one of the few registered
+# leaf keys the corpus has authored OUTSIDE a citations list, on
+# citation_gaps entries. So this is a real shape, not one invented to make
+# a test possible.
+#
+# The valid citations list below is load-bearing rather than decoration. It
+# forces the walk to stop at a block schema FIRST and then keep going to
+# reach the defect, which is the exact sequence under test. A fixture with
+# the defect alone would pass whether or not the stop condition leaked.
+#
+# Expected result is exactly one failure, on citation_status.
+
+name: fixture_substance
+substance_type: nutrient
+status: fixture_only_not_a_record
+
+documented_interactions:
+  status: present
+  items:
+    - interaction_id: fixture_substance__fixture_counterpart
+      citations:
+        - citation_status: cited
+          source: fixture_source
+          document_id: FIXTURE-0006
+          section: "Introduction"
+          section_title: "Introduction"
+          evidence_locator: "Introduction, opening sentences"
+          verbatim: "Placeholder text standing in for a source quotation. This fixture is not derived from any source document and makes no claim about any substance."
+          evidence_methodology: curated_tertiary_synthesis
+          evidence_outcome: positive_finding
+          interaction_axis: [not_applicable]
+          axis_dose_dependence: not_reported
+
+citation_gaps:
+  - gap: "Placeholder gap description for a source not retrieved."
+    rationale: "Fixture only; no real source was evaluated."
+    citation_status: cited_but_unverifiable

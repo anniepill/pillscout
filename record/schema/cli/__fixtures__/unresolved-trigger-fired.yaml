@@ -1,0 +1,64 @@
+# NEGATIVE-TEST FIXTURE. Not a corpus record. Not authored content.
+#
+# This file exists to prove gate 6 (checkUnresolvedTriggers) fires. When it was
+# written no corpus record carried an unresolved block, so there was no corpus
+# input that exercised this gate, and a gate seen only green is
+# indistinguishable from a gate that never runs. Its companion,
+# unresolved-trigger-open.yaml, proves the negative.
+#
+# It lives under schema/cli/__fixtures__/ and NOT under ingredients/ because
+# the full pipeline's corpus-wide validator (not shipped here) discovers
+# records with a non-recursive readdirSync('ingredients/records') filtered to
+# .yaml. A fixture placed there would be validated as if it were real corpus
+# content.
+#
+# THE DEFECT, and the only thing wrong with this file:
+#
+#   must_close_by: after_build_2
+#
+# after_build_2 is a member of FIRED_TRIGGERS in schema/cli/check-triggers.ts,
+# so the block is overdue: the event its deferral was conditioned on has
+# happened and the block is still open. It must now be resolved in place or
+# promoted to an issue in the project's issue list.
+#
+# The marker itself is WELL-FORMED. All four keys are present and every value is
+# a legal member of its vocabulary, so unresolvedBlockSchema passes and the one
+# expected failure comes from gate 6 alone. That separation is the point: a
+# malformed block would have proven the shape schema, which unresolved.test.ts
+# already covers, and not the firing rule.
+#
+# IF THE FIRED SET CHANGES. after_build_2 is fired. FIRED_TRIGGERS is
+# moved by hand, one commit per event, and it only grows, so this fixture stays
+# valid as triggers accrete. If a future commit ever removes a token, the test
+# in validator-core.test.ts is what fails, and the fix is to repoint this file
+# at a token that is fired then.
+#
+# Every other mapped field here carries a genuine enum member, so the expected
+# result is exactly one failure. If this file ever produces more than one, the
+# fixture has drifted and stopped isolating the defect it was built to test.
+
+name: fixture_substance
+substance_type: nutrient
+status: fixture_only_not_a_record
+
+documented_interactions:
+  status: present
+  items:
+    - interaction_id: fixture_substance__fixture_counterpart
+      citations:
+        - citation_status: cited
+          source: fixture_source
+          document_id: FIXTURE-0001
+          section: "Introduction"
+          section_title: "Introduction"
+          evidence_locator: "Introduction, opening sentences"
+          verbatim: "Placeholder text standing in for a source quotation. This fixture is not derived from any source document and makes no claim about any substance."
+          evidence_methodology: curated_tertiary_synthesis
+          evidence_outcome: not_applicable
+          interaction_axis: [not_applicable]
+          axis_dose_dependence: not_reported
+          unresolved:
+            - class: no_slot
+              note: "Placeholder note standing in for an authoring session's account of a fact it could not file. This fixture is not derived from any source document."
+              opened: "2026-09-16"
+              must_close_by: after_build_2

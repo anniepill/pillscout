@@ -1,0 +1,40 @@
+# NEGATIVE-TEST FIXTURE. Not a corpus record. See 01-present.yaml.
+#
+# STATE 8 of 9: a poled container carrying its own status.
+#
+# THE DEFECT, and the only thing wrong with this file: pregnancy_lactation
+# carries a container-level `status: present` above its poles.
+#
+# It looks harmless and it is not. A container status forces ONE verdict over
+# poles that legitimately disagree: here pregnancy has a finding and lactation
+# has a silence, which is the ordinary case rather than an edge one, and a
+# single `present` above them asserts content for lactation that no source
+# supplies. Poling exists precisely to stop that collapse, so the container
+# carries no status and strictness enforces it.
+#
+# The pregnancy pole once carried determination, basis and
+# basis_by_use_category, the per-column basis. All three retired as coined
+# tokens: a structured field never holds the corpus's own summary of a source
+# sentence. They are dropped here rather than kept as harmless payload: a fixture is read as
+# an example of a valid shape, and these are a shape no record may author.
+pregnancy_lactation:
+  status: present
+  pregnancy:
+    status: present
+    citations:
+      - source: health_canada_nnhpd
+        document_id: hc_nnhpd_multivitamin_mineral_monograph
+        section: "Dose(s)"
+        section_title: "Dose information"
+        evidence_locator: "Dose information general bullets, subpopulation bullet"
+        verbatim: "Dose information for adults includes pregnant and breastfeeding women."
+  lactation:
+    status: not_found
+    sources_checked:
+      - source: nih_ods
+        document_id: nih_ods_magnesium
+  fertility:
+    status: not_found
+    sources_checked:
+      - source: nih_ods
+        document_id: nih_ods_magnesium

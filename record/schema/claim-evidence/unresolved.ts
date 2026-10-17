@@ -54,10 +54,9 @@ export const MUST_CLOSE_BY = [
   'after_build_5',
 ] as const;
 
-// The parameterised twelfth trigger. `<category>` is drawn from the
-// substance class typology's closed list; no code home for that list exists
-// yet, so the category is checked for shape (lowercase snake_case, non-empty)
-// and not for membership.
+// The parameterised twelfth trigger. `<category>` is a slug and is not drawn
+// from the substance class typology list, so the category is checked for
+// shape (lowercase snake_case, non-empty) and not for membership.
 export const FIRST_RECORD_OF = /^first_record_of:[a-z0-9]+(_[a-z0-9]+)*$/;
 
 export const mustCloseBySchema = z.union([

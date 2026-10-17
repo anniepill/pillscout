@@ -1,0 +1,22 @@
+# FIXTURE. Not a corpus record. See 01-present.yaml for why it lives here.
+#
+# STATE 2 of 9: stated_absence. A cited authority affirmatively states there
+# is nothing.
+#
+# The piperine case. Health Canada's black pepper monograph prints "No
+# statement required." under its Contraindication(s) heading, which is a
+# labelling determination that no statement is needed, not a silence. Three
+# words, and it passes the gate-6 sentence heuristic on its terminal period,
+# which is the reason that limb of the heuristic exists at all.
+contraindications:
+  status: stated_absence
+  absence_reason: no_statement_required
+  verbatim: "No statement required."
+  citations:
+    - source: health_canada_nnhpd
+      document_id: blackpepper.poivrenoir3
+      section: "Risk information"
+      section_title: "Contraindication(s)"
+      evidence_locator: "Contraindication(s) subsection, sole entry"
+      verbatim: "No statement required."
+      evidence_methodology: regulator_assessment
