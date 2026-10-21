@@ -58,7 +58,7 @@ npm test
 npm run validate -- ingredients/records/ginkgo.yaml
 ```
 
-The tests check the schema and the record's shape; the validator checks the record against 28 schemas and reports one expected warning. The record is the full ginkgo record with its authoring machinery removed for publication: the citation_gaps and version_history blocks are emptied, the derived word-position index is stripped, the internal ticket references in notes are reworded, and one free-text field that told a reading model how to weigh a claim is deleted, because the corpus states and does not interpret. No quote and no label was changed. One thing it cannot do here: the quotes are anchored to byte positions in source documents that are not in this repository, so the anchors are checked for shape, not resolved. Verifying a quote against its source means opening the named document at the named section.
+The tests check the schema and the record's shape; the validator checks the record against 28 schemas and reports one expected warning. The record is the full ginkgo record with its authoring machinery removed for publication; no quote and no label was changed. One thing it cannot do here: the quotes are anchored to byte positions in source documents that are not in this repository, so the anchors are checked for shape, not resolved. Verifying a quote against its source means opening the named document at the named section.
 
 ## What is not here
 

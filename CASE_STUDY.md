@@ -24,4 +24,4 @@ The method of proving a stored statement matches its source, which every reviewe
 
 Fourteen catalogued ways an assistant drifted from the data it was given, and the fixes that held: not telling the model to be careful, but shaping the data so the unsafe move is harder than the safe one.
 
-And this about myself. I am not an engineer and do not want to be one. I know enough to work beside the people who are, follow what they build, and keep up with where the tools are going. What I am good at is operations: turning a direction into a working system, and running the test that might end it.
+And this about myself. I am not an engineer, but I know enough to work beside the people who are, follow what they build, and keep up with where the tools are going. What I am good at is operations: turning a direction into a working system, and running the test that might end it.
