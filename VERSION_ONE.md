@@ -1,6 +1,6 @@
 # Version one, 2025 to 2026
 
-The first PillScout was a consumer web app. Built June 2025 to April 2026 in Cursor, about 1,100 commits, live at pillscout.health until October 2026.
+The first PillScout was a consumer web app. Built June 2025 to April 2026 in Cursor, about 1,100 commits, live at pillscout.health until it was shut down on 31 October 2026.
 
 ## What it was
 
